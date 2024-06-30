@@ -1,0 +1,235 @@
+\doxysection{C\+:/\+Users/\+GDD/\+Desktop/program/c/library/source/string/fstring.c File Reference}
+\hypertarget{fstring_8c}{}\label{fstring_8c}\index{C:/Users/GDD/Desktop/program/c/library/source/string/fstring.c@{C:/Users/GDD/Desktop/program/c/library/source/string/fstring.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include "{}cstring.\+h"{}}\newline
+{\ttfamily \#include "{}fstring\+\_\+error.\+h"{}}\newline
+Include dependency graph for fstring.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fstring_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structtag_f_string}{tag\+FString}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structtag_f_string}{tag\+FString}} \mbox{\hyperlink{fstring_8c_a98c9cd7716524450c6cd131cfed7c0af}{FString}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{fstring_8c_a8847a04f400aa9aedd39708b3df0d160}{FString\+Reserved\+Size}} (int size)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{fstring_8c_ad29085829ff62676d47368471ffedd46}{FString\+Alloc}} (int size)
+\item 
+\mbox{\hyperlink{fstring_8c_a98c9cd7716524450c6cd131cfed7c0af}{FString}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{fstring_8c_ad77ea0048430911af070cbaf4b1e2f37}{FString\+Create}} (int size)
+\item 
+void \mbox{\hyperlink{fstring_8c_a5b24e3a7fd858ec32ca1ed3b908af596}{FString\+Delete}} (\mbox{\hyperlink{fstring_8c_a98c9cd7716524450c6cd131cfed7c0af}{FString}} \texorpdfstring{$\ast$}{*}string)
+\item 
+\mbox{\hyperlink{fstring_8c_a98c9cd7716524450c6cd131cfed7c0af}{FString}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{fstring_8c_a6ecc248c15bc3edb6aafcbd83f1c9426}{FString\+Set}} (char \texorpdfstring{$\ast$}{*}str)
+\item 
+int \mbox{\hyperlink{fstring_8c_adc7eaee1bdf75c3b95b8f0ae132e99a4}{FString\+Reset}} (\mbox{\hyperlink{fstring_8c_a98c9cd7716524450c6cd131cfed7c0af}{FString}} \texorpdfstring{$\ast$}{*}string, char \texorpdfstring{$\ast$}{*}str)
+\item 
+int \mbox{\hyperlink{fstring_8c_a7e67fe03db3a97441048127bdcf7c30b}{FString\+Resize}} (\mbox{\hyperlink{fstring_8c_a98c9cd7716524450c6cd131cfed7c0af}{FString}} \texorpdfstring{$\ast$}{*}string, int target\+\_\+size)
+\item 
+int \mbox{\hyperlink{fstring_8c_a5380b464e9b4a18b686c38bb41a70b07}{FString\+Auto\+Resize}} (\mbox{\hyperlink{fstring_8c_a98c9cd7716524450c6cd131cfed7c0af}{FString}} \texorpdfstring{$\ast$}{*}string)
+\item 
+int \mbox{\hyperlink{fstring_8c_a0117375d41c613a1a83de18eb4a8dec4}{FString\+Fill}} (\mbox{\hyperlink{fstring_8c_a98c9cd7716524450c6cd131cfed7c0af}{FString}} \texorpdfstring{$\ast$}{*}string, char charactor)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{fstring_8c_a98c9cd7716524450c6cd131cfed7c0af}\index{fstring.c@{fstring.c}!FString@{FString}}
+\index{FString@{FString}!fstring.c@{fstring.c}}
+\doxysubsubsection{\texorpdfstring{FString}{FString}}
+{\footnotesize\ttfamily \label{fstring_8c_a98c9cd7716524450c6cd131cfed7c0af} 
+typedef struct \mbox{\hyperlink{structtag_f_string}{tag\+FString}} \mbox{\hyperlink{fstring_8c_a98c9cd7716524450c6cd131cfed7c0af}{FString}}}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{fstring_8c_ad29085829ff62676d47368471ffedd46}\index{fstring.c@{fstring.c}!FStringAlloc@{FStringAlloc}}
+\index{FStringAlloc@{FStringAlloc}!fstring.c@{fstring.c}}
+\doxysubsubsection{\texorpdfstring{FStringAlloc()}{FStringAlloc()}}
+{\footnotesize\ttfamily \label{fstring_8c_ad29085829ff62676d47368471ffedd46} 
+char \texorpdfstring{$\ast$}{*} FString\+Alloc (\begin{DoxyParamCaption}\item[{int}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{fstring_8c_source_l00037}{37}} of file \mbox{\hyperlink{fstring_8c_source}{fstring.\+c}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{fstring_8c_ad29085829ff62676d47368471ffedd46_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{fstring_8c_ad29085829ff62676d47368471ffedd46_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fstring_8c_a5380b464e9b4a18b686c38bb41a70b07}\index{fstring.c@{fstring.c}!FStringAutoResize@{FStringAutoResize}}
+\index{FStringAutoResize@{FStringAutoResize}!fstring.c@{fstring.c}}
+\doxysubsubsection{\texorpdfstring{FStringAutoResize()}{FStringAutoResize()}}
+{\footnotesize\ttfamily \label{fstring_8c_a5380b464e9b4a18b686c38bb41a70b07} 
+int FString\+Auto\+Resize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{fstring_8c_a98c9cd7716524450c6cd131cfed7c0af}{FString}} \texorpdfstring{$\ast$}{*}}]{string}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{fstring_8c_source_l00131}{131}} of file \mbox{\hyperlink{fstring_8c_source}{fstring.\+c}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{fstring_8c_a5380b464e9b4a18b686c38bb41a70b07_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fstring_8c_ad77ea0048430911af070cbaf4b1e2f37}\index{fstring.c@{fstring.c}!FStringCreate@{FStringCreate}}
+\index{FStringCreate@{FStringCreate}!fstring.c@{fstring.c}}
+\doxysubsubsection{\texorpdfstring{FStringCreate()}{FStringCreate()}}
+{\footnotesize\ttfamily \label{fstring_8c_ad77ea0048430911af070cbaf4b1e2f37} 
+\mbox{\hyperlink{fstring_8c_a98c9cd7716524450c6cd131cfed7c0af}{FString}} \texorpdfstring{$\ast$}{*} FString\+Create (\begin{DoxyParamCaption}\item[{int}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{fstring_8c_source_l00042}{42}} of file \mbox{\hyperlink{fstring_8c_source}{fstring.\+c}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{fstring_8c_ad77ea0048430911af070cbaf4b1e2f37_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fstring_8c_ad77ea0048430911af070cbaf4b1e2f37_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fstring_8c_a5b24e3a7fd858ec32ca1ed3b908af596}\index{fstring.c@{fstring.c}!FStringDelete@{FStringDelete}}
+\index{FStringDelete@{FStringDelete}!fstring.c@{fstring.c}}
+\doxysubsubsection{\texorpdfstring{FStringDelete()}{FStringDelete()}}
+{\footnotesize\ttfamily \label{fstring_8c_a5b24e3a7fd858ec32ca1ed3b908af596} 
+void FString\+Delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{fstring_8c_a98c9cd7716524450c6cd131cfed7c0af}{FString}} \texorpdfstring{$\ast$}{*}}]{string}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{fstring_8c_source_l00070}{70}} of file \mbox{\hyperlink{fstring_8c_source}{fstring.\+c}}.
+
+\Hypertarget{fstring_8c_a0117375d41c613a1a83de18eb4a8dec4}\index{fstring.c@{fstring.c}!FStringFill@{FStringFill}}
+\index{FStringFill@{FStringFill}!fstring.c@{fstring.c}}
+\doxysubsubsection{\texorpdfstring{FStringFill()}{FStringFill()}}
+{\footnotesize\ttfamily \label{fstring_8c_a0117375d41c613a1a83de18eb4a8dec4} 
+int FString\+Fill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{fstring_8c_a98c9cd7716524450c6cd131cfed7c0af}{FString}} \texorpdfstring{$\ast$}{*}}]{string}{, }\item[{char}]{charactor}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{fstring_8c_source_l00139}{139}} of file \mbox{\hyperlink{fstring_8c_source}{fstring.\+c}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{fstring_8c_a0117375d41c613a1a83de18eb4a8dec4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fstring_8c_a8847a04f400aa9aedd39708b3df0d160}\index{fstring.c@{fstring.c}!FStringReservedSize@{FStringReservedSize}}
+\index{FStringReservedSize@{FStringReservedSize}!fstring.c@{fstring.c}}
+\doxysubsubsection{\texorpdfstring{FStringReservedSize()}{FStringReservedSize()}}
+{\footnotesize\ttfamily \label{fstring_8c_a8847a04f400aa9aedd39708b3df0d160} 
+int FString\+Reserved\+Size (\begin{DoxyParamCaption}\item[{int}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{fstring_8c_source_l00032}{32}} of file \mbox{\hyperlink{fstring_8c_source}{fstring.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fstring_8c_a8847a04f400aa9aedd39708b3df0d160_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fstring_8c_adc7eaee1bdf75c3b95b8f0ae132e99a4}\index{fstring.c@{fstring.c}!FStringReset@{FStringReset}}
+\index{FStringReset@{FStringReset}!fstring.c@{fstring.c}}
+\doxysubsubsection{\texorpdfstring{FStringReset()}{FStringReset()}}
+{\footnotesize\ttfamily \label{fstring_8c_adc7eaee1bdf75c3b95b8f0ae132e99a4} 
+int FString\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{fstring_8c_a98c9cd7716524450c6cd131cfed7c0af}{FString}} \texorpdfstring{$\ast$}{*}}]{string}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{str}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{fstring_8c_source_l00091}{91}} of file \mbox{\hyperlink{fstring_8c_source}{fstring.\+c}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fstring_8c_adc7eaee1bdf75c3b95b8f0ae132e99a4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fstring_8c_a7e67fe03db3a97441048127bdcf7c30b}\index{fstring.c@{fstring.c}!FStringResize@{FStringResize}}
+\index{FStringResize@{FStringResize}!fstring.c@{fstring.c}}
+\doxysubsubsection{\texorpdfstring{FStringResize()}{FStringResize()}}
+{\footnotesize\ttfamily \label{fstring_8c_a7e67fe03db3a97441048127bdcf7c30b} 
+int FString\+Resize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{fstring_8c_a98c9cd7716524450c6cd131cfed7c0af}{FString}} \texorpdfstring{$\ast$}{*}}]{string}{, }\item[{int}]{target\+\_\+size}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{fstring_8c_source_l00123}{123}} of file \mbox{\hyperlink{fstring_8c_source}{fstring.\+c}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{fstring_8c_a7e67fe03db3a97441048127bdcf7c30b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{fstring_8c_a6ecc248c15bc3edb6aafcbd83f1c9426}\index{fstring.c@{fstring.c}!FStringSet@{FStringSet}}
+\index{FStringSet@{FStringSet}!fstring.c@{fstring.c}}
+\doxysubsubsection{\texorpdfstring{FStringSet()}{FStringSet()}}
+{\footnotesize\ttfamily \label{fstring_8c_a6ecc248c15bc3edb6aafcbd83f1c9426} 
+\mbox{\hyperlink{fstring_8c_a98c9cd7716524450c6cd131cfed7c0af}{FString}} \texorpdfstring{$\ast$}{*} FString\+Set (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{fstring_8c_source_l00080}{80}} of file \mbox{\hyperlink{fstring_8c_source}{fstring.\+c}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fstring_8c_a6ecc248c15bc3edb6aafcbd83f1c9426_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{fstring_8c_a6ecc248c15bc3edb6aafcbd83f1c9426_icgraph}
+\end{center}
+\end{figure}

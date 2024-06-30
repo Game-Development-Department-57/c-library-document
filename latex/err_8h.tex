@@ -1,0 +1,238 @@
+\doxysection{C\+:/\+Users/\+GDD/\+Desktop/program/c/library/source/error/err.h File Reference}
+\hypertarget{err_8h}{}\label{err_8h}\index{C:/Users/GDD/Desktop/program/c/library/source/error/err.h@{C:/Users/GDD/Desktop/program/c/library/source/error/err.h}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{err_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{err_8h_af8bdbf3a4efaa2f6a8d5d9bb7fb3bac4}{err\+Mask\+Sign}}~0x80000000
+\item 
+\#define \mbox{\hyperlink{err_8h_ab804d20634f61c8607533512190a8d77}{err\+Mask\+Reserved}}~0x7f000000
+\item 
+\#define \mbox{\hyperlink{err_8h_a6fb1765cfa10091c99592f8bdaa08b31}{err\+Mask\+RecordA}}~0x00fff000
+\item 
+\#define \mbox{\hyperlink{err_8h_a53428af5c4ea0b4b697cd6b5d833c02e}{err\+Mask\+RecordB}}~0x00000fff
+\item 
+\#define \mbox{\hyperlink{err_8h_ae53880bf2e26a0a9f00c27dc49a8eb8b}{err\+Shift\+Sign}}~31
+\item 
+\#define \mbox{\hyperlink{err_8h_a108f40ecf1551a448e4bc1dec37b7853}{err\+Shift\+Reserved}}~24
+\item 
+\#define \mbox{\hyperlink{err_8h_ad438b968f8b2f9590adeec70557945dd}{err\+Shift\+RecordA}}~12
+\item 
+\#define \mbox{\hyperlink{err_8h_aba51a73d60b82acaa716ea33979350f5}{err\+Shift\+RecordB}}~0
+\item 
+\#define \mbox{\hyperlink{err_8h_a16cbfdbf7f5c986ef7f8335baa4d4f83}{err\+Get\+Sign}}(id)~((id \& \mbox{\hyperlink{err_8h_af8bdbf3a4efaa2f6a8d5d9bb7fb3bac4}{err\+Mask\+Sign}})     $>$$>$ \mbox{\hyperlink{err_8h_ae53880bf2e26a0a9f00c27dc49a8eb8b}{err\+Shift\+Sign}})
+\item 
+\#define \mbox{\hyperlink{err_8h_a84f8a10d30892415889f8c376b744878}{err\+Get\+Reserved}}(id)~((id \& \mbox{\hyperlink{err_8h_ab804d20634f61c8607533512190a8d77}{err\+Mask\+Reserved}}) $>$$>$ \mbox{\hyperlink{err_8h_a108f40ecf1551a448e4bc1dec37b7853}{err\+Shift\+Reserved}})
+\item 
+\#define \mbox{\hyperlink{err_8h_a6e66071f08ae547e9ff41739d9d5f1f9}{err\+Get\+RecordA}}(id)~((id \& \mbox{\hyperlink{err_8h_a6fb1765cfa10091c99592f8bdaa08b31}{err\+Mask\+RecordA}})  $>$$>$ \mbox{\hyperlink{err_8h_ad438b968f8b2f9590adeec70557945dd}{err\+Shift\+RecordA}})
+\item 
+\#define \mbox{\hyperlink{err_8h_a14bc3d1a510b17e84a06429826a9cf85}{err\+Get\+RecordB}}(id)~((id \& \mbox{\hyperlink{err_8h_a53428af5c4ea0b4b697cd6b5d833c02e}{err\+Mask\+RecordB}})  $>$$>$ \mbox{\hyperlink{err_8h_aba51a73d60b82acaa716ea33979350f5}{err\+Shift\+RecordB}})
+\item 
+\#define \mbox{\hyperlink{err_8h_a6f223fd8a27a0c6384741a7592e3d1d7}{err\+Set\+Sign}}(id)~(id $<$$<$ \mbox{\hyperlink{err_8h_ae53880bf2e26a0a9f00c27dc49a8eb8b}{err\+Shift\+Sign}})
+\item 
+\#define \mbox{\hyperlink{err_8h_a0e7f4cee831dd8e4f255fb815a4f3f58}{err\+Set\+Reserved}}(id)~(id $<$$<$ \mbox{\hyperlink{err_8h_a108f40ecf1551a448e4bc1dec37b7853}{err\+Shift\+Reserved}})
+\item 
+\#define \mbox{\hyperlink{err_8h_a59ab42da93756fba69016c6f328e6d70}{err\+Set\+RecordA}}(id)~(id $<$$<$ \mbox{\hyperlink{err_8h_ad438b968f8b2f9590adeec70557945dd}{err\+Shift\+RecordA}})
+\item 
+\#define \mbox{\hyperlink{err_8h_afe5127d2f08946f3a1acd89864caecf5}{err\+Set\+RecordB}}(id)~(id $<$$<$ \mbox{\hyperlink{err_8h_aba51a73d60b82acaa716ea33979350f5}{err\+Shift\+RecordB}})
+\item 
+\#define \mbox{\hyperlink{err_8h_a100ae538bc5819fe7f116f5b51d9556c}{err\+Set\+All}}(sign,  reserved,  recorda,  recordb)~(\mbox{\hyperlink{err_8h_a6f223fd8a27a0c6384741a7592e3d1d7}{err\+Set\+Sign}}(sign) + \mbox{\hyperlink{err_8h_a0e7f4cee831dd8e4f255fb815a4f3f58}{err\+Set\+Reserved}}(reserved) + \mbox{\hyperlink{err_8h_a59ab42da93756fba69016c6f328e6d70}{err\+Set\+RecordA}}(recorda) + \mbox{\hyperlink{err_8h_afe5127d2f08946f3a1acd89864caecf5}{err\+Set\+RecordB}}(recordb))
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef int \mbox{\hyperlink{err_8h_adb571dd32a3d3d2d76c761226206bde0}{err}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{err_8h_a6e66071f08ae547e9ff41739d9d5f1f9}\index{err.h@{err.h}!errGetRecordA@{errGetRecordA}}
+\index{errGetRecordA@{errGetRecordA}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{errGetRecordA}{errGetRecordA}}
+{\footnotesize\ttfamily \label{err_8h_a6e66071f08ae547e9ff41739d9d5f1f9} 
+\#define err\+Get\+RecordA(\begin{DoxyParamCaption}\item[{}]{id}{}\end{DoxyParamCaption})~((id \& \mbox{\hyperlink{err_8h_a6fb1765cfa10091c99592f8bdaa08b31}{err\+Mask\+RecordA}})  $>$$>$ \mbox{\hyperlink{err_8h_ad438b968f8b2f9590adeec70557945dd}{err\+Shift\+RecordA}})}
+
+
+
+Definition at line \mbox{\hyperlink{err_8h_source_l00020}{20}} of file \mbox{\hyperlink{err_8h_source}{err.\+h}}.
+
+\Hypertarget{err_8h_a14bc3d1a510b17e84a06429826a9cf85}\index{err.h@{err.h}!errGetRecordB@{errGetRecordB}}
+\index{errGetRecordB@{errGetRecordB}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{errGetRecordB}{errGetRecordB}}
+{\footnotesize\ttfamily \label{err_8h_a14bc3d1a510b17e84a06429826a9cf85} 
+\#define err\+Get\+RecordB(\begin{DoxyParamCaption}\item[{}]{id}{}\end{DoxyParamCaption})~((id \& \mbox{\hyperlink{err_8h_a53428af5c4ea0b4b697cd6b5d833c02e}{err\+Mask\+RecordB}})  $>$$>$ \mbox{\hyperlink{err_8h_aba51a73d60b82acaa716ea33979350f5}{err\+Shift\+RecordB}})}
+
+
+
+Definition at line \mbox{\hyperlink{err_8h_source_l00021}{21}} of file \mbox{\hyperlink{err_8h_source}{err.\+h}}.
+
+\Hypertarget{err_8h_a84f8a10d30892415889f8c376b744878}\index{err.h@{err.h}!errGetReserved@{errGetReserved}}
+\index{errGetReserved@{errGetReserved}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{errGetReserved}{errGetReserved}}
+{\footnotesize\ttfamily \label{err_8h_a84f8a10d30892415889f8c376b744878} 
+\#define err\+Get\+Reserved(\begin{DoxyParamCaption}\item[{}]{id}{}\end{DoxyParamCaption})~((id \& \mbox{\hyperlink{err_8h_ab804d20634f61c8607533512190a8d77}{err\+Mask\+Reserved}}) $>$$>$ \mbox{\hyperlink{err_8h_a108f40ecf1551a448e4bc1dec37b7853}{err\+Shift\+Reserved}})}
+
+
+
+Definition at line \mbox{\hyperlink{err_8h_source_l00019}{19}} of file \mbox{\hyperlink{err_8h_source}{err.\+h}}.
+
+\Hypertarget{err_8h_a16cbfdbf7f5c986ef7f8335baa4d4f83}\index{err.h@{err.h}!errGetSign@{errGetSign}}
+\index{errGetSign@{errGetSign}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{errGetSign}{errGetSign}}
+{\footnotesize\ttfamily \label{err_8h_a16cbfdbf7f5c986ef7f8335baa4d4f83} 
+\#define err\+Get\+Sign(\begin{DoxyParamCaption}\item[{}]{id}{}\end{DoxyParamCaption})~((id \& \mbox{\hyperlink{err_8h_af8bdbf3a4efaa2f6a8d5d9bb7fb3bac4}{err\+Mask\+Sign}})     $>$$>$ \mbox{\hyperlink{err_8h_ae53880bf2e26a0a9f00c27dc49a8eb8b}{err\+Shift\+Sign}})}
+
+
+
+Definition at line \mbox{\hyperlink{err_8h_source_l00018}{18}} of file \mbox{\hyperlink{err_8h_source}{err.\+h}}.
+
+\Hypertarget{err_8h_a6fb1765cfa10091c99592f8bdaa08b31}\index{err.h@{err.h}!errMaskRecordA@{errMaskRecordA}}
+\index{errMaskRecordA@{errMaskRecordA}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{errMaskRecordA}{errMaskRecordA}}
+{\footnotesize\ttfamily \label{err_8h_a6fb1765cfa10091c99592f8bdaa08b31} 
+\#define err\+Mask\+RecordA~0x00fff000}
+
+
+
+Definition at line \mbox{\hyperlink{err_8h_source_l00010}{10}} of file \mbox{\hyperlink{err_8h_source}{err.\+h}}.
+
+\Hypertarget{err_8h_a53428af5c4ea0b4b697cd6b5d833c02e}\index{err.h@{err.h}!errMaskRecordB@{errMaskRecordB}}
+\index{errMaskRecordB@{errMaskRecordB}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{errMaskRecordB}{errMaskRecordB}}
+{\footnotesize\ttfamily \label{err_8h_a53428af5c4ea0b4b697cd6b5d833c02e} 
+\#define err\+Mask\+RecordB~0x00000fff}
+
+
+
+Definition at line \mbox{\hyperlink{err_8h_source_l00011}{11}} of file \mbox{\hyperlink{err_8h_source}{err.\+h}}.
+
+\Hypertarget{err_8h_ab804d20634f61c8607533512190a8d77}\index{err.h@{err.h}!errMaskReserved@{errMaskReserved}}
+\index{errMaskReserved@{errMaskReserved}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{errMaskReserved}{errMaskReserved}}
+{\footnotesize\ttfamily \label{err_8h_ab804d20634f61c8607533512190a8d77} 
+\#define err\+Mask\+Reserved~0x7f000000}
+
+
+
+Definition at line \mbox{\hyperlink{err_8h_source_l00009}{9}} of file \mbox{\hyperlink{err_8h_source}{err.\+h}}.
+
+\Hypertarget{err_8h_af8bdbf3a4efaa2f6a8d5d9bb7fb3bac4}\index{err.h@{err.h}!errMaskSign@{errMaskSign}}
+\index{errMaskSign@{errMaskSign}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{errMaskSign}{errMaskSign}}
+{\footnotesize\ttfamily \label{err_8h_af8bdbf3a4efaa2f6a8d5d9bb7fb3bac4} 
+\#define err\+Mask\+Sign~0x80000000}
+
+
+
+Definition at line \mbox{\hyperlink{err_8h_source_l00008}{8}} of file \mbox{\hyperlink{err_8h_source}{err.\+h}}.
+
+\Hypertarget{err_8h_a100ae538bc5819fe7f116f5b51d9556c}\index{err.h@{err.h}!errSetAll@{errSetAll}}
+\index{errSetAll@{errSetAll}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{errSetAll}{errSetAll}}
+{\footnotesize\ttfamily \label{err_8h_a100ae538bc5819fe7f116f5b51d9556c} 
+\#define err\+Set\+All(\begin{DoxyParamCaption}\item[{}]{sign}{, }\item[{}]{reserved}{, }\item[{}]{recorda}{, }\item[{}]{recordb}{}\end{DoxyParamCaption})~(\mbox{\hyperlink{err_8h_a6f223fd8a27a0c6384741a7592e3d1d7}{err\+Set\+Sign}}(sign) + \mbox{\hyperlink{err_8h_a0e7f4cee831dd8e4f255fb815a4f3f58}{err\+Set\+Reserved}}(reserved) + \mbox{\hyperlink{err_8h_a59ab42da93756fba69016c6f328e6d70}{err\+Set\+RecordA}}(recorda) + \mbox{\hyperlink{err_8h_afe5127d2f08946f3a1acd89864caecf5}{err\+Set\+RecordB}}(recordb))}
+
+
+
+Definition at line \mbox{\hyperlink{err_8h_source_l00027}{27}} of file \mbox{\hyperlink{err_8h_source}{err.\+h}}.
+
+\Hypertarget{err_8h_a59ab42da93756fba69016c6f328e6d70}\index{err.h@{err.h}!errSetRecordA@{errSetRecordA}}
+\index{errSetRecordA@{errSetRecordA}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{errSetRecordA}{errSetRecordA}}
+{\footnotesize\ttfamily \label{err_8h_a59ab42da93756fba69016c6f328e6d70} 
+\#define err\+Set\+RecordA(\begin{DoxyParamCaption}\item[{}]{id}{}\end{DoxyParamCaption})~(id $<$$<$ \mbox{\hyperlink{err_8h_ad438b968f8b2f9590adeec70557945dd}{err\+Shift\+RecordA}})}
+
+
+
+Definition at line \mbox{\hyperlink{err_8h_source_l00024}{24}} of file \mbox{\hyperlink{err_8h_source}{err.\+h}}.
+
+\Hypertarget{err_8h_afe5127d2f08946f3a1acd89864caecf5}\index{err.h@{err.h}!errSetRecordB@{errSetRecordB}}
+\index{errSetRecordB@{errSetRecordB}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{errSetRecordB}{errSetRecordB}}
+{\footnotesize\ttfamily \label{err_8h_afe5127d2f08946f3a1acd89864caecf5} 
+\#define err\+Set\+RecordB(\begin{DoxyParamCaption}\item[{}]{id}{}\end{DoxyParamCaption})~(id $<$$<$ \mbox{\hyperlink{err_8h_aba51a73d60b82acaa716ea33979350f5}{err\+Shift\+RecordB}})}
+
+
+
+Definition at line \mbox{\hyperlink{err_8h_source_l00025}{25}} of file \mbox{\hyperlink{err_8h_source}{err.\+h}}.
+
+\Hypertarget{err_8h_a0e7f4cee831dd8e4f255fb815a4f3f58}\index{err.h@{err.h}!errSetReserved@{errSetReserved}}
+\index{errSetReserved@{errSetReserved}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{errSetReserved}{errSetReserved}}
+{\footnotesize\ttfamily \label{err_8h_a0e7f4cee831dd8e4f255fb815a4f3f58} 
+\#define err\+Set\+Reserved(\begin{DoxyParamCaption}\item[{}]{id}{}\end{DoxyParamCaption})~(id $<$$<$ \mbox{\hyperlink{err_8h_a108f40ecf1551a448e4bc1dec37b7853}{err\+Shift\+Reserved}})}
+
+
+
+Definition at line \mbox{\hyperlink{err_8h_source_l00023}{23}} of file \mbox{\hyperlink{err_8h_source}{err.\+h}}.
+
+\Hypertarget{err_8h_a6f223fd8a27a0c6384741a7592e3d1d7}\index{err.h@{err.h}!errSetSign@{errSetSign}}
+\index{errSetSign@{errSetSign}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{errSetSign}{errSetSign}}
+{\footnotesize\ttfamily \label{err_8h_a6f223fd8a27a0c6384741a7592e3d1d7} 
+\#define err\+Set\+Sign(\begin{DoxyParamCaption}\item[{}]{id}{}\end{DoxyParamCaption})~(id $<$$<$ \mbox{\hyperlink{err_8h_ae53880bf2e26a0a9f00c27dc49a8eb8b}{err\+Shift\+Sign}})}
+
+
+
+Definition at line \mbox{\hyperlink{err_8h_source_l00022}{22}} of file \mbox{\hyperlink{err_8h_source}{err.\+h}}.
+
+\Hypertarget{err_8h_ad438b968f8b2f9590adeec70557945dd}\index{err.h@{err.h}!errShiftRecordA@{errShiftRecordA}}
+\index{errShiftRecordA@{errShiftRecordA}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{errShiftRecordA}{errShiftRecordA}}
+{\footnotesize\ttfamily \label{err_8h_ad438b968f8b2f9590adeec70557945dd} 
+\#define err\+Shift\+RecordA~12}
+
+
+
+Definition at line \mbox{\hyperlink{err_8h_source_l00014}{14}} of file \mbox{\hyperlink{err_8h_source}{err.\+h}}.
+
+\Hypertarget{err_8h_aba51a73d60b82acaa716ea33979350f5}\index{err.h@{err.h}!errShiftRecordB@{errShiftRecordB}}
+\index{errShiftRecordB@{errShiftRecordB}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{errShiftRecordB}{errShiftRecordB}}
+{\footnotesize\ttfamily \label{err_8h_aba51a73d60b82acaa716ea33979350f5} 
+\#define err\+Shift\+RecordB~0}
+
+
+
+Definition at line \mbox{\hyperlink{err_8h_source_l00015}{15}} of file \mbox{\hyperlink{err_8h_source}{err.\+h}}.
+
+\Hypertarget{err_8h_a108f40ecf1551a448e4bc1dec37b7853}\index{err.h@{err.h}!errShiftReserved@{errShiftReserved}}
+\index{errShiftReserved@{errShiftReserved}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{errShiftReserved}{errShiftReserved}}
+{\footnotesize\ttfamily \label{err_8h_a108f40ecf1551a448e4bc1dec37b7853} 
+\#define err\+Shift\+Reserved~24}
+
+
+
+Definition at line \mbox{\hyperlink{err_8h_source_l00013}{13}} of file \mbox{\hyperlink{err_8h_source}{err.\+h}}.
+
+\Hypertarget{err_8h_ae53880bf2e26a0a9f00c27dc49a8eb8b}\index{err.h@{err.h}!errShiftSign@{errShiftSign}}
+\index{errShiftSign@{errShiftSign}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{errShiftSign}{errShiftSign}}
+{\footnotesize\ttfamily \label{err_8h_ae53880bf2e26a0a9f00c27dc49a8eb8b} 
+\#define err\+Shift\+Sign~31}
+
+
+
+Definition at line \mbox{\hyperlink{err_8h_source_l00012}{12}} of file \mbox{\hyperlink{err_8h_source}{err.\+h}}.
+
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{err_8h_adb571dd32a3d3d2d76c761226206bde0}\index{err.h@{err.h}!err@{err}}
+\index{err@{err}!err.h@{err.h}}
+\doxysubsubsection{\texorpdfstring{err}{err}}
+{\footnotesize\ttfamily \label{err_8h_adb571dd32a3d3d2d76c761226206bde0} 
+typedef int \mbox{\hyperlink{err_8h_adb571dd32a3d3d2d76c761226206bde0}{err}}}
+
+
+
+Definition at line \mbox{\hyperlink{err_8h_source_l00004}{4}} of file \mbox{\hyperlink{err_8h_source}{err.\+h}}.
+

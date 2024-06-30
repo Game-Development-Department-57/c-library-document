@@ -1,0 +1,438 @@
+\doxysection{C\+:/\+Users/\+GDD/\+Desktop/program/c/library/source/data/format/\+IEEE754/\+IEEE754\+FORMAT.h File Reference}
+\hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h}{}\label{_i_e_e_e754_f_o_r_m_a_t_8h}\index{C:/Users/GDD/Desktop/program/c/library/source/data/format/IEEE754/IEEE754FORMAT.h@{C:/Users/GDD/Desktop/program/c/library/source/data/format/IEEE754/IEEE754FORMAT.h}}
+{\ttfamily \#include "{}binary/ftype.\+h"{}}\newline
+Include dependency graph for IEEE754\+FORMAT.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{_i_e_e_e754_f_o_r_m_a_t_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_i_e_e_e754_f_o_r_m_a_t_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structtag_i_e_e_e754_b_i_n_a_r_y16}{tag\+IEEE754\+BINARY16}}
+\item 
+struct \mbox{\hyperlink{structtag_i_e_e_e754_b_i_n_a_r_y32}{tag\+IEEE754\+BINARY32}}
+\item 
+struct \mbox{\hyperlink{structtag_i_e_e_e754_b_i_n_a_r_y64}{tag\+IEEE754\+BINARY64}}
+\item 
+struct \mbox{\hyperlink{structtag_i_e_e_e754_b_i_n_a_r_y64_1_1tag_i_e_e_e754_b_i_n_a_r_y64_f_r_a_c_t_i_o_n}{tag\+IEEE754\+BINARY64\+::tag\+IEEE754\+BINARY64\+FRACTION}}
+\item 
+struct \mbox{\hyperlink{structtag_i_e_e_e754_b_i_n_a_r_y128}{tag\+IEEE754\+BINARY128}}
+\item 
+struct \mbox{\hyperlink{structtag_i_e_e_e754_b_i_n_a_r_y128_1_1tag_i_e_e_e754_b_i_n_a_r_y128_f_r_a_c_t_i_o_n}{tag\+IEEE754\+BINARY128\+::tag\+IEEE754\+BINARY128\+FRACTION}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_a2c945d54005d054222a6ee0a9522b8a9}{IEEE754\+BINARY16\+\_\+\+SIGN}}~0x8000
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_acd255a56cab1466fdb8f5fb2fe2ffe8e}{IEEE754\+BINARY16\+\_\+\+EXPONENT}}~0x7\+C00
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_aee6eb55ec46b37c455b193d91a62ea89}{IEEE754\+BINARY16\+\_\+\+FRACTION}}~0x03\+FF
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_af8503d91b23293d78319fdce0293f1df}{IEEE754\+BINARY16\+\_\+\+SIGN\+\_\+\+SHIFT}}~15
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_a91b833331ace4cd66714cc2ee6091fdc}{IEEE754\+BINARY16\+\_\+\+EXPONENT\+\_\+\+SHIFT}}~10
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_af3e45fef23968623ee9ebcb4b9b9055e}{IEEE754\+BINARY16\+\_\+\+FRACTION\+\_\+\+SHIFT}}~0
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_a888beffe22a9898c59b3d4031ee0c934}{IEEE754\+BINARY32\+\_\+\+SIGN}}~0x80000000
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_a7f6dfef471224c4047dac24f6b3f706c}{IEEE754\+BINARY32\+\_\+\+EXPONENT}}~0x7\+F800000
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_a72879acba84988094613257a96f1b207}{IEEE754\+BINARY32\+\_\+\+FRACTION}}~0x007\+FFFFF
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_a8b6fc6b8485c8736ef1dac624773cbb3}{IEEE754\+BINARY32\+\_\+\+SIGN\+\_\+\+SHIFT}}~31
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_a4fe3676309c3f18098f0b07bca8085d9}{IEEE754\+BINARY32\+\_\+\+EXPONENT\+\_\+\+SHIFT}}~23
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_a73080782114324323dd3fbdaca06d025}{IEEE754\+BINARY32\+\_\+\+FRACTION\+\_\+\+SHIFT}}~0
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_a93035c0ec22f6af1b61488d16e7bf985}{IEEE754\+BINARY64\+\_\+\+SIGN}}~0x8000000000000000
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_a512cf85fe1b34579105e1ecf0cbd327e}{IEEE754\+BINARY64\+\_\+\+EXPONENT}}~0x7\+FF0000000000000
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_a7746e1eec71b7ca8d6b976e939b80d30}{IEEE754\+BINARY64\+\_\+\+FRACTION}}~0x000\+FFFFFFFFFFFFF
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_a4081dc3f39a037119fae8f632905f1ca}{IEEE754\+BINARY64\+\_\+\+FRACTIONH}}~0x000\+FFFFF00000000
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_aa873868f12df3fd891ef8cd0e5abc366}{IEEE754\+BINARY64\+\_\+\+FRACTIONL}}~0x00000000\+FFFFFFFF
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_addd985e26ea468a0d70527aeb6b9ae4a}{IEEE754\+BINARY64\+\_\+\+SIGN\+\_\+\+SHIFT}}~63
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_a8005fcc92d0cbc9192ec03847b1d3391}{IEEE754\+BINARY64\+\_\+\+EXPONENT\+\_\+\+SHIFT}}~52
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_aa33ec5a1ff8e226d71aaf5b4665ff328}{IEEE754\+BINARY64\+\_\+\+FRACTION\+\_\+\+SHIFT}}~0
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_a9edb25a7aa94188d2da5677ae69b617b}{IEEE754\+BINARY64\+\_\+\+FRACTIONH\+\_\+\+SHIFT}}~32
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_abaa56579fea87585021af94011bb5494}{IEEE754\+BINARY64\+\_\+\+FRACTIONL\+\_\+\+SHIFT}}~0
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_a6bbfec29b214f6414894180a5017e5ff}{IEEE754\+BINARY128\+\_\+\+SIGN}}~0x8000000000000000
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_aae023a2861562dfa277c58f3f7a98ee1}{IEEE754\+BINARY128\+\_\+\+EXPONENT}}~0x7\+FFF000000000000
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_abff830f49c2aa97fc943973e90d80c13}{IEEE754\+BINARY128\+\_\+\+FRACTIONH}}~0x0000\+FFFFFFFFFFFF
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_aa8a159bb4d32eda77d188fd0c9f30410}{IEEE754\+BINARY128\+\_\+\+FRACTIONL}}~0x\+FFFFFFFFFFFFFFFF
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_a30438a01c6928f1c65352ee2b39ffb79}{IEEE754\+BINARY128\+\_\+\+SIGN\+\_\+\+SHIFT}}~63
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_aa543ee575126fc654428b46be49b4f9d}{IEEE754\+BINARY128\+\_\+\+EXPONENT\+\_\+\+SHIFT}}~48
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_ac69a1ec65696eaaf908bbc1bb0e18b8a}{IEEE754\+BINARY128\+\_\+\+FRACTIONH\+\_\+\+SHIFT}}~0
+\item 
+\#define \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_a3c1c7c416861523e0a5f3ef005713dd2}{IEEE754\+BINARY128\+\_\+\+FRACTIONL\+\_\+\+SHIFT}}~0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structtag_i_e_e_e754_b_i_n_a_r_y16}{tag\+IEEE754\+BINARY16}} \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_a8dae929bc3bebb4e42b001e7dd149877}{IEEE754\+BINARY16}}
+\item 
+typedef struct \mbox{\hyperlink{structtag_i_e_e_e754_b_i_n_a_r_y32}{tag\+IEEE754\+BINARY32}} \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_ad34c960baad8c3b10847cb056066005e}{IEEE754\+BINARY32}}
+\item 
+typedef struct \mbox{\hyperlink{structtag_i_e_e_e754_b_i_n_a_r_y64}{tag\+IEEE754\+BINARY64}} \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_a30dfaab9a044e0bd0e2c50b1251c14ca}{IEEE754\+BINARY64}}
+\item 
+typedef struct \mbox{\hyperlink{structtag_i_e_e_e754_b_i_n_a_r_y128}{tag\+IEEE754\+BINARY128}} \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_a465e17a9ea26e5f3090058f5fab8e061}{IEEE754\+BINARY128}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_aae023a2861562dfa277c58f3f7a98ee1}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY128\_EXPONENT@{IEEE754BINARY128\_EXPONENT}}
+\index{IEEE754BINARY128\_EXPONENT@{IEEE754BINARY128\_EXPONENT}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY128\_EXPONENT}{IEEE754BINARY128\_EXPONENT}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_aae023a2861562dfa277c58f3f7a98ee1} 
+\#define IEEE754\+BINARY128\+\_\+\+EXPONENT~0x7\+FFF000000000000}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00071}{71}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_aa543ee575126fc654428b46be49b4f9d}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY128\_EXPONENT\_SHIFT@{IEEE754BINARY128\_EXPONENT\_SHIFT}}
+\index{IEEE754BINARY128\_EXPONENT\_SHIFT@{IEEE754BINARY128\_EXPONENT\_SHIFT}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY128\_EXPONENT\_SHIFT}{IEEE754BINARY128\_EXPONENT\_SHIFT}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_aa543ee575126fc654428b46be49b4f9d} 
+\#define IEEE754\+BINARY128\+\_\+\+EXPONENT\+\_\+\+SHIFT~48}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00075}{75}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_abff830f49c2aa97fc943973e90d80c13}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY128\_FRACTIONH@{IEEE754BINARY128\_FRACTIONH}}
+\index{IEEE754BINARY128\_FRACTIONH@{IEEE754BINARY128\_FRACTIONH}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY128\_FRACTIONH}{IEEE754BINARY128\_FRACTIONH}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_abff830f49c2aa97fc943973e90d80c13} 
+\#define IEEE754\+BINARY128\+\_\+\+FRACTIONH~0x0000\+FFFFFFFFFFFF}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00072}{72}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_ac69a1ec65696eaaf908bbc1bb0e18b8a}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY128\_FRACTIONH\_SHIFT@{IEEE754BINARY128\_FRACTIONH\_SHIFT}}
+\index{IEEE754BINARY128\_FRACTIONH\_SHIFT@{IEEE754BINARY128\_FRACTIONH\_SHIFT}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY128\_FRACTIONH\_SHIFT}{IEEE754BINARY128\_FRACTIONH\_SHIFT}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_ac69a1ec65696eaaf908bbc1bb0e18b8a} 
+\#define IEEE754\+BINARY128\+\_\+\+FRACTIONH\+\_\+\+SHIFT~0}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00076}{76}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_aa8a159bb4d32eda77d188fd0c9f30410}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY128\_FRACTIONL@{IEEE754BINARY128\_FRACTIONL}}
+\index{IEEE754BINARY128\_FRACTIONL@{IEEE754BINARY128\_FRACTIONL}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY128\_FRACTIONL}{IEEE754BINARY128\_FRACTIONL}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_aa8a159bb4d32eda77d188fd0c9f30410} 
+\#define IEEE754\+BINARY128\+\_\+\+FRACTIONL~0x\+FFFFFFFFFFFFFFFF}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00073}{73}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_a3c1c7c416861523e0a5f3ef005713dd2}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY128\_FRACTIONL\_SHIFT@{IEEE754BINARY128\_FRACTIONL\_SHIFT}}
+\index{IEEE754BINARY128\_FRACTIONL\_SHIFT@{IEEE754BINARY128\_FRACTIONL\_SHIFT}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY128\_FRACTIONL\_SHIFT}{IEEE754BINARY128\_FRACTIONL\_SHIFT}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_a3c1c7c416861523e0a5f3ef005713dd2} 
+\#define IEEE754\+BINARY128\+\_\+\+FRACTIONL\+\_\+\+SHIFT~0}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00077}{77}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_a6bbfec29b214f6414894180a5017e5ff}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY128\_SIGN@{IEEE754BINARY128\_SIGN}}
+\index{IEEE754BINARY128\_SIGN@{IEEE754BINARY128\_SIGN}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY128\_SIGN}{IEEE754BINARY128\_SIGN}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_a6bbfec29b214f6414894180a5017e5ff} 
+\#define IEEE754\+BINARY128\+\_\+\+SIGN~0x8000000000000000}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00070}{70}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_a30438a01c6928f1c65352ee2b39ffb79}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY128\_SIGN\_SHIFT@{IEEE754BINARY128\_SIGN\_SHIFT}}
+\index{IEEE754BINARY128\_SIGN\_SHIFT@{IEEE754BINARY128\_SIGN\_SHIFT}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY128\_SIGN\_SHIFT}{IEEE754BINARY128\_SIGN\_SHIFT}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_a30438a01c6928f1c65352ee2b39ffb79} 
+\#define IEEE754\+BINARY128\+\_\+\+SIGN\+\_\+\+SHIFT~63}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00074}{74}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_acd255a56cab1466fdb8f5fb2fe2ffe8e}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY16\_EXPONENT@{IEEE754BINARY16\_EXPONENT}}
+\index{IEEE754BINARY16\_EXPONENT@{IEEE754BINARY16\_EXPONENT}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY16\_EXPONENT}{IEEE754BINARY16\_EXPONENT}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_acd255a56cab1466fdb8f5fb2fe2ffe8e} 
+\#define IEEE754\+BINARY16\+\_\+\+EXPONENT~0x7\+C00}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00014}{14}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_a91b833331ace4cd66714cc2ee6091fdc}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY16\_EXPONENT\_SHIFT@{IEEE754BINARY16\_EXPONENT\_SHIFT}}
+\index{IEEE754BINARY16\_EXPONENT\_SHIFT@{IEEE754BINARY16\_EXPONENT\_SHIFT}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY16\_EXPONENT\_SHIFT}{IEEE754BINARY16\_EXPONENT\_SHIFT}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_a91b833331ace4cd66714cc2ee6091fdc} 
+\#define IEEE754\+BINARY16\+\_\+\+EXPONENT\+\_\+\+SHIFT~10}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00017}{17}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_aee6eb55ec46b37c455b193d91a62ea89}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY16\_FRACTION@{IEEE754BINARY16\_FRACTION}}
+\index{IEEE754BINARY16\_FRACTION@{IEEE754BINARY16\_FRACTION}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY16\_FRACTION}{IEEE754BINARY16\_FRACTION}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_aee6eb55ec46b37c455b193d91a62ea89} 
+\#define IEEE754\+BINARY16\+\_\+\+FRACTION~0x03\+FF}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00015}{15}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_af3e45fef23968623ee9ebcb4b9b9055e}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY16\_FRACTION\_SHIFT@{IEEE754BINARY16\_FRACTION\_SHIFT}}
+\index{IEEE754BINARY16\_FRACTION\_SHIFT@{IEEE754BINARY16\_FRACTION\_SHIFT}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY16\_FRACTION\_SHIFT}{IEEE754BINARY16\_FRACTION\_SHIFT}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_af3e45fef23968623ee9ebcb4b9b9055e} 
+\#define IEEE754\+BINARY16\+\_\+\+FRACTION\+\_\+\+SHIFT~0}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00018}{18}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_a2c945d54005d054222a6ee0a9522b8a9}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY16\_SIGN@{IEEE754BINARY16\_SIGN}}
+\index{IEEE754BINARY16\_SIGN@{IEEE754BINARY16\_SIGN}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY16\_SIGN}{IEEE754BINARY16\_SIGN}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_a2c945d54005d054222a6ee0a9522b8a9} 
+\#define IEEE754\+BINARY16\+\_\+\+SIGN~0x8000}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00013}{13}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_af8503d91b23293d78319fdce0293f1df}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY16\_SIGN\_SHIFT@{IEEE754BINARY16\_SIGN\_SHIFT}}
+\index{IEEE754BINARY16\_SIGN\_SHIFT@{IEEE754BINARY16\_SIGN\_SHIFT}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY16\_SIGN\_SHIFT}{IEEE754BINARY16\_SIGN\_SHIFT}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_af8503d91b23293d78319fdce0293f1df} 
+\#define IEEE754\+BINARY16\+\_\+\+SIGN\+\_\+\+SHIFT~15}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00016}{16}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_a7f6dfef471224c4047dac24f6b3f706c}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY32\_EXPONENT@{IEEE754BINARY32\_EXPONENT}}
+\index{IEEE754BINARY32\_EXPONENT@{IEEE754BINARY32\_EXPONENT}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY32\_EXPONENT}{IEEE754BINARY32\_EXPONENT}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_a7f6dfef471224c4047dac24f6b3f706c} 
+\#define IEEE754\+BINARY32\+\_\+\+EXPONENT~0x7\+F800000}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00029}{29}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_a4fe3676309c3f18098f0b07bca8085d9}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY32\_EXPONENT\_SHIFT@{IEEE754BINARY32\_EXPONENT\_SHIFT}}
+\index{IEEE754BINARY32\_EXPONENT\_SHIFT@{IEEE754BINARY32\_EXPONENT\_SHIFT}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY32\_EXPONENT\_SHIFT}{IEEE754BINARY32\_EXPONENT\_SHIFT}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_a4fe3676309c3f18098f0b07bca8085d9} 
+\#define IEEE754\+BINARY32\+\_\+\+EXPONENT\+\_\+\+SHIFT~23}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00032}{32}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_a72879acba84988094613257a96f1b207}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY32\_FRACTION@{IEEE754BINARY32\_FRACTION}}
+\index{IEEE754BINARY32\_FRACTION@{IEEE754BINARY32\_FRACTION}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY32\_FRACTION}{IEEE754BINARY32\_FRACTION}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_a72879acba84988094613257a96f1b207} 
+\#define IEEE754\+BINARY32\+\_\+\+FRACTION~0x007\+FFFFF}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00030}{30}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_a73080782114324323dd3fbdaca06d025}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY32\_FRACTION\_SHIFT@{IEEE754BINARY32\_FRACTION\_SHIFT}}
+\index{IEEE754BINARY32\_FRACTION\_SHIFT@{IEEE754BINARY32\_FRACTION\_SHIFT}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY32\_FRACTION\_SHIFT}{IEEE754BINARY32\_FRACTION\_SHIFT}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_a73080782114324323dd3fbdaca06d025} 
+\#define IEEE754\+BINARY32\+\_\+\+FRACTION\+\_\+\+SHIFT~0}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00033}{33}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_a888beffe22a9898c59b3d4031ee0c934}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY32\_SIGN@{IEEE754BINARY32\_SIGN}}
+\index{IEEE754BINARY32\_SIGN@{IEEE754BINARY32\_SIGN}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY32\_SIGN}{IEEE754BINARY32\_SIGN}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_a888beffe22a9898c59b3d4031ee0c934} 
+\#define IEEE754\+BINARY32\+\_\+\+SIGN~0x80000000}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00028}{28}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_a8b6fc6b8485c8736ef1dac624773cbb3}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY32\_SIGN\_SHIFT@{IEEE754BINARY32\_SIGN\_SHIFT}}
+\index{IEEE754BINARY32\_SIGN\_SHIFT@{IEEE754BINARY32\_SIGN\_SHIFT}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY32\_SIGN\_SHIFT}{IEEE754BINARY32\_SIGN\_SHIFT}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_a8b6fc6b8485c8736ef1dac624773cbb3} 
+\#define IEEE754\+BINARY32\+\_\+\+SIGN\+\_\+\+SHIFT~31}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00031}{31}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_a512cf85fe1b34579105e1ecf0cbd327e}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY64\_EXPONENT@{IEEE754BINARY64\_EXPONENT}}
+\index{IEEE754BINARY64\_EXPONENT@{IEEE754BINARY64\_EXPONENT}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY64\_EXPONENT}{IEEE754BINARY64\_EXPONENT}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_a512cf85fe1b34579105e1ecf0cbd327e} 
+\#define IEEE754\+BINARY64\+\_\+\+EXPONENT~0x7\+FF0000000000000}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00048}{48}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_a8005fcc92d0cbc9192ec03847b1d3391}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY64\_EXPONENT\_SHIFT@{IEEE754BINARY64\_EXPONENT\_SHIFT}}
+\index{IEEE754BINARY64\_EXPONENT\_SHIFT@{IEEE754BINARY64\_EXPONENT\_SHIFT}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY64\_EXPONENT\_SHIFT}{IEEE754BINARY64\_EXPONENT\_SHIFT}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_a8005fcc92d0cbc9192ec03847b1d3391} 
+\#define IEEE754\+BINARY64\+\_\+\+EXPONENT\+\_\+\+SHIFT~52}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00053}{53}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_a7746e1eec71b7ca8d6b976e939b80d30}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY64\_FRACTION@{IEEE754BINARY64\_FRACTION}}
+\index{IEEE754BINARY64\_FRACTION@{IEEE754BINARY64\_FRACTION}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY64\_FRACTION}{IEEE754BINARY64\_FRACTION}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_a7746e1eec71b7ca8d6b976e939b80d30} 
+\#define IEEE754\+BINARY64\+\_\+\+FRACTION~0x000\+FFFFFFFFFFFFF}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00049}{49}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_aa33ec5a1ff8e226d71aaf5b4665ff328}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY64\_FRACTION\_SHIFT@{IEEE754BINARY64\_FRACTION\_SHIFT}}
+\index{IEEE754BINARY64\_FRACTION\_SHIFT@{IEEE754BINARY64\_FRACTION\_SHIFT}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY64\_FRACTION\_SHIFT}{IEEE754BINARY64\_FRACTION\_SHIFT}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_aa33ec5a1ff8e226d71aaf5b4665ff328} 
+\#define IEEE754\+BINARY64\+\_\+\+FRACTION\+\_\+\+SHIFT~0}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00054}{54}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_a4081dc3f39a037119fae8f632905f1ca}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY64\_FRACTIONH@{IEEE754BINARY64\_FRACTIONH}}
+\index{IEEE754BINARY64\_FRACTIONH@{IEEE754BINARY64\_FRACTIONH}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY64\_FRACTIONH}{IEEE754BINARY64\_FRACTIONH}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_a4081dc3f39a037119fae8f632905f1ca} 
+\#define IEEE754\+BINARY64\+\_\+\+FRACTIONH~0x000\+FFFFF00000000}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00050}{50}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_a9edb25a7aa94188d2da5677ae69b617b}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY64\_FRACTIONH\_SHIFT@{IEEE754BINARY64\_FRACTIONH\_SHIFT}}
+\index{IEEE754BINARY64\_FRACTIONH\_SHIFT@{IEEE754BINARY64\_FRACTIONH\_SHIFT}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY64\_FRACTIONH\_SHIFT}{IEEE754BINARY64\_FRACTIONH\_SHIFT}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_a9edb25a7aa94188d2da5677ae69b617b} 
+\#define IEEE754\+BINARY64\+\_\+\+FRACTIONH\+\_\+\+SHIFT~32}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00055}{55}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_aa873868f12df3fd891ef8cd0e5abc366}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY64\_FRACTIONL@{IEEE754BINARY64\_FRACTIONL}}
+\index{IEEE754BINARY64\_FRACTIONL@{IEEE754BINARY64\_FRACTIONL}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY64\_FRACTIONL}{IEEE754BINARY64\_FRACTIONL}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_aa873868f12df3fd891ef8cd0e5abc366} 
+\#define IEEE754\+BINARY64\+\_\+\+FRACTIONL~0x00000000\+FFFFFFFF}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00051}{51}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_abaa56579fea87585021af94011bb5494}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY64\_FRACTIONL\_SHIFT@{IEEE754BINARY64\_FRACTIONL\_SHIFT}}
+\index{IEEE754BINARY64\_FRACTIONL\_SHIFT@{IEEE754BINARY64\_FRACTIONL\_SHIFT}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY64\_FRACTIONL\_SHIFT}{IEEE754BINARY64\_FRACTIONL\_SHIFT}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_abaa56579fea87585021af94011bb5494} 
+\#define IEEE754\+BINARY64\+\_\+\+FRACTIONL\+\_\+\+SHIFT~0}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00056}{56}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_a93035c0ec22f6af1b61488d16e7bf985}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY64\_SIGN@{IEEE754BINARY64\_SIGN}}
+\index{IEEE754BINARY64\_SIGN@{IEEE754BINARY64\_SIGN}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY64\_SIGN}{IEEE754BINARY64\_SIGN}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_a93035c0ec22f6af1b61488d16e7bf985} 
+\#define IEEE754\+BINARY64\+\_\+\+SIGN~0x8000000000000000}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00047}{47}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_addd985e26ea468a0d70527aeb6b9ae4a}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY64\_SIGN\_SHIFT@{IEEE754BINARY64\_SIGN\_SHIFT}}
+\index{IEEE754BINARY64\_SIGN\_SHIFT@{IEEE754BINARY64\_SIGN\_SHIFT}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY64\_SIGN\_SHIFT}{IEEE754BINARY64\_SIGN\_SHIFT}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_addd985e26ea468a0d70527aeb6b9ae4a} 
+\#define IEEE754\+BINARY64\+\_\+\+SIGN\+\_\+\+SHIFT~63}
+
+
+
+Definition at line \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source_l00052}{52}} of file \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_source}{IEEE754\+FORMAT.\+h}}.
+
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_a465e17a9ea26e5f3090058f5fab8e061}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY128@{IEEE754BINARY128}}
+\index{IEEE754BINARY128@{IEEE754BINARY128}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY128}{IEEE754BINARY128}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_a465e17a9ea26e5f3090058f5fab8e061} 
+typedef struct \mbox{\hyperlink{structtag_i_e_e_e754_b_i_n_a_r_y128}{tag\+IEEE754\+BINARY128}} \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_a465e17a9ea26e5f3090058f5fab8e061}{IEEE754\+BINARY128}}}
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_a8dae929bc3bebb4e42b001e7dd149877}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY16@{IEEE754BINARY16}}
+\index{IEEE754BINARY16@{IEEE754BINARY16}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY16}{IEEE754BINARY16}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_a8dae929bc3bebb4e42b001e7dd149877} 
+typedef struct \mbox{\hyperlink{structtag_i_e_e_e754_b_i_n_a_r_y16}{tag\+IEEE754\+BINARY16}} \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_a8dae929bc3bebb4e42b001e7dd149877}{IEEE754\+BINARY16}}}
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_ad34c960baad8c3b10847cb056066005e}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY32@{IEEE754BINARY32}}
+\index{IEEE754BINARY32@{IEEE754BINARY32}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY32}{IEEE754BINARY32}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_ad34c960baad8c3b10847cb056066005e} 
+typedef struct \mbox{\hyperlink{structtag_i_e_e_e754_b_i_n_a_r_y32}{tag\+IEEE754\+BINARY32}} \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_ad34c960baad8c3b10847cb056066005e}{IEEE754\+BINARY32}}}
+
+\Hypertarget{_i_e_e_e754_f_o_r_m_a_t_8h_a30dfaab9a044e0bd0e2c50b1251c14ca}\index{IEEE754FORMAT.h@{IEEE754FORMAT.h}!IEEE754BINARY64@{IEEE754BINARY64}}
+\index{IEEE754BINARY64@{IEEE754BINARY64}!IEEE754FORMAT.h@{IEEE754FORMAT.h}}
+\doxysubsubsection{\texorpdfstring{IEEE754BINARY64}{IEEE754BINARY64}}
+{\footnotesize\ttfamily \label{_i_e_e_e754_f_o_r_m_a_t_8h_a30dfaab9a044e0bd0e2c50b1251c14ca} 
+typedef struct \mbox{\hyperlink{structtag_i_e_e_e754_b_i_n_a_r_y64}{tag\+IEEE754\+BINARY64}} \mbox{\hyperlink{_i_e_e_e754_f_o_r_m_a_t_8h_a30dfaab9a044e0bd0e2c50b1251c14ca}{IEEE754\+BINARY64}}}
+

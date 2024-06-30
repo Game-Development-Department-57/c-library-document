@@ -1,0 +1,27 @@
+\doxysection{cstring.\+c}
+\hypertarget{cstring_8c_source}{}\label{cstring_8c_source}\index{C:/Users/GDD/Desktop/program/c/library/source/string/cstring.c@{C:/Users/GDD/Desktop/program/c/library/source/string/cstring.c}}
+\mbox{\hyperlink{cstring_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{cstring_8c_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{cstring_8c_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{cstring_8c_source_l00003}\mbox{\hyperlink{cstring_8c_a6405386000d439df5be3b39ea93a100f}{00003}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{cstring_8c_a6405386000d439df5be3b39ea93a100f}{CStringLength}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ str)}
+\DoxyCodeLine{\Hypertarget{cstring_8c_source_l00004}00004\ \{}
+\DoxyCodeLine{\Hypertarget{cstring_8c_source_l00005}00005\ \ \ \textcolor{keywordflow}{if}\ (str\ ==\ \mbox{\hyperlink{error_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}})\ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{cstring_8c_source_l00006}00006\ \ \ }
+\DoxyCodeLine{\Hypertarget{cstring_8c_source_l00007}00007\ \ \ \textcolor{keywordtype}{int}\ length;}
+\DoxyCodeLine{\Hypertarget{cstring_8c_source_l00008}00008\ \ \ \textcolor{keywordflow}{for}\ (length\ =\ 0;\ str[length]\ !=\ \textcolor{charliteral}{'\(\backslash\)0'};\ length++)\{\}}
+\DoxyCodeLine{\Hypertarget{cstring_8c_source_l00009}00009\ \ \ \textcolor{keywordflow}{return}\ length\ +\ 1;}
+\DoxyCodeLine{\Hypertarget{cstring_8c_source_l00010}00010\ \}}
+\DoxyCodeLine{\Hypertarget{cstring_8c_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{cstring_8c_source_l00012}\mbox{\hyperlink{cstring_8c_a76c59c9360e2b037acd0c17ceac4ed85}{00012}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{cstring_8c_a76c59c9360e2b037acd0c17ceac4ed85}{CStringCopy}}(\textcolor{keywordtype}{char}*\ str2,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ str1,\ \textcolor{keywordtype}{int}\ size)}
+\DoxyCodeLine{\Hypertarget{cstring_8c_source_l00013}00013\ \{}
+\DoxyCodeLine{\Hypertarget{cstring_8c_source_l00014}00014\ \ \ \textcolor{keywordflow}{if}\ (str2\ ==\ \mbox{\hyperlink{error_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}\ ||\ str1\ ==\ \mbox{\hyperlink{error_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}})\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{cstring_8c_source_l00015}00015\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ index\ =\ 0;\ index\ <\ size;\ index++)}
+\DoxyCodeLine{\Hypertarget{cstring_8c_source_l00016}00016\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{cstring_8c_source_l00017}00017\ \ \ \ \ str2[index]\ =\ str1[index];}
+\DoxyCodeLine{\Hypertarget{cstring_8c_source_l00018}00018\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{cstring_8c_source_l00019}00019\ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{cstring_8c_source_l00020}00020\ \}}
+\DoxyCodeLine{\Hypertarget{cstring_8c_source_l00021}00021\ }
+
+\end{DoxyCode}

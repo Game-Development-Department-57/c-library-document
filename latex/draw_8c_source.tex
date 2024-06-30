@@ -1,0 +1,152 @@
+\doxysection{draw.\+c}
+\hypertarget{draw_8c_source}{}\label{draw_8c_source}\index{C:/Users/GDD/Desktop/program/c/library/source/draw/draw/draw.c@{C:/Users/GDD/Desktop/program/c/library/source/draw/draw/draw.c}}
+\mbox{\hyperlink{draw_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00001}00001\ \textcolor{comment}{/*\ }}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00002}00002\ \textcolor{comment}{date:2023-\/11-\/11}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00003}00003\ \textcolor{comment}{name:draw.c}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00004}00004\ \textcolor{comment}{path:library/draw/draw/draw.c}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00005}00005\ \textcolor{comment}{made:Fujiwara}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00006}00006\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00008}00008\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00009}00009\ \textcolor{comment}{*\ RawImage構造体}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00010}00010\ \textcolor{comment}{*\ Init関数}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00011}00011\ \textcolor{comment}{*\ Delete関数}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00012}00012\ \textcolor{comment}{*\ Fill関数}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00013}00013\ \textcolor{comment}{*\ AllFill関数}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00014}00014\ \textcolor{comment}{*\ Pointing関数}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00015}00015\ \textcolor{comment}{*\ Triangle関数}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00016}00016\ \textcolor{comment}{*\ Quadrangle関数}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00017}00017\ \textcolor{comment}{*\ TriangleSide関数}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00018}00018\ \textcolor{comment}{*\ QuadrangleSide関数}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00019}00019\ \textcolor{comment}{*\ Cut関数}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00020}00020\ \textcolor{comment}{*\ Scaling関数}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00021}00021\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00027}00027\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00028}00028\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{binary_8h}{binary/binary.h}}"{}}\ \textcolor{comment}{/*\ library/binary/binary.h\ */}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00029}00029\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{binary_2ftype_8h}{binary/ftype.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00035}\mbox{\hyperlink{structtag_draw_color}{00035}}\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtag_draw_color}{tagDrawColor}}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00036}00036\ \{}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00037}\mbox{\hyperlink{structtag_draw_color_ab2d798a301ec421a35a0c462e5caba7c}{00037}}\ \ \ \mbox{\hyperlink{binary_2ftype_8h_ad8d13cbd8aa031cd923b3a10beb366ef}{FBYTE}}\ \mbox{\hyperlink{structtag_draw_color_ab2d798a301ec421a35a0c462e5caba7c}{Red}};}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00038}\mbox{\hyperlink{structtag_draw_color_aace655155a5abe8cdf119bd884707882}{00038}}\ \ \ \mbox{\hyperlink{binary_2ftype_8h_ad8d13cbd8aa031cd923b3a10beb366ef}{FBYTE}}\ \mbox{\hyperlink{structtag_draw_color_aace655155a5abe8cdf119bd884707882}{Green}};}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00039}\mbox{\hyperlink{structtag_draw_color_a91c5113c618c667f987d5fe43ac1e88d}{00039}}\ \ \ \mbox{\hyperlink{binary_2ftype_8h_ad8d13cbd8aa031cd923b3a10beb366ef}{FBYTE}}\ \mbox{\hyperlink{structtag_draw_color_a91c5113c618c667f987d5fe43ac1e88d}{Blue}};}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00040}\mbox{\hyperlink{structtag_draw_color_a581ce4d77bea2874eace40365e6b6ba3}{00040}}\ \ \ \mbox{\hyperlink{binary_2ftype_8h_ad8d13cbd8aa031cd923b3a10beb366ef}{FBYTE}}\ \mbox{\hyperlink{structtag_draw_color_a581ce4d77bea2874eace40365e6b6ba3}{Alpha}};}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00041}\mbox{\hyperlink{draw_8c_af7a5eb72298afd3646256af37e8210f7}{00041}}\ \}\ \mbox{\hyperlink{draw_8c_af7a5eb72298afd3646256af37e8210f7}{drawColor}};}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00043}\mbox{\hyperlink{structtag_draw_raw_image}{00043}}\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtag_draw_raw_image}{tagDrawRawImage}}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00044}00044\ \{}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00045}\mbox{\hyperlink{structtag_draw_raw_image_ad236290e38f0a0691cccf39ff4f7c584}{00045}}\ \ \ \textcolor{keywordtype}{int}\ \ \ \ \ \ \ \ \mbox{\hyperlink{structtag_draw_raw_image_ad236290e38f0a0691cccf39ff4f7c584}{x}};}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00046}\mbox{\hyperlink{structtag_draw_raw_image_a1c10ff754380a4bbecba3e869a79d390}{00046}}\ \ \ \textcolor{keywordtype}{int}\ \ \ \ \ \ \ \ \mbox{\hyperlink{structtag_draw_raw_image_a1c10ff754380a4bbecba3e869a79d390}{y}};}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00047}\mbox{\hyperlink{structtag_draw_raw_image_a4e81f73b0cbf8e9a28af3eb444b2c9e2}{00047}}\ \ \ \mbox{\hyperlink{structtag_draw_color}{drawColor}}*\ \mbox{\hyperlink{structtag_draw_raw_image_a4e81f73b0cbf8e9a28af3eb444b2c9e2}{image}};}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00048}\mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{00048}}\ \}\ \mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{drawRawImage}};}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00050}\mbox{\hyperlink{structtag_draw_point}{00050}}\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtag_draw_point}{tagDrawPoint}}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00051}00051\ \{}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00052}\mbox{\hyperlink{structtag_draw_point_a083d8db932a1836d8369a2adbfbd606c}{00052}}\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structtag_draw_point_a083d8db932a1836d8369a2adbfbd606c}{x}};}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00053}\mbox{\hyperlink{structtag_draw_point_a8ad8c617a11b3b0cedba4742938fdef2}{00053}}\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structtag_draw_point_a8ad8c617a11b3b0cedba4742938fdef2}{y}};}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00054}\mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{00054}}\ \}\ \mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{drawPoint}},\ \mbox{\hyperlink{draw_8c_abee56b083c7e967b4560638c24f70794}{drawSize}};}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00060}00060\ \textcolor{comment}{/*\ int\ drawImageIndex(drawRawImage\ image,\ FDWORD\ x,\ FDWORD\ y)\ */}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00061}\mbox{\hyperlink{draw_8c_a932434e2b28ab076859540433d605e20}{00061}}\ \textcolor{preprocessor}{\#define\ drawImageIndex(image\_,\ x\_,\ y\_)\ (image\_-\/>x\ *\ y\_\ +\ x\_)}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00062}00062\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00067}\mbox{\hyperlink{draw_8c_a8c45bc21feb09d961f8865a2cfb85cdd}{00067}}\ \mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*\ \mbox{\hyperlink{draw_8c_a8c45bc21feb09d961f8865a2cfb85cdd}{drawInit}}(\mbox{\hyperlink{structtag_draw_point}{drawSize}}\ size)}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00068}00068\ \{}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00069}00069\ \ \ \mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*\ image\ =\ (\mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*)\ malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}));}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00070}00070\ \ \ image-\/>\mbox{\hyperlink{structtag_draw_raw_image_ad236290e38f0a0691cccf39ff4f7c584}{x}}\ =\ size.\mbox{\hyperlink{structtag_draw_point_a083d8db932a1836d8369a2adbfbd606c}{x}};}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00071}00071\ \ \ image-\/>\mbox{\hyperlink{structtag_draw_raw_image_a1c10ff754380a4bbecba3e869a79d390}{y}}\ =\ size.\mbox{\hyperlink{structtag_draw_point_a8ad8c617a11b3b0cedba4742938fdef2}{y}};}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00072}00072\ \ \ image-\/>\mbox{\hyperlink{structtag_draw_raw_image_a4e81f73b0cbf8e9a28af3eb444b2c9e2}{image}}\ =\ (\mbox{\hyperlink{structtag_draw_color}{drawColor}}*)\ malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structtag_draw_color}{drawColor}})\ *\ (size.\mbox{\hyperlink{structtag_draw_point_a8ad8c617a11b3b0cedba4742938fdef2}{y}}\ *\ size.\mbox{\hyperlink{structtag_draw_point_a083d8db932a1836d8369a2adbfbd606c}{x}}));}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00073}00073\ \ \ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00074}00074\ \ \ \textcolor{keywordflow}{return}\ image;}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00075}00075\ \}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00076}00076\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00077}\mbox{\hyperlink{draw_8c_a94529cb00d9b138f430ae08f37e8e48a}{00077}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{draw_8c_a94529cb00d9b138f430ae08f37e8e48a}{drawDelte}}(\mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*\ image)}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00078}00078\ \{}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00079}00079\ \ \ free(image-\/>\mbox{\hyperlink{structtag_draw_raw_image_a4e81f73b0cbf8e9a28af3eb444b2c9e2}{image}});}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00080}00080\ \ \ free(image);}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00081}00081\ \ \ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00082}00082\ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00083}00083\ \}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00084}00084\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00085}\mbox{\hyperlink{draw_8c_aabeec0c13970ab97f84bc4a5879ed911}{00085}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{draw_8c_aabeec0c13970ab97f84bc4a5879ed911}{drawFill}}(\mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*\ image,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point\ ,\ \mbox{\hyperlink{structtag_draw_point}{drawSize}}\ size,\ \mbox{\hyperlink{structtag_draw_color}{drawColor}}\ color)}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00086}00086\ \{}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00087}00087\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ index\_y\ =\ point.\mbox{\hyperlink{structtag_draw_point_a8ad8c617a11b3b0cedba4742938fdef2}{y}};\ index\_y\ <\ (point.\mbox{\hyperlink{structtag_draw_point_a8ad8c617a11b3b0cedba4742938fdef2}{y}}\ +\ size.\mbox{\hyperlink{structtag_draw_point_a8ad8c617a11b3b0cedba4742938fdef2}{y}});\ index\_y++)}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00088}00088\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00089}00089\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ index\_x\ =\ point.\mbox{\hyperlink{structtag_draw_point_a083d8db932a1836d8369a2adbfbd606c}{x}};\ index\_x\ <\ (point.\mbox{\hyperlink{structtag_draw_point_a083d8db932a1836d8369a2adbfbd606c}{x}}\ +\ size.\mbox{\hyperlink{structtag_draw_point_a083d8db932a1836d8369a2adbfbd606c}{x}});\ index\_x++)}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00090}00090\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00091}00091\ \ \ \ \ \ \ image-\/>\mbox{\hyperlink{structtag_draw_raw_image_a4e81f73b0cbf8e9a28af3eb444b2c9e2}{image}}[\mbox{\hyperlink{draw_8c_a932434e2b28ab076859540433d605e20}{drawImageIndex}}(image,\ index\_x,\ index\_y)]\ =\ color;}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00092}00092\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00093}00093\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00094}00094\ \ \ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00095}00095\ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00096}00096\ \}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00097}00097\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00098}\mbox{\hyperlink{draw_8c_a73cad7681289ccd967625d55ce435f76}{00098}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{draw_8c_a73cad7681289ccd967625d55ce435f76}{drawAllFill}}(\mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*\ image,\ \mbox{\hyperlink{structtag_draw_color}{drawColor}}\ color)}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00099}00099\ \{}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00100}00100\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ index\_y\ =\ 0;\ index\_y\ <\ image-\/>\mbox{\hyperlink{structtag_draw_raw_image_a1c10ff754380a4bbecba3e869a79d390}{y}};\ index\_y++)}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00101}00101\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00102}00102\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ index\_x\ =\ 0;\ index\_x\ <\ image-\/>\mbox{\hyperlink{structtag_draw_raw_image_ad236290e38f0a0691cccf39ff4f7c584}{x}};\ index\_x++)}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00103}00103\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00104}00104\ \ \ \ \ \ \ image-\/>\mbox{\hyperlink{structtag_draw_raw_image_a4e81f73b0cbf8e9a28af3eb444b2c9e2}{image}}[\mbox{\hyperlink{draw_8c_a932434e2b28ab076859540433d605e20}{drawImageIndex}}(image,\ index\_x,\ index\_y)]\ =\ color;}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00105}00105\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00106}00106\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00107}00107\ \ \ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00108}00108\ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00109}00109\ \}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00110}00110\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00111}\mbox{\hyperlink{draw_8c_a3faa2850cf2c12ec5694435ba2f776dd}{00111}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{draw_8c_a3faa2850cf2c12ec5694435ba2f776dd}{drawPointing}}(\mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*\ image,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point,\ \mbox{\hyperlink{structtag_draw_color}{drawColor}}\ color)}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00112}00112\ \{}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00113}00113\ \ \ image-\/>\mbox{\hyperlink{structtag_draw_raw_image_a4e81f73b0cbf8e9a28af3eb444b2c9e2}{image}}[\mbox{\hyperlink{draw_8c_a932434e2b28ab076859540433d605e20}{drawImageIndex}}(image,\ point.\mbox{\hyperlink{structtag_draw_point_a083d8db932a1836d8369a2adbfbd606c}{x}},\ point.\mbox{\hyperlink{structtag_draw_point_a8ad8c617a11b3b0cedba4742938fdef2}{y}})]\ =\ color;}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00114}00114\ \ \ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00115}00115\ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00116}00116\ \}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00117}00117\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00118}\mbox{\hyperlink{draw_8c_ac1c8b0381976837d1c891150719d5624}{00118}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{draw_8c_ac1c8b0381976837d1c891150719d5624}{drawTriangle}}(\mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*\ image,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point1,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point2,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point3,\ \mbox{\hyperlink{structtag_draw_color}{drawColor}}\ color)}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00119}00119\ \{}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00120}00120\ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00121}00121\ \}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00122}00122\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00123}\mbox{\hyperlink{draw_8c_a80f1b87d698991be828c3876910915e6}{00123}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{draw_8c_a80f1b87d698991be828c3876910915e6}{drawQuadrangle}}(\mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*\ image,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point1,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point2,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point3,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point4,\ \mbox{\hyperlink{structtag_draw_color}{drawColor}}\ color)}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00124}00124\ \{}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00125}00125\ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00126}00126\ \}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00127}00127\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00128}\mbox{\hyperlink{draw_8c_ac05afb5fda421c394cc87b6b7adfd304}{00128}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{draw_8c_ac05afb5fda421c394cc87b6b7adfd304}{drawTriangleSide}}(\mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*\ image,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point1,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point2,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point3,\ \textcolor{keywordtype}{int}\ width,\ \mbox{\hyperlink{structtag_draw_color}{drawColor}}\ color)}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00129}00129\ \{}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00130}00130\ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00131}00131\ \}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00132}00132\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00133}\mbox{\hyperlink{draw_8c_a1584394623ab3f29bba877d335462491}{00133}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{draw_8c_a1584394623ab3f29bba877d335462491}{drawQuadrangleSide}}(\mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*\ image,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point1,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point2,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point3,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point4,\ \textcolor{keywordtype}{int}\ width,\ \mbox{\hyperlink{structtag_draw_color}{drawColor}}\ color)}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00134}00134\ \{}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00135}00135\ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00136}00136\ \}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00137}00137\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00138}\mbox{\hyperlink{draw_8c_a7bcf68423b09d9cece763404fbc52c72}{00138}}\ \mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*\ \mbox{\hyperlink{draw_8c_a7bcf68423b09d9cece763404fbc52c72}{drawCut}}(\mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*\ image,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point1,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point2)}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00139}00139\ \{}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00140}00140\ \ \ \textcolor{keywordflow}{return}\ image;}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00141}00141\ \}}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00142}00142\ }
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00143}\mbox{\hyperlink{draw_8c_a290feeda9257a089241bfc7bc4012ad9}{00143}}\ \mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*\ \mbox{\hyperlink{draw_8c_a290feeda9257a089241bfc7bc4012ad9}{drawScaling}}(\mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*\ image,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point1)}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00144}00144\ \{}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00145}00145\ \ \ \textcolor{keywordflow}{return}\ image;}
+\DoxyCodeLine{\Hypertarget{draw_8c_source_l00146}00146\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,34 @@
+\doxysection{queue.\+c}
+\hypertarget{queue_8c_source}{}\label{queue_8c_source}\index{C:/Users/GDD/Desktop/program/c/library/source/data/queue/queue.c@{C:/Users/GDD/Desktop/program/c/library/source/data/queue/queue.c}}
+\mbox{\hyperlink{queue_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00003}\mbox{\hyperlink{structtag_q_u_e_u_e}{00003}}\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtag_q_u_e_u_e}{tagQUEUE}}}
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00004}00004\ \{}
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00005}\mbox{\hyperlink{structtag_q_u_e_u_e_a3ee0ec9d50c56b168794be3d0e672d59}{00005}}\ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{structtag_q_u_e_u_e_a3ee0ec9d50c56b168794be3d0e672d59}{bufferSize}};}
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00006}\mbox{\hyperlink{structtag_q_u_e_u_e_acd916915adb3b52dde8caa27c12916ad}{00006}}\ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{structtag_q_u_e_u_e_acd916915adb3b52dde8caa27c12916ad}{contentSize}};}
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00007}\mbox{\hyperlink{structtag_q_u_e_u_e_a4c96ee7e2f4a6ea260e5b897c3d9ce84}{00007}}\ \ \ \textcolor{keywordtype}{void}*\ \ \mbox{\hyperlink{structtag_q_u_e_u_e_a4c96ee7e2f4a6ea260e5b897c3d9ce84}{queuePointer}};}
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00008}\mbox{\hyperlink{structtag_q_u_e_u_e_ad3b24aff28b7127206afacdda70a9fe8}{00008}}\ \ \ \textcolor{keywordtype}{void}*\ \ \mbox{\hyperlink{structtag_q_u_e_u_e_ad3b24aff28b7127206afacdda70a9fe8}{basePointer}};}
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00009}\mbox{\hyperlink{structtag_q_u_e_u_e_a9afad8b1dc9b8f38b784307d02c88892}{00009}}\ \ \ \textcolor{keywordtype}{void}*\ \ \mbox{\hyperlink{structtag_q_u_e_u_e_a9afad8b1dc9b8f38b784307d02c88892}{buffer}};}
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00010}\mbox{\hyperlink{queue_8c_a5701f3d78f01efc4c9c7c0abb36631bf}{00010}}\ \}\ \mbox{\hyperlink{queue_8c_a5701f3d78f01efc4c9c7c0abb36631bf}{QUEUE}};}
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00012}\mbox{\hyperlink{queue_8c_aad8f2eb73f2aa504a900eef6a265ad6a}{00012}}\ \textcolor{keyword}{typedef}\ \mbox{\hyperlink{structtag_q_u_e_u_e}{QUEUE}}*\ \mbox{\hyperlink{queue_8c_aad8f2eb73f2aa504a900eef6a265ad6a}{Queue}};}
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00014}\mbox{\hyperlink{queue_8c_a2bb62d72d683eeebaee9ffbdfc8242ae}{00014}}\ \mbox{\hyperlink{structtag_q_u_e_u_e}{Queue}}\ \mbox{\hyperlink{queue_8c_a2bb62d72d683eeebaee9ffbdfc8242ae}{queueCreate}}(\textcolor{keywordtype}{size\_t}\ buffer\_size,\ \textcolor{keywordtype}{size\_t}\ content\_size)}
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00015}00015\ \{}
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00016}00016\ \ \ \mbox{\hyperlink{structtag_q_u_e_u_e}{Queue}}\ queue\ =\ (\mbox{\hyperlink{queue_8c_aad8f2eb73f2aa504a900eef6a265ad6a}{Queue}})\ malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structtag_q_u_e_u_e}{QUEUE}}));}
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00017}00017\ \ \ \textcolor{keywordflow}{if}\ (queue\ ==\ \mbox{\hyperlink{error_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{error_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}};}
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00018}00018\ \ \ }
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00019}00019\ \ \ queue-\/>\mbox{\hyperlink{structtag_q_u_e_u_e_a9afad8b1dc9b8f38b784307d02c88892}{buffer}}\ =\ (\textcolor{keywordtype}{void}*)\ malloc(buffer\_size);}
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00020}00020\ \ \ \textcolor{keywordflow}{if}\ (queue-\/>\mbox{\hyperlink{structtag_q_u_e_u_e_a9afad8b1dc9b8f38b784307d02c88892}{buffer}}\ ==\ \mbox{\hyperlink{error_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}})}
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00021}00021\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00022}00022\ \ \ \ \ free(queue);}
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00023}00023\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{error_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}};}
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00024}00024\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00025}00025\ \ \ }
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00026}00026\ \ \ queue-\/>\mbox{\hyperlink{structtag_q_u_e_u_e_a3ee0ec9d50c56b168794be3d0e672d59}{bufferSize}}\ \ =\ buffer\_size;}
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00027}00027\ \ \ queue-\/>\mbox{\hyperlink{structtag_q_u_e_u_e_acd916915adb3b52dde8caa27c12916ad}{contentSize}}\ =\ content\_size;}
+\DoxyCodeLine{\Hypertarget{queue_8c_source_l00028}00028\ \}}
+
+\end{DoxyCode}

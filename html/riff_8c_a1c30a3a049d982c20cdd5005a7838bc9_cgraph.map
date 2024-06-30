@@ -1,0 +1,16 @@
+<map id="riffRead" name="riffRead">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,70,133"/>
+<area shape="rect" id="Node000002" href="$riff_8c.html#a255467591ebd23444d007ed8ba6f1da0" title=" " alt="" coords="126,5,223,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="51,104,116,49,132,38,135,43,119,53,54,108"/>
+<area shape="rect" id="Node000003" href="$riff_8c.html#a738b878c44a5b16c339c197afeabc97d" title=" " alt="" coords="279,81,360,108"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="69,105,117,92,193,86,263,87,263,93,194,91,118,97,71,110"/>
+<area shape="rect" id="Node000005" href="$riff_8c.html#af2ff88f0120ee07a3c90346eff22a04f" title=" " alt="" coords="125,107,224,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="70,117,109,117,109,123,70,123"/>
+<area shape="rect" id="Node000006" href="$stack_2stack_8c.html#a99803088f2924735c6f27cab6698c83e" title=" " alt="" coords="129,157,220,184"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="71,129,123,149,121,154,69,134"/>
+<area shape="rect" id="Node000007" href="$stack_2stack_8c.html#a6ab5a4919400414962ce61b822f4bdf4" title=" " alt="" coords="118,208,231,235"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="52,132,81,162,119,194,126,198,124,203,116,198,78,166,49,136"/>
+<area shape="rect" id="Node000004" href="$binary_8c.html#ab387ddd302785691faff04ed8e5b7dd5" title=" " alt="" coords="408,81,492,108"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="361,92,392,92,392,97,361,97"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="224,109,263,102,264,107,225,114"/>
+</map>

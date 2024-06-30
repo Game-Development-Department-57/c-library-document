@@ -1,0 +1,111 @@
+\doxysection{C\+:/\+Users/\+GDD/\+Desktop/program/c/library/source/binary/binary.h File Reference}
+\hypertarget{binary_8h}{}\label{binary_8h}\index{C:/Users/GDD/Desktop/program/c/library/source/binary/binary.h@{C:/Users/GDD/Desktop/program/c/library/source/binary/binary.h}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{binary_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structtag_b_i_t_c_h_a_r}{tag\+BITCHAR}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structtag_b_i_t_c_h_a_r}{tag\+BITCHAR}} \mbox{\hyperlink{binary_8h_aca36a61ca54c4a9e18b01a2b15395415}{BITCHAR}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{binary_8h_ab387ddd302785691faff04ed8e5b7dd5}{binary\+Cmp}} (void \texorpdfstring{$\ast$}{*}a, void \texorpdfstring{$\ast$}{*}b, int size)
+\item 
+int \mbox{\hyperlink{binary_8h_af7e0c66d0d145c83caaa1e7099e2fb65}{binary\+Set}} (void \texorpdfstring{$\ast$}{*}ptr, int var, int size)
+\item 
+int \mbox{\hyperlink{binary_8h_a2b45962308ba40535205e3560ab044d4}{binary\+Cpy}} (void \texorpdfstring{$\ast$}{*}a, void \texorpdfstring{$\ast$}{*}b, int size)
+\item 
+\mbox{\hyperlink{binary_8c_aca36a61ca54c4a9e18b01a2b15395415}{BITCHAR}} \mbox{\hyperlink{binary_8h_a8bfee62a87a4019ba4f8064cdf05b926}{binary\+Byte\+To\+Bitchar}} (unsigned char byte)
+\item 
+unsigned char \mbox{\hyperlink{binary_8h_a3ba01185abf7ccea106177d10ba8384f}{binary\+Bitchar\+To\+Byte}} (\mbox{\hyperlink{binary_8c_aca36a61ca54c4a9e18b01a2b15395415}{BITCHAR}} bit)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{binary_8h_aca36a61ca54c4a9e18b01a2b15395415}\index{binary.h@{binary.h}!BITCHAR@{BITCHAR}}
+\index{BITCHAR@{BITCHAR}!binary.h@{binary.h}}
+\doxysubsubsection{\texorpdfstring{BITCHAR}{BITCHAR}}
+{\footnotesize\ttfamily \label{binary_8h_aca36a61ca54c4a9e18b01a2b15395415} 
+typedef struct \mbox{\hyperlink{structtag_b_i_t_c_h_a_r}{tag\+BITCHAR}} \mbox{\hyperlink{binary_8c_aca36a61ca54c4a9e18b01a2b15395415}{BITCHAR}}}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{binary_8h_a3ba01185abf7ccea106177d10ba8384f}\index{binary.h@{binary.h}!binaryBitcharToByte@{binaryBitcharToByte}}
+\index{binaryBitcharToByte@{binaryBitcharToByte}!binary.h@{binary.h}}
+\doxysubsubsection{\texorpdfstring{binaryBitcharToByte()}{binaryBitcharToByte()}}
+{\footnotesize\ttfamily \label{binary_8h_a3ba01185abf7ccea106177d10ba8384f} 
+unsigned char binary\+Bitchar\+To\+Byte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{binary_8c_aca36a61ca54c4a9e18b01a2b15395415}{BITCHAR}}}]{bit}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{binary_8c_source_l00036}{36}} of file \mbox{\hyperlink{binary_8c_source}{binary.\+c}}.
+
+\Hypertarget{binary_8h_a8bfee62a87a4019ba4f8064cdf05b926}\index{binary.h@{binary.h}!binaryByteToBitchar@{binaryByteToBitchar}}
+\index{binaryByteToBitchar@{binaryByteToBitchar}!binary.h@{binary.h}}
+\doxysubsubsection{\texorpdfstring{binaryByteToBitchar()}{binaryByteToBitchar()}}
+{\footnotesize\ttfamily \label{binary_8h_a8bfee62a87a4019ba4f8064cdf05b926} 
+\mbox{\hyperlink{binary_8c_aca36a61ca54c4a9e18b01a2b15395415}{BITCHAR}} binary\+Byte\+To\+Bitchar (\begin{DoxyParamCaption}\item[{unsigned char}]{byte}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{binary_8c_source_l00028}{28}} of file \mbox{\hyperlink{binary_8c_source}{binary.\+c}}.
+
+\Hypertarget{binary_8h_ab387ddd302785691faff04ed8e5b7dd5}\index{binary.h@{binary.h}!binaryCmp@{binaryCmp}}
+\index{binaryCmp@{binaryCmp}!binary.h@{binary.h}}
+\doxysubsubsection{\texorpdfstring{binaryCmp()}{binaryCmp()}}
+{\footnotesize\ttfamily \label{binary_8h_ab387ddd302785691faff04ed8e5b7dd5} 
+int binary\+Cmp (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{a}{, }\item[{void \texorpdfstring{$\ast$}{*}}]{b}{, }\item[{int}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{binary_8c_source_l00001}{1}} of file \mbox{\hyperlink{binary_8c_source}{binary.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{binary_8h_ab387ddd302785691faff04ed8e5b7dd5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{binary_8h_a2b45962308ba40535205e3560ab044d4}\index{binary.h@{binary.h}!binaryCpy@{binaryCpy}}
+\index{binaryCpy@{binaryCpy}!binary.h@{binary.h}}
+\doxysubsubsection{\texorpdfstring{binaryCpy()}{binaryCpy()}}
+{\footnotesize\ttfamily \label{binary_8h_a2b45962308ba40535205e3560ab044d4} 
+int binary\+Cpy (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{a}{, }\item[{void \texorpdfstring{$\ast$}{*}}]{b}{, }\item[{int}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{binary_8c_source_l00015}{15}} of file \mbox{\hyperlink{binary_8c_source}{binary.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{binary_8h_a2b45962308ba40535205e3560ab044d4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{binary_8h_af7e0c66d0d145c83caaa1e7099e2fb65}\index{binary.h@{binary.h}!binarySet@{binarySet}}
+\index{binarySet@{binarySet}!binary.h@{binary.h}}
+\doxysubsubsection{\texorpdfstring{binarySet()}{binarySet()}}
+{\footnotesize\ttfamily \label{binary_8h_af7e0c66d0d145c83caaa1e7099e2fb65} 
+int binary\+Set (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{ptr}{, }\item[{int}]{var}{, }\item[{int}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{binary_8c_source_l00008}{8}} of file \mbox{\hyperlink{binary_8c_source}{binary.\+c}}.
+

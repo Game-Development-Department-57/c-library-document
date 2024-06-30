@@ -1,0 +1,42 @@
+\doxysection{complex.\+h}
+\hypertarget{complex_8h_source}{}\label{complex_8h_source}\index{C:/Users/GDD/Desktop/program/c/library/source/operator/complex/complex.h@{C:/Users/GDD/Desktop/program/c/library/source/operator/complex/complex.h}}
+\mbox{\hyperlink{complex_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <math.h>}}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00005}00005\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00006}00006\ \{}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00007}00007\ \ \ \ \ \textcolor{keywordtype}{int}\ real;}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00008}00008\ \ \ \ \ \textcolor{keywordtype}{int}\ imaginary;}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00009}00009\ \}\ \mbox{\hyperlink{structcomplexi}{complexi}};}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00011}00011\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00012}00012\ \{}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00013}00013\ \ \ \ \ \textcolor{keywordtype}{float}\ real;}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00014}00014\ \ \ \ \ \textcolor{keywordtype}{float}\ imaginary;}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00015}00015\ \}\ \mbox{\hyperlink{structcomplexf}{complexf}};}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00017}00017\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct}}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00018}00018\ \{}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00019}00019\ \ \ \ \ \textcolor{keywordtype}{double}\ real;}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00020}00020\ \ \ \ \ \textcolor{keywordtype}{double}\ imaginary;}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00021}\mbox{\hyperlink{complex_8h_a227591a25f3a267d1f0e8d305545a5a4}{00021}}\ \}\ \mbox{\hyperlink{structcomplexd}{complexd}},\ \mbox{\hyperlink{complex_8h_a227591a25f3a267d1f0e8d305545a5a4}{complex}};}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00023}\mbox{\hyperlink{complex_8h_aff56833902ff97141a1f7d23f67f8da9}{00023}}\ \textcolor{preprocessor}{\#define\ complexInit(complex\_,\ real\_,\ imaginary\_)\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00024}00024\ \textcolor{preprocessor}{do\{\(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00025}00025\ \textcolor{preprocessor}{\ \ complex\_.real\ =\ (real\_);\(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00026}00026\ \textcolor{preprocessor}{\ \ complex\_.imaginary\ =\ (imaginary\_);\(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00027}00027\ \textcolor{preprocessor}{\}while(0)}}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00029}00029\ \mbox{\hyperlink{structcomplexd}{complexd}}\ \mbox{\hyperlink{complex_8h_ab42dcdd5af530f42397a56c0d3f22a64}{complexAdd2d}}(\mbox{\hyperlink{structcomplexd}{complexd}}\ a,\ \mbox{\hyperlink{structcomplexd}{complexd}}\ b);}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00030}00030\ \mbox{\hyperlink{structcomplexd}{complexd}}\ \mbox{\hyperlink{complex_8h_a9b98fef2f71f6c7e8eb6d133a8f5ba1d}{complexSub2d}}(\mbox{\hyperlink{structcomplexd}{complexd}}\ a,\ \mbox{\hyperlink{structcomplexd}{complexd}}\ b);}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00031}00031\ \mbox{\hyperlink{structcomplexd}{complexd}}\ \mbox{\hyperlink{complex_8h_aca974a322e736a62cbd06d3b7cc5846c}{complexMul2d}}(\mbox{\hyperlink{structcomplexd}{complexd}}\ a,\ \mbox{\hyperlink{structcomplexd}{complexd}}\ b);}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00032}00032\ \mbox{\hyperlink{structcomplexd}{complexd}}\ \mbox{\hyperlink{complex_8h_a7b93101eb002801306696a552dbe1527}{complexDiv2d}}(\mbox{\hyperlink{structcomplexd}{complexd}}\ a,\ \mbox{\hyperlink{structcomplexd}{complexd}}\ b);}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00033}00033\ \mbox{\hyperlink{structcomplexd}{complexd}}\ \mbox{\hyperlink{complex_8h_a3c5b882d6825c14e1af5cac07b749d06}{complexConjugate1d}}(\mbox{\hyperlink{structcomplexd}{complexd}}\ a);}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00034}00034\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{complex_8h_ab844e595fc3871ed16c9f40a3b940dd1}{complexAbsolute1d}}(\mbox{\hyperlink{structcomplexd}{complexd}}\ a);}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00035}00035\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{complex_8h_a1dd367abd9fd6b396a2fe7a370c28931}{complexPrint1d}}(\mbox{\hyperlink{structcomplexd}{complexd}}\ a);}
+\DoxyCodeLine{\Hypertarget{complex_8h_source_l00036}00036\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{complex_8h_afd50c5a3284814b6ff1995222ae43a42}{complexPrintln1d}}(\mbox{\hyperlink{structcomplexd}{complexd}}\ a);}
+
+\end{DoxyCode}

@@ -1,0 +1,187 @@
+\doxysection{C\+:/\+Users/\+GDD/\+Desktop/program/c/library/source/data/list/list\+\_\+basic.c File Reference}
+\hypertarget{list__basic_8c}{}\label{list__basic_8c}\index{C:/Users/GDD/Desktop/program/c/library/source/data/list/list\_basic.c@{C:/Users/GDD/Desktop/program/c/library/source/data/list/list\_basic.c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include "{}list\+\_\+std.\+h"{}}\newline
+{\ttfamily \#include "{}list\+\_\+base.\+h"{}}\newline
+Include dependency graph for list\+\_\+basic.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{list__basic_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}} \mbox{\hyperlink{list__basic_8c_a8ba13b1ce2941a4a7e27961ed8732486}{list\+Create}} (void)
+\item 
+void \mbox{\hyperlink{list__basic_8c_a04291ed41b3bb7a2fd690825496481c9}{list\+Delete}} (\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}} list)
+\item 
+\mbox{\hyperlink{err_8h_adb571dd32a3d3d2d76c761226206bde0}{err}} \mbox{\hyperlink{list__basic_8c_a4a73f2009e430c3d3ffe19b3a165239f}{list\+Add}} (\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}} list, \mbox{\hyperlink{list__types_8h_a827e8fb836ae3e440727586b7ade5957}{Item}} item)
+\item 
+\mbox{\hyperlink{err_8h_adb571dd32a3d3d2d76c761226206bde0}{err}} \mbox{\hyperlink{list__basic_8c_a7f3b96f2ed98e900023e72ba2cc6b40a}{list\+Del}} (\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}} list, \mbox{\hyperlink{list__types_8h_a49ce6bd05ef083b0734d34862190a08a}{Index}} index)
+\item 
+\mbox{\hyperlink{err_8h_adb571dd32a3d3d2d76c761226206bde0}{err}} \mbox{\hyperlink{list__basic_8c_a53ff8376562f3e6b2a3b498b9e49e458}{list\+Crean}} (\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}} list)
+\item 
+\mbox{\hyperlink{err_8h_adb571dd32a3d3d2d76c761226206bde0}{err}} \mbox{\hyperlink{list__basic_8c_ab0dd508af57c40f27dcc5427382263e5}{list\+Fill}} (\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}} list, \mbox{\hyperlink{list__types_8h_a827e8fb836ae3e440727586b7ade5957}{Item}} item)
+\item 
+\mbox{\hyperlink{list__types_8h_a827e8fb836ae3e440727586b7ade5957}{Item}} \mbox{\hyperlink{list__basic_8c_a9de88ef63caba81a6c5058a3ff329033}{list\+Get}} (\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}} list, \mbox{\hyperlink{list__types_8h_a49ce6bd05ef083b0734d34862190a08a}{Index}} index)
+\item 
+\mbox{\hyperlink{err_8h_adb571dd32a3d3d2d76c761226206bde0}{err}} \mbox{\hyperlink{list__basic_8c_a8e70bc6fd007a0562c6e598448924c02}{list\+Set}} (\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}} list, \mbox{\hyperlink{list__types_8h_a49ce6bd05ef083b0734d34862190a08a}{Index}} index, \mbox{\hyperlink{list__types_8h_a827e8fb836ae3e440727586b7ade5957}{Item}} item)
+\item 
+int \mbox{\hyperlink{list__basic_8c_a4236bec68606674d4a348063a40184cc}{list\+Length}} (\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}} list)
+\item 
+\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}} \mbox{\hyperlink{list__basic_8c_a7f0bb6109ba95b2510b50c27866dbb85}{list\+Copy}} (\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}} list)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{list__basic_8c_a4a73f2009e430c3d3ffe19b3a165239f}\index{list\_basic.c@{list\_basic.c}!listAdd@{listAdd}}
+\index{listAdd@{listAdd}!list\_basic.c@{list\_basic.c}}
+\doxysubsubsection{\texorpdfstring{listAdd()}{listAdd()}}
+{\footnotesize\ttfamily \label{list__basic_8c_a4a73f2009e430c3d3ffe19b3a165239f} 
+\mbox{\hyperlink{err_8h_adb571dd32a3d3d2d76c761226206bde0}{err}} list\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}}}]{list}{, }\item[{\mbox{\hyperlink{list__types_8h_a827e8fb836ae3e440727586b7ade5957}{Item}}}]{item}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{list__basic_8c_source_l00041}{41}} of file \mbox{\hyperlink{list__basic_8c_source}{list\+\_\+basic.\+c}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{list__basic_8c_a4a73f2009e430c3d3ffe19b3a165239f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{list__basic_8c_a7f0bb6109ba95b2510b50c27866dbb85}\index{list\_basic.c@{list\_basic.c}!listCopy@{listCopy}}
+\index{listCopy@{listCopy}!list\_basic.c@{list\_basic.c}}
+\doxysubsubsection{\texorpdfstring{listCopy()}{listCopy()}}
+{\footnotesize\ttfamily \label{list__basic_8c_a7f0bb6109ba95b2510b50c27866dbb85} 
+\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}} list\+Copy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}}}]{list}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{list__basic_8c_source_l00152}{152}} of file \mbox{\hyperlink{list__basic_8c_source}{list\+\_\+basic.\+c}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{list__basic_8c_a7f0bb6109ba95b2510b50c27866dbb85_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{list__basic_8c_a53ff8376562f3e6b2a3b498b9e49e458}\index{list\_basic.c@{list\_basic.c}!listCrean@{listCrean}}
+\index{listCrean@{listCrean}!list\_basic.c@{list\_basic.c}}
+\doxysubsubsection{\texorpdfstring{listCrean()}{listCrean()}}
+{\footnotesize\ttfamily \label{list__basic_8c_a53ff8376562f3e6b2a3b498b9e49e458} 
+\mbox{\hyperlink{err_8h_adb571dd32a3d3d2d76c761226206bde0}{err}} list\+Crean (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}}}]{list}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{list__basic_8c_source_l00094}{94}} of file \mbox{\hyperlink{list__basic_8c_source}{list\+\_\+basic.\+c}}.
+
+\Hypertarget{list__basic_8c_a8ba13b1ce2941a4a7e27961ed8732486}\index{list\_basic.c@{list\_basic.c}!listCreate@{listCreate}}
+\index{listCreate@{listCreate}!list\_basic.c@{list\_basic.c}}
+\doxysubsubsection{\texorpdfstring{listCreate()}{listCreate()}}
+{\footnotesize\ttfamily \label{list__basic_8c_a8ba13b1ce2941a4a7e27961ed8732486} 
+\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}} list\+Create (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{list__basic_8c_source_l00010}{10}} of file \mbox{\hyperlink{list__basic_8c_source}{list\+\_\+basic.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{list__basic_8c_a8ba13b1ce2941a4a7e27961ed8732486_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{list__basic_8c_a7f3b96f2ed98e900023e72ba2cc6b40a}\index{list\_basic.c@{list\_basic.c}!listDel@{listDel}}
+\index{listDel@{listDel}!list\_basic.c@{list\_basic.c}}
+\doxysubsubsection{\texorpdfstring{listDel()}{listDel()}}
+{\footnotesize\ttfamily \label{list__basic_8c_a7f3b96f2ed98e900023e72ba2cc6b40a} 
+\mbox{\hyperlink{err_8h_adb571dd32a3d3d2d76c761226206bde0}{err}} list\+Del (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}}}]{list}{, }\item[{\mbox{\hyperlink{list__types_8h_a49ce6bd05ef083b0734d34862190a08a}{Index}}}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{list__basic_8c_source_l00068}{68}} of file \mbox{\hyperlink{list__basic_8c_source}{list\+\_\+basic.\+c}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{list__basic_8c_a7f3b96f2ed98e900023e72ba2cc6b40a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{list__basic_8c_a04291ed41b3bb7a2fd690825496481c9}\index{list\_basic.c@{list\_basic.c}!listDelete@{listDelete}}
+\index{listDelete@{listDelete}!list\_basic.c@{list\_basic.c}}
+\doxysubsubsection{\texorpdfstring{listDelete()}{listDelete()}}
+{\footnotesize\ttfamily \label{list__basic_8c_a04291ed41b3bb7a2fd690825496481c9} 
+void list\+Delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}}}]{list}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{list__basic_8c_source_l00022}{22}} of file \mbox{\hyperlink{list__basic_8c_source}{list\+\_\+basic.\+c}}.
+
+\Hypertarget{list__basic_8c_ab0dd508af57c40f27dcc5427382263e5}\index{list\_basic.c@{list\_basic.c}!listFill@{listFill}}
+\index{listFill@{listFill}!list\_basic.c@{list\_basic.c}}
+\doxysubsubsection{\texorpdfstring{listFill()}{listFill()}}
+{\footnotesize\ttfamily \label{list__basic_8c_ab0dd508af57c40f27dcc5427382263e5} 
+\mbox{\hyperlink{err_8h_adb571dd32a3d3d2d76c761226206bde0}{err}} list\+Fill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}}}]{list}{, }\item[{\mbox{\hyperlink{list__types_8h_a827e8fb836ae3e440727586b7ade5957}{Item}}}]{item}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{list__basic_8c_source_l00110}{110}} of file \mbox{\hyperlink{list__basic_8c_source}{list\+\_\+basic.\+c}}.
+
+\Hypertarget{list__basic_8c_a9de88ef63caba81a6c5058a3ff329033}\index{list\_basic.c@{list\_basic.c}!listGet@{listGet}}
+\index{listGet@{listGet}!list\_basic.c@{list\_basic.c}}
+\doxysubsubsection{\texorpdfstring{listGet()}{listGet()}}
+{\footnotesize\ttfamily \label{list__basic_8c_a9de88ef63caba81a6c5058a3ff329033} 
+\mbox{\hyperlink{list__types_8h_a827e8fb836ae3e440727586b7ade5957}{Item}} list\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}}}]{list}{, }\item[{\mbox{\hyperlink{list__types_8h_a49ce6bd05ef083b0734d34862190a08a}{Index}}}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{list__basic_8c_source_l00127}{127}} of file \mbox{\hyperlink{list__basic_8c_source}{list\+\_\+basic.\+c}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{list__basic_8c_a9de88ef63caba81a6c5058a3ff329033_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{list__basic_8c_a4236bec68606674d4a348063a40184cc}\index{list\_basic.c@{list\_basic.c}!listLength@{listLength}}
+\index{listLength@{listLength}!list\_basic.c@{list\_basic.c}}
+\doxysubsubsection{\texorpdfstring{listLength()}{listLength()}}
+{\footnotesize\ttfamily \label{list__basic_8c_a4236bec68606674d4a348063a40184cc} 
+int list\+Length (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}}}]{list}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{list__basic_8c_source_l00146}{146}} of file \mbox{\hyperlink{list__basic_8c_source}{list\+\_\+basic.\+c}}.
+
+\Hypertarget{list__basic_8c_a8e70bc6fd007a0562c6e598448924c02}\index{list\_basic.c@{list\_basic.c}!listSet@{listSet}}
+\index{listSet@{listSet}!list\_basic.c@{list\_basic.c}}
+\doxysubsubsection{\texorpdfstring{listSet()}{listSet()}}
+{\footnotesize\ttfamily \label{list__basic_8c_a8e70bc6fd007a0562c6e598448924c02} 
+\mbox{\hyperlink{err_8h_adb571dd32a3d3d2d76c761226206bde0}{err}} list\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}}}]{list}{, }\item[{\mbox{\hyperlink{list__types_8h_a49ce6bd05ef083b0734d34862190a08a}{Index}}}]{index}{, }\item[{\mbox{\hyperlink{list__types_8h_a827e8fb836ae3e440727586b7ade5957}{Item}}}]{item}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{list__basic_8c_source_l00136}{136}} of file \mbox{\hyperlink{list__basic_8c_source}{list\+\_\+basic.\+c}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{list__basic_8c_a8e70bc6fd007a0562c6e598448924c02_cgraph}
+\end{center}
+\end{figure}

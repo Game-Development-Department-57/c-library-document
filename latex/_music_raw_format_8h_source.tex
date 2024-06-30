@@ -1,0 +1,40 @@
+\doxysection{Music\+Raw\+Format.\+h}
+\hypertarget{_music_raw_format_8h_source}{}\label{_music_raw_format_8h_source}\index{C:/Users/GDD/Desktop/program/c/library/source/file/music/MusicRawFormat.h@{C:/Users/GDD/Desktop/program/c/library/source/file/music/MusicRawFormat.h}}
+\mbox{\hyperlink{_music_raw_format_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ FUJIWARA\_FILE\_MUSIGRAWFORMAT\_H}}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ FUJIWARA\_FILE\_MUSIGRAWFORMAT\_H}}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{data_2ftype_8h}{data/ftype.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00006}\mbox{\hyperlink{structtag_music_raw_header}{00006}}\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtag_music_raw_header}{tagMusicRawHeader}}}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00007}00007\ \{}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00008}\mbox{\hyperlink{structtag_music_raw_header_a8e47867612de167278be4a6b5604cf68}{00008}}\ \ \ \mbox{\hyperlink{binary_2ftype_8h_a6a082686277de39ac6dbe7f7007bb4d4}{FDWORD}}\ \mbox{\hyperlink{structtag_music_raw_header_a8e47867612de167278be4a6b5604cf68}{SamplingRate}};\ \ \ \ \ \textcolor{comment}{/*\ 標本化周波数\ */}}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00009}\mbox{\hyperlink{structtag_music_raw_header_a2cc193d8e6a7a94c279e34559bd35e20}{00009}}\ \ \ \mbox{\hyperlink{binary_2ftype_8h_a6a082686277de39ac6dbe7f7007bb4d4}{FDWORD}}\ \mbox{\hyperlink{structtag_music_raw_header_a2cc193d8e6a7a94c279e34559bd35e20}{QuantizationRate}};\ \textcolor{comment}{/*\ 量子化ビット数\ */}}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00010}\mbox{\hyperlink{structtag_music_raw_header_a6314bc1530c479457e1e34c1ecd93a0a}{00010}}\ \ \ \mbox{\hyperlink{binary_2ftype_8h_a6a082686277de39ac6dbe7f7007bb4d4}{FDWORD}}\ \mbox{\hyperlink{structtag_music_raw_header_a6314bc1530c479457e1e34c1ecd93a0a}{DataLength}};\ \ \ \ \ \ \ \textcolor{comment}{/*\ データセクション長さ\ */}}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00011}\mbox{\hyperlink{structtag_music_raw_header_a16784c04cc9c6a1e0fd30c57b145ee38}{00011}}\ \ \ \mbox{\hyperlink{binary_2ftype_8h_a6a082686277de39ac6dbe7f7007bb4d4}{FDWORD}}\ \mbox{\hyperlink{structtag_music_raw_header_a16784c04cc9c6a1e0fd30c57b145ee38}{Flags}};\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ セクションフラグ\ */}}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00012}\mbox{\hyperlink{_music_raw_format_8h_af2ffae669d61f703ed5785174e4c0e3a}{00012}}\ \}\ \mbox{\hyperlink{_music_raw_format_8h_af2ffae669d61f703ed5785174e4c0e3a}{MusicRawHeader}};\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ MusicRawのヘッダー\ */}}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00014}\mbox{\hyperlink{structtag_music_raw_data}{00014}}\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtag_music_raw_data}{tagMusicRawData}}}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00015}00015\ \{}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00016}\mbox{\hyperlink{structtag_music_raw_data_a0950fa960c69c27a4784ec8898b9fcf8}{00016}}\ \ \ \mbox{\hyperlink{binary_2ftype_8h_ad8d13cbd8aa031cd923b3a10beb366ef}{FBYTE}}*\ \mbox{\hyperlink{structtag_music_raw_data_a0950fa960c69c27a4784ec8898b9fcf8}{Data}};\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ データ\ */}}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00017}\mbox{\hyperlink{_music_raw_format_8h_ac7a83ce70f3a25872b05af9395d58074}{00017}}\ \}\ \mbox{\hyperlink{_music_raw_format_8h_ac7a83ce70f3a25872b05af9395d58074}{MusicRawData}};\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ MusicRawのデータ\ */}}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00019}\mbox{\hyperlink{structtag_music_raw_list}{00019}}\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtag_music_raw_list}{tagMusicRawList}}}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00020}00020\ \{}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00021}\mbox{\hyperlink{structtag_music_raw_list_a4aae15da70da9eb34a51c7e53ea57ba2}{00021}}\ \ \ \mbox{\hyperlink{binary_2ftype_8h_ad8d13cbd8aa031cd923b3a10beb366ef}{FBYTE}}*\ \mbox{\hyperlink{structtag_music_raw_list_a4aae15da70da9eb34a51c7e53ea57ba2}{FileName}};}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00022}\mbox{\hyperlink{structtag_music_raw_list_aede5aeab69a5f311cc018b23e0e5f048}{00022}}\ \ \ \mbox{\hyperlink{binary_2ftype_8h_ad8d13cbd8aa031cd923b3a10beb366ef}{FBYTE}}*\ \mbox{\hyperlink{structtag_music_raw_list_aede5aeab69a5f311cc018b23e0e5f048}{AuthorName}};}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00023}\mbox{\hyperlink{structtag_music_raw_list_a5f235b5df2535412333f42497c251296}{00023}}\ \ \ \mbox{\hyperlink{binary_2ftype_8h_ad8d13cbd8aa031cd923b3a10beb366ef}{FBYTE}}*\ \mbox{\hyperlink{structtag_music_raw_list_a5f235b5df2535412333f42497c251296}{Date}};}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00024}\mbox{\hyperlink{structtag_music_raw_list_a00ef5eca3d9c7c3b8feb006b01eb777a}{00024}}\ \ \ \mbox{\hyperlink{binary_2ftype_8h_ad8d13cbd8aa031cd923b3a10beb366ef}{FBYTE}}*\ \mbox{\hyperlink{structtag_music_raw_list_a00ef5eca3d9c7c3b8feb006b01eb777a}{Comment}};}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00025}\mbox{\hyperlink{_music_raw_format_8h_af3784854c8f603508875f77720ecd2de}{00025}}\ \}\ \mbox{\hyperlink{_music_raw_format_8h_af3784854c8f603508875f77720ecd2de}{MusicRawList}};}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00027}\mbox{\hyperlink{structtag_music_raw}{00027}}\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtag_music_raw}{tagMusicRaw}}}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00028}00028\ \{}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00029}\mbox{\hyperlink{structtag_music_raw_add3b754de04d691671687837db9c6dca}{00029}}\ \ \ \mbox{\hyperlink{structtag_music_raw_header}{MusicRawHeader}}*\ \mbox{\hyperlink{structtag_music_raw_add3b754de04d691671687837db9c6dca}{Header}};\ \ \textcolor{comment}{/*\ ヘッダー\ */}}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00030}\mbox{\hyperlink{structtag_music_raw_a4cff75c03fe03a1133dc68e8d61702a7}{00030}}\ \ \ \mbox{\hyperlink{structtag_music_raw_data}{MusicRawData}}*\ \ \ \mbox{\hyperlink{structtag_music_raw_a4cff75c03fe03a1133dc68e8d61702a7}{Data}};\ \ \ \ \textcolor{comment}{/*\ データ\ */}}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00031}\mbox{\hyperlink{structtag_music_raw_a083779ef6392ec78219f0a4ef0c0340d}{00031}}\ \ \ \mbox{\hyperlink{structtag_music_raw_list}{MusicRawList}}*\ \ \ \mbox{\hyperlink{structtag_music_raw_a083779ef6392ec78219f0a4ef0c0340d}{List}};\ \ \ \ \textcolor{comment}{/*\ リスト\ */}}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00032}\mbox{\hyperlink{_music_raw_format_8h_a9887df729a12e797a06f3379f2a001bc}{00032}}\ \}\ \mbox{\hyperlink{_music_raw_format_8h_a9887df729a12e797a06f3379f2a001bc}{MusicRaw}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 音楽の加工用生データ\ */}}
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{_music_raw_format_8h_source_l00034}00034\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

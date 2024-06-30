@@ -1,0 +1,216 @@
+\doxysection{C\+:/\+Users/\+GDD/\+Desktop/program/c/library/source/draw/draw/draw.c File Reference}
+\hypertarget{draw_8c}{}\label{draw_8c}\index{C:/Users/GDD/Desktop/program/c/library/source/draw/draw/draw.c@{C:/Users/GDD/Desktop/program/c/library/source/draw/draw/draw.c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include "{}binary/binary.\+h"{}}\newline
+{\ttfamily \#include "{}binary/ftype.\+h"{}}\newline
+Include dependency graph for draw.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{draw_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structtag_draw_color}{tag\+Draw\+Color}}
+\item 
+struct \mbox{\hyperlink{structtag_draw_raw_image}{tag\+Draw\+Raw\+Image}}
+\item 
+struct \mbox{\hyperlink{structtag_draw_point}{tag\+Draw\+Point}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{draw_8c_a932434e2b28ab076859540433d605e20}{draw\+Image\+Index}}(image\+\_\+,  x\+\_\+,  y\+\_\+)~(image\+\_\+-\/$>$x \texorpdfstring{$\ast$}{*} y\+\_\+ + x\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structtag_draw_color}{tag\+Draw\+Color}} \mbox{\hyperlink{draw_8c_af7a5eb72298afd3646256af37e8210f7}{draw\+Color}}
+\item 
+typedef struct \mbox{\hyperlink{structtag_draw_raw_image}{tag\+Draw\+Raw\+Image}} \mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}}
+\item 
+typedef struct \mbox{\hyperlink{structtag_draw_point}{tag\+Draw\+Point}} \mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}}
+\item 
+typedef struct \mbox{\hyperlink{structtag_draw_point}{tag\+Draw\+Point}} \mbox{\hyperlink{draw_8c_abee56b083c7e967b4560638c24f70794}{draw\+Size}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{draw_8c_a8c45bc21feb09d961f8865a2cfb85cdd}{draw\+Init}} (\mbox{\hyperlink{draw_8c_abee56b083c7e967b4560638c24f70794}{draw\+Size}} size)
+\item 
+void \mbox{\hyperlink{draw_8c_a94529cb00d9b138f430ae08f37e8e48a}{draw\+Delte}} (\mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}} \texorpdfstring{$\ast$}{*}image)
+\item 
+void \mbox{\hyperlink{draw_8c_aabeec0c13970ab97f84bc4a5879ed911}{draw\+Fill}} (\mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}} \texorpdfstring{$\ast$}{*}image, \mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}} point, \mbox{\hyperlink{draw_8c_abee56b083c7e967b4560638c24f70794}{draw\+Size}} size, \mbox{\hyperlink{draw_8c_af7a5eb72298afd3646256af37e8210f7}{draw\+Color}} color)
+\item 
+void \mbox{\hyperlink{draw_8c_a73cad7681289ccd967625d55ce435f76}{draw\+All\+Fill}} (\mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}} \texorpdfstring{$\ast$}{*}image, \mbox{\hyperlink{draw_8c_af7a5eb72298afd3646256af37e8210f7}{draw\+Color}} color)
+\item 
+void \mbox{\hyperlink{draw_8c_a3faa2850cf2c12ec5694435ba2f776dd}{draw\+Pointing}} (\mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}} \texorpdfstring{$\ast$}{*}image, \mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}} point, \mbox{\hyperlink{draw_8c_af7a5eb72298afd3646256af37e8210f7}{draw\+Color}} color)
+\item 
+void \mbox{\hyperlink{draw_8c_ac1c8b0381976837d1c891150719d5624}{draw\+Triangle}} (\mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}} \texorpdfstring{$\ast$}{*}image, \mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}} point1, \mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}} point2, \mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}} point3, \mbox{\hyperlink{draw_8c_af7a5eb72298afd3646256af37e8210f7}{draw\+Color}} color)
+\item 
+void \mbox{\hyperlink{draw_8c_a80f1b87d698991be828c3876910915e6}{draw\+Quadrangle}} (\mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}} \texorpdfstring{$\ast$}{*}image, \mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}} point1, \mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}} point2, \mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}} point3, \mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}} point4, \mbox{\hyperlink{draw_8c_af7a5eb72298afd3646256af37e8210f7}{draw\+Color}} color)
+\item 
+void \mbox{\hyperlink{draw_8c_ac05afb5fda421c394cc87b6b7adfd304}{draw\+Triangle\+Side}} (\mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}} \texorpdfstring{$\ast$}{*}image, \mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}} point1, \mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}} point2, \mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}} point3, int width, \mbox{\hyperlink{draw_8c_af7a5eb72298afd3646256af37e8210f7}{draw\+Color}} color)
+\item 
+void \mbox{\hyperlink{draw_8c_a1584394623ab3f29bba877d335462491}{draw\+Quadrangle\+Side}} (\mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}} \texorpdfstring{$\ast$}{*}image, \mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}} point1, \mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}} point2, \mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}} point3, \mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}} point4, int width, \mbox{\hyperlink{draw_8c_af7a5eb72298afd3646256af37e8210f7}{draw\+Color}} color)
+\item 
+\mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{draw_8c_a7bcf68423b09d9cece763404fbc52c72}{draw\+Cut}} (\mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}} \texorpdfstring{$\ast$}{*}image, \mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}} point1, \mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}} point2)
+\item 
+\mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{draw_8c_a290feeda9257a089241bfc7bc4012ad9}{draw\+Scaling}} (\mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}} \texorpdfstring{$\ast$}{*}image, \mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}} point1)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{draw_8c_a932434e2b28ab076859540433d605e20}\index{draw.c@{draw.c}!drawImageIndex@{drawImageIndex}}
+\index{drawImageIndex@{drawImageIndex}!draw.c@{draw.c}}
+\doxysubsubsection{\texorpdfstring{drawImageIndex}{drawImageIndex}}
+{\footnotesize\ttfamily \label{draw_8c_a932434e2b28ab076859540433d605e20} 
+\#define draw\+Image\+Index(\begin{DoxyParamCaption}\item[{}]{image\+\_\+}{, }\item[{}]{x\+\_\+}{, }\item[{}]{y\+\_\+}{}\end{DoxyParamCaption})~(image\+\_\+-\/$>$x \texorpdfstring{$\ast$}{*} y\+\_\+ + x\+\_\+)}
+
+
+
+Definition at line \mbox{\hyperlink{draw_8c_source_l00061}{61}} of file \mbox{\hyperlink{draw_8c_source}{draw.\+c}}.
+
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{draw_8c_af7a5eb72298afd3646256af37e8210f7}\index{draw.c@{draw.c}!drawColor@{drawColor}}
+\index{drawColor@{drawColor}!draw.c@{draw.c}}
+\doxysubsubsection{\texorpdfstring{drawColor}{drawColor}}
+{\footnotesize\ttfamily \label{draw_8c_af7a5eb72298afd3646256af37e8210f7} 
+typedef struct \mbox{\hyperlink{structtag_draw_color}{tag\+Draw\+Color}} \mbox{\hyperlink{draw_8c_af7a5eb72298afd3646256af37e8210f7}{draw\+Color}}}
+
+\Hypertarget{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}\index{draw.c@{draw.c}!drawPoint@{drawPoint}}
+\index{drawPoint@{drawPoint}!draw.c@{draw.c}}
+\doxysubsubsection{\texorpdfstring{drawPoint}{drawPoint}}
+{\footnotesize\ttfamily \label{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0} 
+typedef struct \mbox{\hyperlink{structtag_draw_point}{tag\+Draw\+Point}} \mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}}}
+
+\Hypertarget{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}\index{draw.c@{draw.c}!drawRawImage@{drawRawImage}}
+\index{drawRawImage@{drawRawImage}!draw.c@{draw.c}}
+\doxysubsubsection{\texorpdfstring{drawRawImage}{drawRawImage}}
+{\footnotesize\ttfamily \label{draw_8c_a911cf3d3feb8510f78bee88881df8b5b} 
+typedef struct \mbox{\hyperlink{structtag_draw_raw_image}{tag\+Draw\+Raw\+Image}} \mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}}}
+
+\Hypertarget{draw_8c_abee56b083c7e967b4560638c24f70794}\index{draw.c@{draw.c}!drawSize@{drawSize}}
+\index{drawSize@{drawSize}!draw.c@{draw.c}}
+\doxysubsubsection{\texorpdfstring{drawSize}{drawSize}}
+{\footnotesize\ttfamily \label{draw_8c_abee56b083c7e967b4560638c24f70794} 
+typedef struct \mbox{\hyperlink{structtag_draw_point}{tag\+Draw\+Point}} \mbox{\hyperlink{draw_8c_abee56b083c7e967b4560638c24f70794}{draw\+Size}}}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{draw_8c_a73cad7681289ccd967625d55ce435f76}\index{draw.c@{draw.c}!drawAllFill@{drawAllFill}}
+\index{drawAllFill@{drawAllFill}!draw.c@{draw.c}}
+\doxysubsubsection{\texorpdfstring{drawAllFill()}{drawAllFill()}}
+{\footnotesize\ttfamily \label{draw_8c_a73cad7681289ccd967625d55ce435f76} 
+void draw\+All\+Fill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}} \texorpdfstring{$\ast$}{*}}]{image}{, }\item[{\mbox{\hyperlink{draw_8c_af7a5eb72298afd3646256af37e8210f7}{draw\+Color}}}]{color}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{draw_8c_source_l00098}{98}} of file \mbox{\hyperlink{draw_8c_source}{draw.\+c}}.
+
+\Hypertarget{draw_8c_a7bcf68423b09d9cece763404fbc52c72}\index{draw.c@{draw.c}!drawCut@{drawCut}}
+\index{drawCut@{drawCut}!draw.c@{draw.c}}
+\doxysubsubsection{\texorpdfstring{drawCut()}{drawCut()}}
+{\footnotesize\ttfamily \label{draw_8c_a7bcf68423b09d9cece763404fbc52c72} 
+\mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}} \texorpdfstring{$\ast$}{*} draw\+Cut (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}} \texorpdfstring{$\ast$}{*}}]{image}{, }\item[{\mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}}}]{point1}{, }\item[{\mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}}}]{point2}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{draw_8c_source_l00138}{138}} of file \mbox{\hyperlink{draw_8c_source}{draw.\+c}}.
+
+\Hypertarget{draw_8c_a94529cb00d9b138f430ae08f37e8e48a}\index{draw.c@{draw.c}!drawDelte@{drawDelte}}
+\index{drawDelte@{drawDelte}!draw.c@{draw.c}}
+\doxysubsubsection{\texorpdfstring{drawDelte()}{drawDelte()}}
+{\footnotesize\ttfamily \label{draw_8c_a94529cb00d9b138f430ae08f37e8e48a} 
+void draw\+Delte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}} \texorpdfstring{$\ast$}{*}}]{image}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{draw_8c_source_l00077}{77}} of file \mbox{\hyperlink{draw_8c_source}{draw.\+c}}.
+
+\Hypertarget{draw_8c_aabeec0c13970ab97f84bc4a5879ed911}\index{draw.c@{draw.c}!drawFill@{drawFill}}
+\index{drawFill@{drawFill}!draw.c@{draw.c}}
+\doxysubsubsection{\texorpdfstring{drawFill()}{drawFill()}}
+{\footnotesize\ttfamily \label{draw_8c_aabeec0c13970ab97f84bc4a5879ed911} 
+void draw\+Fill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}} \texorpdfstring{$\ast$}{*}}]{image}{, }\item[{\mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}}}]{point}{, }\item[{\mbox{\hyperlink{draw_8c_abee56b083c7e967b4560638c24f70794}{draw\+Size}}}]{size}{, }\item[{\mbox{\hyperlink{draw_8c_af7a5eb72298afd3646256af37e8210f7}{draw\+Color}}}]{color}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{draw_8c_source_l00085}{85}} of file \mbox{\hyperlink{draw_8c_source}{draw.\+c}}.
+
+\Hypertarget{draw_8c_a8c45bc21feb09d961f8865a2cfb85cdd}\index{draw.c@{draw.c}!drawInit@{drawInit}}
+\index{drawInit@{drawInit}!draw.c@{draw.c}}
+\doxysubsubsection{\texorpdfstring{drawInit()}{drawInit()}}
+{\footnotesize\ttfamily \label{draw_8c_a8c45bc21feb09d961f8865a2cfb85cdd} 
+\mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}} \texorpdfstring{$\ast$}{*} draw\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{draw_8c_abee56b083c7e967b4560638c24f70794}{draw\+Size}}}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{draw_8c_source_l00067}{67}} of file \mbox{\hyperlink{draw_8c_source}{draw.\+c}}.
+
+\Hypertarget{draw_8c_a3faa2850cf2c12ec5694435ba2f776dd}\index{draw.c@{draw.c}!drawPointing@{drawPointing}}
+\index{drawPointing@{drawPointing}!draw.c@{draw.c}}
+\doxysubsubsection{\texorpdfstring{drawPointing()}{drawPointing()}}
+{\footnotesize\ttfamily \label{draw_8c_a3faa2850cf2c12ec5694435ba2f776dd} 
+void draw\+Pointing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}} \texorpdfstring{$\ast$}{*}}]{image}{, }\item[{\mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}}}]{point}{, }\item[{\mbox{\hyperlink{draw_8c_af7a5eb72298afd3646256af37e8210f7}{draw\+Color}}}]{color}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{draw_8c_source_l00111}{111}} of file \mbox{\hyperlink{draw_8c_source}{draw.\+c}}.
+
+\Hypertarget{draw_8c_a80f1b87d698991be828c3876910915e6}\index{draw.c@{draw.c}!drawQuadrangle@{drawQuadrangle}}
+\index{drawQuadrangle@{drawQuadrangle}!draw.c@{draw.c}}
+\doxysubsubsection{\texorpdfstring{drawQuadrangle()}{drawQuadrangle()}}
+{\footnotesize\ttfamily \label{draw_8c_a80f1b87d698991be828c3876910915e6} 
+void draw\+Quadrangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}} \texorpdfstring{$\ast$}{*}}]{image}{, }\item[{\mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}}}]{point1}{, }\item[{\mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}}}]{point2}{, }\item[{\mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}}}]{point3}{, }\item[{\mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}}}]{point4}{, }\item[{\mbox{\hyperlink{draw_8c_af7a5eb72298afd3646256af37e8210f7}{draw\+Color}}}]{color}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{draw_8c_source_l00123}{123}} of file \mbox{\hyperlink{draw_8c_source}{draw.\+c}}.
+
+\Hypertarget{draw_8c_a1584394623ab3f29bba877d335462491}\index{draw.c@{draw.c}!drawQuadrangleSide@{drawQuadrangleSide}}
+\index{drawQuadrangleSide@{drawQuadrangleSide}!draw.c@{draw.c}}
+\doxysubsubsection{\texorpdfstring{drawQuadrangleSide()}{drawQuadrangleSide()}}
+{\footnotesize\ttfamily \label{draw_8c_a1584394623ab3f29bba877d335462491} 
+void draw\+Quadrangle\+Side (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}} \texorpdfstring{$\ast$}{*}}]{image}{, }\item[{\mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}}}]{point1}{, }\item[{\mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}}}]{point2}{, }\item[{\mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}}}]{point3}{, }\item[{\mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}}}]{point4}{, }\item[{int}]{width}{, }\item[{\mbox{\hyperlink{draw_8c_af7a5eb72298afd3646256af37e8210f7}{draw\+Color}}}]{color}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{draw_8c_source_l00133}{133}} of file \mbox{\hyperlink{draw_8c_source}{draw.\+c}}.
+
+\Hypertarget{draw_8c_a290feeda9257a089241bfc7bc4012ad9}\index{draw.c@{draw.c}!drawScaling@{drawScaling}}
+\index{drawScaling@{drawScaling}!draw.c@{draw.c}}
+\doxysubsubsection{\texorpdfstring{drawScaling()}{drawScaling()}}
+{\footnotesize\ttfamily \label{draw_8c_a290feeda9257a089241bfc7bc4012ad9} 
+\mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}} \texorpdfstring{$\ast$}{*} draw\+Scaling (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}} \texorpdfstring{$\ast$}{*}}]{image}{, }\item[{\mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}}}]{point1}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{draw_8c_source_l00143}{143}} of file \mbox{\hyperlink{draw_8c_source}{draw.\+c}}.
+
+\Hypertarget{draw_8c_ac1c8b0381976837d1c891150719d5624}\index{draw.c@{draw.c}!drawTriangle@{drawTriangle}}
+\index{drawTriangle@{drawTriangle}!draw.c@{draw.c}}
+\doxysubsubsection{\texorpdfstring{drawTriangle()}{drawTriangle()}}
+{\footnotesize\ttfamily \label{draw_8c_ac1c8b0381976837d1c891150719d5624} 
+void draw\+Triangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}} \texorpdfstring{$\ast$}{*}}]{image}{, }\item[{\mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}}}]{point1}{, }\item[{\mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}}}]{point2}{, }\item[{\mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}}}]{point3}{, }\item[{\mbox{\hyperlink{draw_8c_af7a5eb72298afd3646256af37e8210f7}{draw\+Color}}}]{color}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{draw_8c_source_l00118}{118}} of file \mbox{\hyperlink{draw_8c_source}{draw.\+c}}.
+
+\Hypertarget{draw_8c_ac05afb5fda421c394cc87b6b7adfd304}\index{draw.c@{draw.c}!drawTriangleSide@{drawTriangleSide}}
+\index{drawTriangleSide@{drawTriangleSide}!draw.c@{draw.c}}
+\doxysubsubsection{\texorpdfstring{drawTriangleSide()}{drawTriangleSide()}}
+{\footnotesize\ttfamily \label{draw_8c_ac05afb5fda421c394cc87b6b7adfd304} 
+void draw\+Triangle\+Side (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{draw_8c_a911cf3d3feb8510f78bee88881df8b5b}{draw\+Raw\+Image}} \texorpdfstring{$\ast$}{*}}]{image}{, }\item[{\mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}}}]{point1}{, }\item[{\mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}}}]{point2}{, }\item[{\mbox{\hyperlink{draw_8c_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{draw\+Point}}}]{point3}{, }\item[{int}]{width}{, }\item[{\mbox{\hyperlink{draw_8c_af7a5eb72298afd3646256af37e8210f7}{draw\+Color}}}]{color}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{draw_8c_source_l00128}{128}} of file \mbox{\hyperlink{draw_8c_source}{draw.\+c}}.
+

@@ -1,0 +1,69 @@
+\doxysection{bitmap.\+c}
+\hypertarget{bitmap_8c_source}{}\label{bitmap_8c_source}\index{C:/Users/GDD/Desktop/program/c/library/source/file/image/bitmap.c@{C:/Users/GDD/Desktop/program/c/library/source/file/image/bitmap.c}}
+\mbox{\hyperlink{bitmap_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00004}00004\ \textcolor{comment}{//\#include\ "{}file/image/bitmapformat.h"{}}}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{bitmapformat_8h}{bitmapformat.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00007}\mbox{\hyperlink{bitmap_8c_a20d6f0b317d69ca5735500d8f9bfd387}{00007}}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{bitmap_8c_a20d6f0b317d69ca5735500d8f9bfd387}{floord}}(\textcolor{keywordtype}{double}\ a)}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00008}00008\ \{}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00009}00009\ \ \ \textcolor{keywordflow}{return}\ (a\ <\ 0)\ ?\ (long)\ a\ -\/\ 1\ :\ (long)\ a;}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00010}00010\ \}}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00012}\mbox{\hyperlink{bitmap_8c_aaac1a2e5d22430389adaf985e709e295}{00012}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{bitmap_8c_aaac1a2e5d22430389adaf985e709e295}{bitmapLineSize}}(\mbox{\hyperlink{structtag_b_i_t_m_a_p}{BITMAP}}*\ bmp)}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00013}00013\ \{}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00014}00014\ \ \ \mbox{\hyperlink{structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r}{BITMAPINFOHEADER}}*\ info\ =\ (\mbox{\hyperlink{structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r}{BITMAPINFOHEADER}}*)\ bmp-\/>\mbox{\hyperlink{structtag_b_i_t_m_a_p_add4fbb0b8eb301257019262450ac89ec}{info}};}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00015}00015\ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{bitmap_8c_a20d6f0b317d69ca5735500d8f9bfd387}{floord}}((info-\/>\mbox{\hyperlink{structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r_adcafe5d9edf9e4623ee411b48d5a4999}{width}}\ *\ info-\/>\mbox{\hyperlink{structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r_a3baea6df953248acf3c4d7469787df11}{pixelBit}}\ +\ 31)\ /\ 32)\ *\ 4;}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00016}00016\ \}}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00018}\mbox{\hyperlink{bitmap_8c_a1d489b026cc16b06ca316e60587d5048}{00018}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{bitmap_8c_a1d489b026cc16b06ca316e60587d5048}{bitmapHeightGet}}(\mbox{\hyperlink{structtag_b_i_t_m_a_p}{BITMAP}}*\ bmp)}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00019}00019\ \{}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00020}00020\ \ \ \mbox{\hyperlink{structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r}{BITMAPINFOHEADER}}*\ info\ =\ (\mbox{\hyperlink{structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r}{BITMAPINFOHEADER}}*)\ bmp-\/>\mbox{\hyperlink{structtag_b_i_t_m_a_p_add4fbb0b8eb301257019262450ac89ec}{info}};}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00021}00021\ \ \ \textcolor{keywordflow}{return}\ info-\/>\mbox{\hyperlink{structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r_a86dcc8e373b569e48f4e4cb16807d61e}{height}};}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00022}00022\ \}}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00024}\mbox{\hyperlink{bitmap_8c_a964e109cf7e6ade6c018710ae7b78eb8}{00024}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{bitmap_8c_a964e109cf7e6ade6c018710ae7b78eb8}{bitmapWidthGet}}(\mbox{\hyperlink{structtag_b_i_t_m_a_p}{BITMAP}}*\ bmp)}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00025}00025\ \{}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00026}00026\ \ \ \mbox{\hyperlink{structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r}{BITMAPINFOHEADER}}*\ info\ =\ (\mbox{\hyperlink{structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r}{BITMAPINFOHEADER}}*)\ bmp-\/>\mbox{\hyperlink{structtag_b_i_t_m_a_p_add4fbb0b8eb301257019262450ac89ec}{info}};}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00027}00027\ \ \ \textcolor{keywordflow}{return}\ info-\/>\mbox{\hyperlink{structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r_adcafe5d9edf9e4623ee411b48d5a4999}{width}};}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00028}00028\ \}}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00030}\mbox{\hyperlink{bitmap_8c_a8c7a60a8bfdea0e1d2f872f1c6a5bb39}{00030}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{bitmap_8c_a8c7a60a8bfdea0e1d2f872f1c6a5bb39}{bitmapImageSizeGet}}(\mbox{\hyperlink{structtag_b_i_t_m_a_p}{BITMAP}}*\ bmp)}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00031}00031\ \{}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00032}00032\ \ \ \mbox{\hyperlink{structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r}{BITMAPINFOHEADER}}*\ info\ =\ (\mbox{\hyperlink{structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r}{BITMAPINFOHEADER}}*)\ bmp-\/>\mbox{\hyperlink{structtag_b_i_t_m_a_p_add4fbb0b8eb301257019262450ac89ec}{info}};}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00033}00033\ \ \ \textcolor{keywordflow}{return}\ info-\/>\mbox{\hyperlink{structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r_a875431e69df6c6266b98813fd3922a7d}{imageSize}};}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00034}00034\ \}}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00037}\mbox{\hyperlink{bitmap_8c_a2cd1b5b79c789f70270c9f8e3366e4f9}{00037}}\ \mbox{\hyperlink{structtag_b_i_t_m_a_p}{BITMAP}}*\ \mbox{\hyperlink{bitmap_8c_a2cd1b5b79c789f70270c9f8e3366e4f9}{bitmapHeaderLoad}}(FILE*\ fp)}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00038}00038\ \{}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00039}00039\ \ \ \mbox{\hyperlink{structtag_b_i_t_m_a_p}{BITMAP}}*\ bmp\ =\ (\mbox{\hyperlink{structtag_b_i_t_m_a_p}{BITMAP}}*)\ malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structtag_b_i_t_m_a_p}{BITMAP}}));}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00040}00040\ \ \ \textcolor{keywordflow}{if}\ (bmp\ ==\ \mbox{\hyperlink{error_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{error_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}};}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00041}00041\ \ \ bmp-\/>\mbox{\hyperlink{structtag_b_i_t_m_a_p_afd76d6da7f8a539f72d2e52c81e3c9d3}{header}}\ =\ (\textcolor{keywordtype}{void}*)\ malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structtag_b_i_t_m_a_p_h_e_a_d_e_r}{BITMAPHEADER}}));}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00042}00042\ \ \ \textcolor{keywordflow}{if}\ (bmp-\/>\mbox{\hyperlink{structtag_b_i_t_m_a_p_afd76d6da7f8a539f72d2e52c81e3c9d3}{header}}\ ==\ \mbox{\hyperlink{error_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}})}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00043}00043\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00044}00044\ \ \ \ \ free(bmp);}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00045}00045\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{error_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}};}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00046}00046\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00047}00047\ \ \ bmp-\/>\mbox{\hyperlink{structtag_b_i_t_m_a_p_add4fbb0b8eb301257019262450ac89ec}{info}}\ =\ (\textcolor{keywordtype}{void}*)\ malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r}{BITMAPINFOHEADER}}));}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00048}00048\ \ \ \textcolor{keywordflow}{if}\ (bmp-\/>\mbox{\hyperlink{structtag_b_i_t_m_a_p_add4fbb0b8eb301257019262450ac89ec}{info}}\ ==\ \mbox{\hyperlink{error_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}})}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00049}00049\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00050}00050\ \ \ \ \ free(bmp-\/>\mbox{\hyperlink{structtag_b_i_t_m_a_p_afd76d6da7f8a539f72d2e52c81e3c9d3}{header}});}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00051}00051\ \ \ \ \ free(bmp);}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00052}00052\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{error_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}};}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00053}00053\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00054}00054\ \ \ }
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00055}00055\ \ \ fseek(fp,\ 0,\ SEEK\_SET);}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00056}00056\ \ \ fread(bmp-\/>\mbox{\hyperlink{structtag_b_i_t_m_a_p_afd76d6da7f8a539f72d2e52c81e3c9d3}{header}},\ \textcolor{keyword}{sizeof}(\mbox{\hyperlink{structtag_b_i_t_m_a_p_h_e_a_d_e_r}{BITMAPHEADER}}),\ 1,\ fp);}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00057}00057\ \ \ \textcolor{keywordtype}{int}\ size;}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00058}00058\ \ \ fread(\&size,\ 4,\ 1,\ fp);}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00059}00059\ \ \ \textcolor{keywordflow}{if}\ (size\ !=\ 40)\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{error_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}};\ \textcolor{comment}{//\ errorライブラリを追加予定}}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00060}00060\ \ \ fseek(fp,\ -\/4,\ SEEK\_CUR);}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00061}00061\ \ \ fread(bmp-\/>\mbox{\hyperlink{structtag_b_i_t_m_a_p_add4fbb0b8eb301257019262450ac89ec}{info}},\ 40,\ 1,\ fp);}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00062}00062\ \ \ \textcolor{keywordflow}{return}\ bmp;}
+\DoxyCodeLine{\Hypertarget{bitmap_8c_source_l00063}00063\ \}}
+
+\end{DoxyCode}

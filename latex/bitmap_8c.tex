@@ -1,0 +1,139 @@
+\doxysection{C\+:/\+Users/\+GDD/\+Desktop/program/c/library/source/file/image/bitmap.c File Reference}
+\hypertarget{bitmap_8c}{}\label{bitmap_8c}\index{C:/Users/GDD/Desktop/program/c/library/source/file/image/bitmap.c@{C:/Users/GDD/Desktop/program/c/library/source/file/image/bitmap.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include "{}bitmapformat.\+h"{}}\newline
+Include dependency graph for bitmap.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{bitmap_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+long \mbox{\hyperlink{bitmap_8c_a20d6f0b317d69ca5735500d8f9bfd387}{floord}} (double a)
+\item 
+int \mbox{\hyperlink{bitmap_8c_aaac1a2e5d22430389adaf985e709e295}{bitmap\+Line\+Size}} (\mbox{\hyperlink{bitmapformat_8h_a634ffded308c97bac5cfb80468159e67}{BITMAP}} \texorpdfstring{$\ast$}{*}bmp)
+\item 
+int \mbox{\hyperlink{bitmap_8c_a1d489b026cc16b06ca316e60587d5048}{bitmap\+Height\+Get}} (\mbox{\hyperlink{bitmapformat_8h_a634ffded308c97bac5cfb80468159e67}{BITMAP}} \texorpdfstring{$\ast$}{*}bmp)
+\item 
+int \mbox{\hyperlink{bitmap_8c_a964e109cf7e6ade6c018710ae7b78eb8}{bitmap\+Width\+Get}} (\mbox{\hyperlink{bitmapformat_8h_a634ffded308c97bac5cfb80468159e67}{BITMAP}} \texorpdfstring{$\ast$}{*}bmp)
+\item 
+int \mbox{\hyperlink{bitmap_8c_a8c7a60a8bfdea0e1d2f872f1c6a5bb39}{bitmap\+Image\+Size\+Get}} (\mbox{\hyperlink{bitmapformat_8h_a634ffded308c97bac5cfb80468159e67}{BITMAP}} \texorpdfstring{$\ast$}{*}bmp)
+\item 
+\mbox{\hyperlink{bitmapformat_8h_a634ffded308c97bac5cfb80468159e67}{BITMAP}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{bitmap_8c_a2cd1b5b79c789f70270c9f8e3366e4f9}{bitmap\+Header\+Load}} (FILE \texorpdfstring{$\ast$}{*}fp)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{bitmap_8c_a2cd1b5b79c789f70270c9f8e3366e4f9}\index{bitmap.c@{bitmap.c}!bitmapHeaderLoad@{bitmapHeaderLoad}}
+\index{bitmapHeaderLoad@{bitmapHeaderLoad}!bitmap.c@{bitmap.c}}
+\doxysubsubsection{\texorpdfstring{bitmapHeaderLoad()}{bitmapHeaderLoad()}}
+{\footnotesize\ttfamily \label{bitmap_8c_a2cd1b5b79c789f70270c9f8e3366e4f9} 
+\mbox{\hyperlink{bitmapformat_8h_a634ffded308c97bac5cfb80468159e67}{BITMAP}} \texorpdfstring{$\ast$}{*} bitmap\+Header\+Load (\begin{DoxyParamCaption}\item[{FILE \texorpdfstring{$\ast$}{*}}]{fp}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{bitmap_8c_source_l00037}{37}} of file \mbox{\hyperlink{bitmap_8c_source}{bitmap.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{bitmap_8c_a2cd1b5b79c789f70270c9f8e3366e4f9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{bitmap_8c_a1d489b026cc16b06ca316e60587d5048}\index{bitmap.c@{bitmap.c}!bitmapHeightGet@{bitmapHeightGet}}
+\index{bitmapHeightGet@{bitmapHeightGet}!bitmap.c@{bitmap.c}}
+\doxysubsubsection{\texorpdfstring{bitmapHeightGet()}{bitmapHeightGet()}}
+{\footnotesize\ttfamily \label{bitmap_8c_a1d489b026cc16b06ca316e60587d5048} 
+int bitmap\+Height\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{bitmapformat_8h_a634ffded308c97bac5cfb80468159e67}{BITMAP}} \texorpdfstring{$\ast$}{*}}]{bmp}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{bitmap_8c_source_l00018}{18}} of file \mbox{\hyperlink{bitmap_8c_source}{bitmap.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{bitmap_8c_a1d489b026cc16b06ca316e60587d5048_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{bitmap_8c_a8c7a60a8bfdea0e1d2f872f1c6a5bb39}\index{bitmap.c@{bitmap.c}!bitmapImageSizeGet@{bitmapImageSizeGet}}
+\index{bitmapImageSizeGet@{bitmapImageSizeGet}!bitmap.c@{bitmap.c}}
+\doxysubsubsection{\texorpdfstring{bitmapImageSizeGet()}{bitmapImageSizeGet()}}
+{\footnotesize\ttfamily \label{bitmap_8c_a8c7a60a8bfdea0e1d2f872f1c6a5bb39} 
+int bitmap\+Image\+Size\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{bitmapformat_8h_a634ffded308c97bac5cfb80468159e67}{BITMAP}} \texorpdfstring{$\ast$}{*}}]{bmp}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{bitmap_8c_source_l00030}{30}} of file \mbox{\hyperlink{bitmap_8c_source}{bitmap.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{bitmap_8c_a8c7a60a8bfdea0e1d2f872f1c6a5bb39_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{bitmap_8c_aaac1a2e5d22430389adaf985e709e295}\index{bitmap.c@{bitmap.c}!bitmapLineSize@{bitmapLineSize}}
+\index{bitmapLineSize@{bitmapLineSize}!bitmap.c@{bitmap.c}}
+\doxysubsubsection{\texorpdfstring{bitmapLineSize()}{bitmapLineSize()}}
+{\footnotesize\ttfamily \label{bitmap_8c_aaac1a2e5d22430389adaf985e709e295} 
+int bitmap\+Line\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{bitmapformat_8h_a634ffded308c97bac5cfb80468159e67}{BITMAP}} \texorpdfstring{$\ast$}{*}}]{bmp}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{bitmap_8c_source_l00012}{12}} of file \mbox{\hyperlink{bitmap_8c_source}{bitmap.\+c}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{bitmap_8c_aaac1a2e5d22430389adaf985e709e295_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{bitmap_8c_aaac1a2e5d22430389adaf985e709e295_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{bitmap_8c_a964e109cf7e6ade6c018710ae7b78eb8}\index{bitmap.c@{bitmap.c}!bitmapWidthGet@{bitmapWidthGet}}
+\index{bitmapWidthGet@{bitmapWidthGet}!bitmap.c@{bitmap.c}}
+\doxysubsubsection{\texorpdfstring{bitmapWidthGet()}{bitmapWidthGet()}}
+{\footnotesize\ttfamily \label{bitmap_8c_a964e109cf7e6ade6c018710ae7b78eb8} 
+int bitmap\+Width\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{bitmapformat_8h_a634ffded308c97bac5cfb80468159e67}{BITMAP}} \texorpdfstring{$\ast$}{*}}]{bmp}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{bitmap_8c_source_l00024}{24}} of file \mbox{\hyperlink{bitmap_8c_source}{bitmap.\+c}}.
+
+\Hypertarget{bitmap_8c_a20d6f0b317d69ca5735500d8f9bfd387}\index{bitmap.c@{bitmap.c}!floord@{floord}}
+\index{floord@{floord}!bitmap.c@{bitmap.c}}
+\doxysubsubsection{\texorpdfstring{floord()}{floord()}}
+{\footnotesize\ttfamily \label{bitmap_8c_a20d6f0b317d69ca5735500d8f9bfd387} 
+long floord (\begin{DoxyParamCaption}\item[{double}]{a}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{bitmap_8c_source_l00007}{7}} of file \mbox{\hyperlink{bitmap_8c_source}{bitmap.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{bitmap_8c_a20d6f0b317d69ca5735500d8f9bfd387_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,154 @@
+\doxysection{C\+:/\+Users/\+GDD/\+Desktop/program/c/library/source/data/vector/vector.c File Reference}
+\hypertarget{vector_2vector_8c}{}\label{vector_2vector_8c}\index{C:/Users/GDD/Desktop/program/c/library/source/data/vector/vector.c@{C:/Users/GDD/Desktop/program/c/library/source/data/vector/vector.c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include "{}data/ftype.\+h"{}}\newline
+{\ttfamily \#include "{}binary/binary.\+h"{}}\newline
+Include dependency graph for vector.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{vector_2vector_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structtag_v_e_c_t_o_r}{tag\+VECTOR}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structtag_v_e_c_t_o_r}{tag\+VECTOR}} \mbox{\hyperlink{vector_2vector_8c_a6b10d78f8b711b068b0b14aba0e83a58}{VECTOR}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{vector_2vector_8c_a869725d037e6c5686d04d7fce234e7f1}{vector\+Reserved\+Size}} (size\+\_\+t size)
+\item 
+\mbox{\hyperlink{binary_2ftype_8h_ad8d13cbd8aa031cd923b3a10beb366ef}{FBYTE}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{vector_2vector_8c_a61c85706f169af1f3f1a6a171c2b3447}{vector\+Alloc}} (size\+\_\+t size)
+\item 
+\mbox{\hyperlink{vector_2vector_8c_a6b10d78f8b711b068b0b14aba0e83a58}{VECTOR}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{vector_2vector_8c_a8dffff4c58aff3afc1c346e7ee181084}{vector\+Init}} (size\+\_\+t size)
+\item 
+int \mbox{\hyperlink{vector_2vector_8c_a79c4f23ad1c65d71d10c004fabb4559a}{vector\+Resize}} (\mbox{\hyperlink{vector_2vector_8c_a6b10d78f8b711b068b0b14aba0e83a58}{VECTOR}} \texorpdfstring{$\ast$}{*}vector, size\+\_\+t size)
+\item 
+size\+\_\+t \mbox{\hyperlink{vector_2vector_8c_af23ebb73024b6bb9beb22e39455b3c5d}{vector\+Get\+Reserved}} (\mbox{\hyperlink{vector_2vector_8c_a6b10d78f8b711b068b0b14aba0e83a58}{VECTOR}} \texorpdfstring{$\ast$}{*}vector)
+\item 
+size\+\_\+t \mbox{\hyperlink{vector_2vector_8c_a5585035c7af95a7e96818a348515bc7a}{vector\+Get\+Size}} (\mbox{\hyperlink{vector_2vector_8c_a6b10d78f8b711b068b0b14aba0e83a58}{VECTOR}} \texorpdfstring{$\ast$}{*}vector)
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{vector_2vector_8c_a2e508c0c04c88957a73da8d21c28ec28}{vector\+Get\+Buffer}} (\mbox{\hyperlink{vector_2vector_8c_a6b10d78f8b711b068b0b14aba0e83a58}{VECTOR}} \texorpdfstring{$\ast$}{*}vector)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{vector_2vector_8c_a6b10d78f8b711b068b0b14aba0e83a58}\index{vector.c@{vector.c}!VECTOR@{VECTOR}}
+\index{VECTOR@{VECTOR}!vector.c@{vector.c}}
+\doxysubsubsection{\texorpdfstring{VECTOR}{VECTOR}}
+{\footnotesize\ttfamily \label{vector_2vector_8c_a6b10d78f8b711b068b0b14aba0e83a58} 
+typedef struct \mbox{\hyperlink{structtag_v_e_c_t_o_r}{tag\+VECTOR}} \mbox{\hyperlink{vector_2vector_8c_a6b10d78f8b711b068b0b14aba0e83a58}{VECTOR}}}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{vector_2vector_8c_a61c85706f169af1f3f1a6a171c2b3447}\index{vector.c@{vector.c}!vectorAlloc@{vectorAlloc}}
+\index{vectorAlloc@{vectorAlloc}!vector.c@{vector.c}}
+\doxysubsubsection{\texorpdfstring{vectorAlloc()}{vectorAlloc()}}
+{\footnotesize\ttfamily \label{vector_2vector_8c_a61c85706f169af1f3f1a6a171c2b3447} 
+\mbox{\hyperlink{binary_2ftype_8h_ad8d13cbd8aa031cd923b3a10beb366ef}{FBYTE}} \texorpdfstring{$\ast$}{*} vector\+Alloc (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{vector_2vector_8c_source_l00019}{19}} of file \mbox{\hyperlink{vector_2vector_8c_source}{vector.\+c}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{vector_2vector_8c_a61c85706f169af1f3f1a6a171c2b3447_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{vector_2vector_8c_a2e508c0c04c88957a73da8d21c28ec28}\index{vector.c@{vector.c}!vectorGetBuffer@{vectorGetBuffer}}
+\index{vectorGetBuffer@{vectorGetBuffer}!vector.c@{vector.c}}
+\doxysubsubsection{\texorpdfstring{vectorGetBuffer()}{vectorGetBuffer()}}
+{\footnotesize\ttfamily \label{vector_2vector_8c_a2e508c0c04c88957a73da8d21c28ec28} 
+void \texorpdfstring{$\ast$}{*} vector\+Get\+Buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{vector_2vector_8c_a6b10d78f8b711b068b0b14aba0e83a58}{VECTOR}} \texorpdfstring{$\ast$}{*}}]{vector}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{vector_2vector_8c_source_l00092}{92}} of file \mbox{\hyperlink{vector_2vector_8c_source}{vector.\+c}}.
+
+\Hypertarget{vector_2vector_8c_af23ebb73024b6bb9beb22e39455b3c5d}\index{vector.c@{vector.c}!vectorGetReserved@{vectorGetReserved}}
+\index{vectorGetReserved@{vectorGetReserved}!vector.c@{vector.c}}
+\doxysubsubsection{\texorpdfstring{vectorGetReserved()}{vectorGetReserved()}}
+{\footnotesize\ttfamily \label{vector_2vector_8c_af23ebb73024b6bb9beb22e39455b3c5d} 
+size\+\_\+t vector\+Get\+Reserved (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{vector_2vector_8c_a6b10d78f8b711b068b0b14aba0e83a58}{VECTOR}} \texorpdfstring{$\ast$}{*}}]{vector}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{vector_2vector_8c_source_l00083}{83}} of file \mbox{\hyperlink{vector_2vector_8c_source}{vector.\+c}}.
+
+\Hypertarget{vector_2vector_8c_a5585035c7af95a7e96818a348515bc7a}\index{vector.c@{vector.c}!vectorGetSize@{vectorGetSize}}
+\index{vectorGetSize@{vectorGetSize}!vector.c@{vector.c}}
+\doxysubsubsection{\texorpdfstring{vectorGetSize()}{vectorGetSize()}}
+{\footnotesize\ttfamily \label{vector_2vector_8c_a5585035c7af95a7e96818a348515bc7a} 
+size\+\_\+t vector\+Get\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{vector_2vector_8c_a6b10d78f8b711b068b0b14aba0e83a58}{VECTOR}} \texorpdfstring{$\ast$}{*}}]{vector}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{vector_2vector_8c_source_l00088}{88}} of file \mbox{\hyperlink{vector_2vector_8c_source}{vector.\+c}}.
+
+\Hypertarget{vector_2vector_8c_a8dffff4c58aff3afc1c346e7ee181084}\index{vector.c@{vector.c}!vectorInit@{vectorInit}}
+\index{vectorInit@{vectorInit}!vector.c@{vector.c}}
+\doxysubsubsection{\texorpdfstring{vectorInit()}{vectorInit()}}
+{\footnotesize\ttfamily \label{vector_2vector_8c_a8dffff4c58aff3afc1c346e7ee181084} 
+\mbox{\hyperlink{vector_2vector_8c_a6b10d78f8b711b068b0b14aba0e83a58}{VECTOR}} \texorpdfstring{$\ast$}{*} vector\+Init (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{vector_2vector_8c_source_l00024}{24}} of file \mbox{\hyperlink{vector_2vector_8c_source}{vector.\+c}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{vector_2vector_8c_a8dffff4c58aff3afc1c346e7ee181084_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{vector_2vector_8c_a869725d037e6c5686d04d7fce234e7f1}\index{vector.c@{vector.c}!vectorReservedSize@{vectorReservedSize}}
+\index{vectorReservedSize@{vectorReservedSize}!vector.c@{vector.c}}
+\doxysubsubsection{\texorpdfstring{vectorReservedSize()}{vectorReservedSize()}}
+{\footnotesize\ttfamily \label{vector_2vector_8c_a869725d037e6c5686d04d7fce234e7f1} 
+size\+\_\+t vector\+Reserved\+Size (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{vector_2vector_8c_source_l00014}{14}} of file \mbox{\hyperlink{vector_2vector_8c_source}{vector.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{vector_2vector_8c_a869725d037e6c5686d04d7fce234e7f1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{vector_2vector_8c_a79c4f23ad1c65d71d10c004fabb4559a}\index{vector.c@{vector.c}!vectorResize@{vectorResize}}
+\index{vectorResize@{vectorResize}!vector.c@{vector.c}}
+\doxysubsubsection{\texorpdfstring{vectorResize()}{vectorResize()}}
+{\footnotesize\ttfamily \label{vector_2vector_8c_a79c4f23ad1c65d71d10c004fabb4559a} 
+int vector\+Resize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{vector_2vector_8c_a6b10d78f8b711b068b0b14aba0e83a58}{VECTOR}} \texorpdfstring{$\ast$}{*}}]{vector}{, }\item[{size\+\_\+t}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{vector_2vector_8c_source_l00045}{45}} of file \mbox{\hyperlink{vector_2vector_8c_source}{vector.\+c}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{vector_2vector_8c_a79c4f23ad1c65d71d10c004fabb4559a_cgraph}
+\end{center}
+\end{figure}

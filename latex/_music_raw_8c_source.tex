@@ -1,0 +1,29 @@
+\doxysection{Music\+Raw.\+c}
+\hypertarget{_music_raw_8c_source}{}\label{_music_raw_8c_source}\index{C:/Users/GDD/Desktop/program/c/library/source/file/music/MusicRaw.c@{C:/Users/GDD/Desktop/program/c/library/source/file/music/MusicRaw.c}}
+\mbox{\hyperlink{_music_raw_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_music_raw_8c_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{\Hypertarget{_music_raw_8c_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_music_raw_format_8h}{file/music/MusicRawFormat.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_music_raw_8c_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_music_raw_8c_source_l00004}\mbox{\hyperlink{_music_raw_8c_a6cc810c60b20770f10d5a95487fe3f8f}{00004}}\ \mbox{\hyperlink{structtag_music_raw}{MusicRaw}}*\ \mbox{\hyperlink{_music_raw_8c_a6cc810c60b20770f10d5a95487fe3f8f}{MusicRawInit}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_music_raw_8c_source_l00005}00005\ \{}
+\DoxyCodeLine{\Hypertarget{_music_raw_8c_source_l00006}00006\ \ \ \mbox{\hyperlink{structtag_music_raw}{MusicRaw}}*\ music\ =\ (\mbox{\hyperlink{structtag_music_raw}{MusicRaw}}*)\ malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structtag_music_raw}{MusicRaw}}));}
+\DoxyCodeLine{\Hypertarget{_music_raw_8c_source_l00007}00007\ \ \ \textcolor{keywordflow}{if}\ (music\ ==\ \mbox{\hyperlink{error_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{error_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}};}
+\DoxyCodeLine{\Hypertarget{_music_raw_8c_source_l00008}00008\ \ \ }
+\DoxyCodeLine{\Hypertarget{_music_raw_8c_source_l00009}00009\ \ \ music-\/>\mbox{\hyperlink{structtag_music_raw_add3b754de04d691671687837db9c6dca}{Header}}\ =\ (\mbox{\hyperlink{structtag_music_raw_header}{MusicRawHeader}}*)\ malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structtag_music_raw_header}{MusicRawHeader}}));}
+\DoxyCodeLine{\Hypertarget{_music_raw_8c_source_l00010}00010\ \ \ \textcolor{keywordflow}{if}\ (music-\/>\mbox{\hyperlink{structtag_music_raw_add3b754de04d691671687837db9c6dca}{Header}}\ ==\ \mbox{\hyperlink{error_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}})\ \{\ free(music);\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{error_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}};\ \}}
+\DoxyCodeLine{\Hypertarget{_music_raw_8c_source_l00011}00011\ \ \ }
+\DoxyCodeLine{\Hypertarget{_music_raw_8c_source_l00012}00012\ \ \ music-\/>\mbox{\hyperlink{structtag_music_raw_add3b754de04d691671687837db9c6dca}{Header}}-\/>\mbox{\hyperlink{structtag_music_raw_header_a8e47867612de167278be4a6b5604cf68}{SamplingRate}}\ \ \ \ \ =\ 44100;}
+\DoxyCodeLine{\Hypertarget{_music_raw_8c_source_l00013}00013\ \ \ music-\/>\mbox{\hyperlink{structtag_music_raw_add3b754de04d691671687837db9c6dca}{Header}}-\/>\mbox{\hyperlink{structtag_music_raw_header_a2cc193d8e6a7a94c279e34559bd35e20}{QuantizationRate}}\ =\ 8;}
+\DoxyCodeLine{\Hypertarget{_music_raw_8c_source_l00014}00014\ \ \ music-\/>\mbox{\hyperlink{structtag_music_raw_add3b754de04d691671687837db9c6dca}{Header}}-\/>\mbox{\hyperlink{structtag_music_raw_header_a6314bc1530c479457e1e34c1ecd93a0a}{DataLength}}\ \ \ \ \ \ \ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_music_raw_8c_source_l00015}00015\ \ \ music-\/>\mbox{\hyperlink{structtag_music_raw_add3b754de04d691671687837db9c6dca}{Header}}-\/>\mbox{\hyperlink{structtag_music_raw_header_a16784c04cc9c6a1e0fd30c57b145ee38}{Flags}}\ \ \ \ \ \ \ \ \ \ \ \ =\ 0x00000000;}
+\DoxyCodeLine{\Hypertarget{_music_raw_8c_source_l00016}00016\ \ \ }
+\DoxyCodeLine{\Hypertarget{_music_raw_8c_source_l00017}00017\ \ \ \textcolor{keywordflow}{return}\ music;}
+\DoxyCodeLine{\Hypertarget{_music_raw_8c_source_l00018}00018\ \}}
+\DoxyCodeLine{\Hypertarget{_music_raw_8c_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_music_raw_8c_source_l00020}\mbox{\hyperlink{_music_raw_8c_ae7043ff49460f5ded2516324ff8f4b95}{00020}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_music_raw_8c_ae7043ff49460f5ded2516324ff8f4b95}{MusicRawDataLoad}}(\mbox{\hyperlink{structtag_music_raw}{MusicRaw}}*\ music,\ \textcolor{keywordtype}{char}*\ fileName)}
+\DoxyCodeLine{\Hypertarget{_music_raw_8c_source_l00021}00021\ \{}
+\DoxyCodeLine{\Hypertarget{_music_raw_8c_source_l00022}00022\ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{_music_raw_8c_source_l00023}00023\ \}}
+
+\end{DoxyCode}

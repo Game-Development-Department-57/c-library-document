@@ -1,0 +1,163 @@
+\doxysection{C\+:/\+Users/\+GDD/\+Desktop/program/c/library/source/operator/complex/complex.h File Reference}
+\hypertarget{complex_8h}{}\label{complex_8h}\index{C:/Users/GDD/Desktop/program/c/library/source/operator/complex/complex.h@{C:/Users/GDD/Desktop/program/c/library/source/operator/complex/complex.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+Include dependency graph for complex.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{complex_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcomplexi}{complexi}}
+\item 
+struct \mbox{\hyperlink{structcomplexf}{complexf}}
+\item 
+struct \mbox{\hyperlink{structcomplexd}{complexd}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{complex_8h_aff56833902ff97141a1f7d23f67f8da9}{complex\+Init}}(complex\+\_\+,  real\+\_\+,  imaginary\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structcomplexd}{complexd}} \mbox{\hyperlink{complex_8h_a227591a25f3a267d1f0e8d305545a5a4}{complex}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structcomplexd}{complexd}} \mbox{\hyperlink{complex_8h_ab42dcdd5af530f42397a56c0d3f22a64}{complex\+Add2d}} (\mbox{\hyperlink{structcomplexd}{complexd}} a, \mbox{\hyperlink{structcomplexd}{complexd}} b)
+\item 
+\mbox{\hyperlink{structcomplexd}{complexd}} \mbox{\hyperlink{complex_8h_a9b98fef2f71f6c7e8eb6d133a8f5ba1d}{complex\+Sub2d}} (\mbox{\hyperlink{structcomplexd}{complexd}} a, \mbox{\hyperlink{structcomplexd}{complexd}} b)
+\item 
+\mbox{\hyperlink{structcomplexd}{complexd}} \mbox{\hyperlink{complex_8h_aca974a322e736a62cbd06d3b7cc5846c}{complex\+Mul2d}} (\mbox{\hyperlink{structcomplexd}{complexd}} a, \mbox{\hyperlink{structcomplexd}{complexd}} b)
+\item 
+\mbox{\hyperlink{structcomplexd}{complexd}} \mbox{\hyperlink{complex_8h_a7b93101eb002801306696a552dbe1527}{complex\+Div2d}} (\mbox{\hyperlink{structcomplexd}{complexd}} a, \mbox{\hyperlink{structcomplexd}{complexd}} b)
+\item 
+\mbox{\hyperlink{structcomplexd}{complexd}} \mbox{\hyperlink{complex_8h_a3c5b882d6825c14e1af5cac07b749d06}{complex\+Conjugate1d}} (\mbox{\hyperlink{structcomplexd}{complexd}} a)
+\item 
+double \mbox{\hyperlink{complex_8h_ab844e595fc3871ed16c9f40a3b940dd1}{complex\+Absolute1d}} (\mbox{\hyperlink{structcomplexd}{complexd}} a)
+\item 
+void \mbox{\hyperlink{complex_8h_a1dd367abd9fd6b396a2fe7a370c28931}{complex\+Print1d}} (\mbox{\hyperlink{structcomplexd}{complexd}} a)
+\item 
+void \mbox{\hyperlink{complex_8h_afd50c5a3284814b6ff1995222ae43a42}{complex\+Println1d}} (\mbox{\hyperlink{structcomplexd}{complexd}} a)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{complex_8h_aff56833902ff97141a1f7d23f67f8da9}\index{complex.h@{complex.h}!complexInit@{complexInit}}
+\index{complexInit@{complexInit}!complex.h@{complex.h}}
+\doxysubsubsection{\texorpdfstring{complexInit}{complexInit}}
+{\footnotesize\ttfamily \label{complex_8h_aff56833902ff97141a1f7d23f67f8da9} 
+\#define complex\+Init(\begin{DoxyParamCaption}\item[{}]{complex\+\_\+}{, }\item[{}]{real\+\_\+}{, }\item[{}]{imaginary\+\_\+}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do}\{\(\backslash\)}
+\DoxyCodeLine{\ \ complex\_.real\ =\ (real\_);\(\backslash\)}
+\DoxyCodeLine{\ \ complex\_.imaginary\ =\ (imaginary\_);\(\backslash\)}
+\DoxyCodeLine{\}\textcolor{keywordflow}{while}(0)}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{complex_8h_source_l00023}{23}} of file \mbox{\hyperlink{complex_8h_source}{complex.\+h}}.
+
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{complex_8h_a227591a25f3a267d1f0e8d305545a5a4}\index{complex.h@{complex.h}!complex@{complex}}
+\index{complex@{complex}!complex.h@{complex.h}}
+\doxysubsubsection{\texorpdfstring{complex}{complex}}
+{\footnotesize\ttfamily \label{complex_8h_a227591a25f3a267d1f0e8d305545a5a4} 
+typedef  struct \mbox{\hyperlink{structcomplexd}{complexd}} \mbox{\hyperlink{complex_8c_a227591a25f3a267d1f0e8d305545a5a4}{complex}}}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{complex_8h_ab844e595fc3871ed16c9f40a3b940dd1}\index{complex.h@{complex.h}!complexAbsolute1d@{complexAbsolute1d}}
+\index{complexAbsolute1d@{complexAbsolute1d}!complex.h@{complex.h}}
+\doxysubsubsection{\texorpdfstring{complexAbsolute1d()}{complexAbsolute1d()}}
+{\footnotesize\ttfamily \label{complex_8h_ab844e595fc3871ed16c9f40a3b940dd1} 
+double complex\+Absolute1d (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcomplexd}{complexd}}}]{a}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{complex_8c_source_l00093}{93}} of file \mbox{\hyperlink{complex_8c_source}{complex.\+c}}.
+
+\Hypertarget{complex_8h_ab42dcdd5af530f42397a56c0d3f22a64}\index{complex.h@{complex.h}!complexAdd2d@{complexAdd2d}}
+\index{complexAdd2d@{complexAdd2d}!complex.h@{complex.h}}
+\doxysubsubsection{\texorpdfstring{complexAdd2d()}{complexAdd2d()}}
+{\footnotesize\ttfamily \label{complex_8h_ab42dcdd5af530f42397a56c0d3f22a64} 
+\mbox{\hyperlink{structcomplexd}{complexd}} complex\+Add2d (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcomplexd}{complexd}}}]{a}{, }\item[{\mbox{\hyperlink{structcomplexd}{complexd}}}]{b}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{complex_8c_source_l00051}{51}} of file \mbox{\hyperlink{complex_8c_source}{complex.\+c}}.
+
+\Hypertarget{complex_8h_a3c5b882d6825c14e1af5cac07b749d06}\index{complex.h@{complex.h}!complexConjugate1d@{complexConjugate1d}}
+\index{complexConjugate1d@{complexConjugate1d}!complex.h@{complex.h}}
+\doxysubsubsection{\texorpdfstring{complexConjugate1d()}{complexConjugate1d()}}
+{\footnotesize\ttfamily \label{complex_8h_a3c5b882d6825c14e1af5cac07b749d06} 
+\mbox{\hyperlink{structcomplexd}{complexd}} complex\+Conjugate1d (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcomplexd}{complexd}}}]{a}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{complex_8c_source_l00087}{87}} of file \mbox{\hyperlink{complex_8c_source}{complex.\+c}}.
+
+\Hypertarget{complex_8h_a7b93101eb002801306696a552dbe1527}\index{complex.h@{complex.h}!complexDiv2d@{complexDiv2d}}
+\index{complexDiv2d@{complexDiv2d}!complex.h@{complex.h}}
+\doxysubsubsection{\texorpdfstring{complexDiv2d()}{complexDiv2d()}}
+{\footnotesize\ttfamily \label{complex_8h_a7b93101eb002801306696a552dbe1527} 
+\mbox{\hyperlink{structcomplexd}{complexd}} complex\+Div2d (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcomplexd}{complexd}}}]{a}{, }\item[{\mbox{\hyperlink{structcomplexd}{complexd}}}]{b}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{complex_8c_source_l00078}{78}} of file \mbox{\hyperlink{complex_8c_source}{complex.\+c}}.
+
+\Hypertarget{complex_8h_aca974a322e736a62cbd06d3b7cc5846c}\index{complex.h@{complex.h}!complexMul2d@{complexMul2d}}
+\index{complexMul2d@{complexMul2d}!complex.h@{complex.h}}
+\doxysubsubsection{\texorpdfstring{complexMul2d()}{complexMul2d()}}
+{\footnotesize\ttfamily \label{complex_8h_aca974a322e736a62cbd06d3b7cc5846c} 
+\mbox{\hyperlink{structcomplexd}{complexd}} complex\+Mul2d (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcomplexd}{complexd}}}]{a}{, }\item[{\mbox{\hyperlink{structcomplexd}{complexd}}}]{b}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{complex_8c_source_l00069}{69}} of file \mbox{\hyperlink{complex_8c_source}{complex.\+c}}.
+
+\Hypertarget{complex_8h_a1dd367abd9fd6b396a2fe7a370c28931}\index{complex.h@{complex.h}!complexPrint1d@{complexPrint1d}}
+\index{complexPrint1d@{complexPrint1d}!complex.h@{complex.h}}
+\doxysubsubsection{\texorpdfstring{complexPrint1d()}{complexPrint1d()}}
+{\footnotesize\ttfamily \label{complex_8h_a1dd367abd9fd6b396a2fe7a370c28931} 
+void complex\+Print1d (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcomplexd}{complexd}}}]{a}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{complex_8c_source_l00098}{98}} of file \mbox{\hyperlink{complex_8c_source}{complex.\+c}}.
+
+\Hypertarget{complex_8h_afd50c5a3284814b6ff1995222ae43a42}\index{complex.h@{complex.h}!complexPrintln1d@{complexPrintln1d}}
+\index{complexPrintln1d@{complexPrintln1d}!complex.h@{complex.h}}
+\doxysubsubsection{\texorpdfstring{complexPrintln1d()}{complexPrintln1d()}}
+{\footnotesize\ttfamily \label{complex_8h_afd50c5a3284814b6ff1995222ae43a42} 
+void complex\+Println1d (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcomplexd}{complexd}}}]{a}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{complex_8c_source_l00103}{103}} of file \mbox{\hyperlink{complex_8c_source}{complex.\+c}}.
+
+\Hypertarget{complex_8h_a9b98fef2f71f6c7e8eb6d133a8f5ba1d}\index{complex.h@{complex.h}!complexSub2d@{complexSub2d}}
+\index{complexSub2d@{complexSub2d}!complex.h@{complex.h}}
+\doxysubsubsection{\texorpdfstring{complexSub2d()}{complexSub2d()}}
+{\footnotesize\ttfamily \label{complex_8h_a9b98fef2f71f6c7e8eb6d133a8f5ba1d} 
+\mbox{\hyperlink{structcomplexd}{complexd}} complex\+Sub2d (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcomplexd}{complexd}}}]{a}{, }\item[{\mbox{\hyperlink{structcomplexd}{complexd}}}]{b}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{complex_8c_source_l00060}{60}} of file \mbox{\hyperlink{complex_8c_source}{complex.\+c}}.
+

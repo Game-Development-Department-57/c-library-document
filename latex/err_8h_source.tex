@@ -1,0 +1,37 @@
+\doxysection{err.\+h}
+\hypertarget{err_8h_source}{}\label{err_8h_source}\index{C:/Users/GDD/Desktop/program/c/library/source/error/err.h@{C:/Users/GDD/Desktop/program/c/library/source/error/err.h}}
+\mbox{\hyperlink{err_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ ERROR\_ERR\_H}}
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ ERROR\_ERR\_H}}
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00004}\mbox{\hyperlink{err_8h_adb571dd32a3d3d2d76c761226206bde0}{00004}}\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{err_8h_adb571dd32a3d3d2d76c761226206bde0}{err}};}
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00008}\mbox{\hyperlink{err_8h_af8bdbf3a4efaa2f6a8d5d9bb7fb3bac4}{00008}}\ \textcolor{preprocessor}{\#define\ errMaskSign\ \ \ \ \ \ 0x80000000}}
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00009}\mbox{\hyperlink{err_8h_ab804d20634f61c8607533512190a8d77}{00009}}\ \textcolor{preprocessor}{\#define\ errMaskReserved\ \ 0x7f000000}}
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00010}\mbox{\hyperlink{err_8h_a6fb1765cfa10091c99592f8bdaa08b31}{00010}}\ \textcolor{preprocessor}{\#define\ errMaskRecordA\ \ \ 0x00fff000}}
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00011}\mbox{\hyperlink{err_8h_a53428af5c4ea0b4b697cd6b5d833c02e}{00011}}\ \textcolor{preprocessor}{\#define\ errMaskRecordB\ \ \ 0x00000fff}}
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00012}\mbox{\hyperlink{err_8h_ae53880bf2e26a0a9f00c27dc49a8eb8b}{00012}}\ \textcolor{preprocessor}{\#define\ errShiftSign\ \ \ \ \ 31}}
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00013}\mbox{\hyperlink{err_8h_a108f40ecf1551a448e4bc1dec37b7853}{00013}}\ \textcolor{preprocessor}{\#define\ errShiftReserved\ 24}}
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00014}\mbox{\hyperlink{err_8h_ad438b968f8b2f9590adeec70557945dd}{00014}}\ \textcolor{preprocessor}{\#define\ errShiftRecordA\ \ 12}}
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00015}\mbox{\hyperlink{err_8h_aba51a73d60b82acaa716ea33979350f5}{00015}}\ \textcolor{preprocessor}{\#define\ errShiftRecordB\ \ 0}}
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00018}\mbox{\hyperlink{err_8h_a16cbfdbf7f5c986ef7f8335baa4d4f83}{00018}}\ \textcolor{preprocessor}{\#define\ errGetSign(id)\ \ \ \ \ ((id\ \&\ errMaskSign)\ \ \ \ \ >>\ errShiftSign)}}
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00019}\mbox{\hyperlink{err_8h_a84f8a10d30892415889f8c376b744878}{00019}}\ \textcolor{preprocessor}{\#define\ errGetReserved(id)\ ((id\ \&\ errMaskReserved)\ >>\ errShiftReserved)}}
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00020}\mbox{\hyperlink{err_8h_a6e66071f08ae547e9ff41739d9d5f1f9}{00020}}\ \textcolor{preprocessor}{\#define\ errGetRecordA(id)\ \ ((id\ \&\ errMaskRecordA)\ \ >>\ errShiftRecordA)}}
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00021}\mbox{\hyperlink{err_8h_a14bc3d1a510b17e84a06429826a9cf85}{00021}}\ \textcolor{preprocessor}{\#define\ errGetRecordB(id)\ \ ((id\ \&\ errMaskRecordB)\ \ >>\ errShiftRecordB)}}
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00022}\mbox{\hyperlink{err_8h_a6f223fd8a27a0c6384741a7592e3d1d7}{00022}}\ \textcolor{preprocessor}{\#define\ errSetSign(id)\ \ \ \ \ (id\ <<\ errShiftSign)}}
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00023}\mbox{\hyperlink{err_8h_a0e7f4cee831dd8e4f255fb815a4f3f58}{00023}}\ \textcolor{preprocessor}{\#define\ errSetReserved(id)\ (id\ <<\ errShiftReserved)}}
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00024}\mbox{\hyperlink{err_8h_a59ab42da93756fba69016c6f328e6d70}{00024}}\ \textcolor{preprocessor}{\#define\ errSetRecordA(id)\ \ (id\ <<\ errShiftRecordA)}}
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00025}\mbox{\hyperlink{err_8h_afe5127d2f08946f3a1acd89864caecf5}{00025}}\ \textcolor{preprocessor}{\#define\ errSetRecordB(id)\ \ (id\ <<\ errShiftRecordB)}}
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00027}\mbox{\hyperlink{err_8h_a100ae538bc5819fe7f116f5b51d9556c}{00027}}\ \textcolor{preprocessor}{\#define\ errSetAll(sign,\ reserved,\ recorda,\ recordb)\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00028}00028\ \textcolor{preprocessor}{(errSetSign(sign)\ +\ errSetReserved(reserved)\ +\ errSetRecordA(recorda)\ +\ errSetRecordB(recordb))}}
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{err_8h_source_l00031}00031\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

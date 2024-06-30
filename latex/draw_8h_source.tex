@@ -1,0 +1,123 @@
+\doxysection{draw.\+h}
+\hypertarget{draw_8h_source}{}\label{draw_8h_source}\index{C:/Users/GDD/Desktop/program/c/library/source/draw/draw/draw.h@{C:/Users/GDD/Desktop/program/c/library/source/draw/draw/draw.h}}
+\mbox{\hyperlink{draw_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ F\_DRAW\_DRAW\_H}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ F\_DRAW\_DRAW\_H}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{binary_8h}{binary/binary.h}}"{}}\ \textcolor{comment}{/*\ library/binary/binary.h\ */}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00006}00006\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtag_draw_color}{tagDrawColor}}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00007}00007\ \{}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00008}00008\ \ \ \mbox{\hyperlink{binary_2ftype_8h_ad8d13cbd8aa031cd923b3a10beb366ef}{FBYTE}}\ \mbox{\hyperlink{structtag_draw_color_ab2d798a301ec421a35a0c462e5caba7c}{Red}};}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00009}00009\ \ \ \mbox{\hyperlink{binary_2ftype_8h_ad8d13cbd8aa031cd923b3a10beb366ef}{FBYTE}}\ \mbox{\hyperlink{structtag_draw_color_aace655155a5abe8cdf119bd884707882}{Green}};}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00010}00010\ \ \ \mbox{\hyperlink{binary_2ftype_8h_ad8d13cbd8aa031cd923b3a10beb366ef}{FBYTE}}\ \mbox{\hyperlink{structtag_draw_color_a91c5113c618c667f987d5fe43ac1e88d}{Blue}};}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00011}00011\ \ \ \mbox{\hyperlink{binary_2ftype_8h_ad8d13cbd8aa031cd923b3a10beb366ef}{FBYTE}}\ \mbox{\hyperlink{structtag_draw_color_a581ce4d77bea2874eace40365e6b6ba3}{Alpha}};}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00012}\mbox{\hyperlink{draw_8h_af7a5eb72298afd3646256af37e8210f7}{00012}}\ \}\ \mbox{\hyperlink{draw_8h_af7a5eb72298afd3646256af37e8210f7}{drawColor}};}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00014}00014\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtag_draw_raw_image}{tagDrawRawImage}}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00015}00015\ \{}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00016}00016\ \ \ \textcolor{keywordtype}{int}\ \ \ \ \ \ \ \ \mbox{\hyperlink{structtag_draw_raw_image_ad236290e38f0a0691cccf39ff4f7c584}{x}};}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00017}00017\ \ \ \textcolor{keywordtype}{int}\ \ \ \ \ \ \ \ \mbox{\hyperlink{structtag_draw_raw_image_a1c10ff754380a4bbecba3e869a79d390}{y}};}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00018}00018\ \ \ \mbox{\hyperlink{structtag_draw_color}{drawColor}}*\ \mbox{\hyperlink{structtag_draw_raw_image_a4e81f73b0cbf8e9a28af3eb444b2c9e2}{image}};}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00019}\mbox{\hyperlink{draw_8h_a911cf3d3feb8510f78bee88881df8b5b}{00019}}\ \}\ \mbox{\hyperlink{draw_8h_a911cf3d3feb8510f78bee88881df8b5b}{drawRawImage}};}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00021}00021\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtag_draw_point}{tagDrawPoint}}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00022}00022\ \{}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00023}00023\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structtag_draw_point_a083d8db932a1836d8369a2adbfbd606c}{x}};}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00024}00024\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structtag_draw_point_a8ad8c617a11b3b0cedba4742938fdef2}{y}};}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00025}\mbox{\hyperlink{draw_8h_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{00025}}\ \}\ \mbox{\hyperlink{draw_8h_af4b7d7fbdeaf922d6779c90aa5bf0cc0}{drawPoint}},\ \mbox{\hyperlink{draw_8h_abee56b083c7e967b4560638c24f70794}{drawSize}};}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00027}00027\ \textcolor{comment}{/*\ }}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00028}00028\ \textcolor{comment}{Init関数}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00029}00029\ \textcolor{comment}{\ \ 説明\ \ \ :\ RawImageデータの作成}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00030}00030\ \textcolor{comment}{\ \ 1\ \ \ \ \ \ :\ drawSize\ イメージのサイズ}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00031}00031\ \textcolor{comment}{\ \ 戻り値\ :\ RawImageデータ}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00032}00032\ \textcolor{comment}{Delete関数}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00033}00033\ \textcolor{comment}{\ \ 説明\ \ \ :\ RawImageデータの削除}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00034}00034\ \textcolor{comment}{\ \ 1\ \ \ \ \ \ :\ RawImageデータ}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00035}00035\ \textcolor{comment}{\ \ 戻り値\ :\ 無し}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00036}00036\ \textcolor{comment}{Fill関数}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00037}00037\ \textcolor{comment}{\ \ 説明\ \ \ :\ イメージの指定された領域を塗りつぶす}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00038}00038\ \textcolor{comment}{\ \ 1\ \ \ \ \ \ :\ RawImageデータ}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00039}00039\ \textcolor{comment}{\ \ 2\ \ \ \ \ \ :\ 指定領域の左上}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00040}00040\ \textcolor{comment}{\ \ 3\ \ \ \ \ \ :\ 指定領域の幅と高さ(右下から左上の座標を差し引いた大きさ)}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00041}00041\ \textcolor{comment}{\ \ 4\ \ \ \ \ \ :\ 色}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00042}00042\ \textcolor{comment}{\ \ 戻り値\ :\ 無し}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00043}00043\ \textcolor{comment}{AllFill関数}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00044}00044\ \textcolor{comment}{\ \ 説明\ \ \ :\ イメージ全体を塗りつぶす}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00045}00045\ \textcolor{comment}{\ \ 1\ \ \ \ \ \ :\ RawImageデータ}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00046}00046\ \textcolor{comment}{\ \ 2\ \ \ \ \ \ :\ 色}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00047}00047\ \textcolor{comment}{\ \ 戻り値\ :\ 無し}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00048}00048\ \textcolor{comment}{Pointing関数}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00049}00049\ \textcolor{comment}{\ \ 説明\ \ \ :\ 点を描画}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00050}00050\ \textcolor{comment}{\ \ 1\ \ \ \ \ \ :\ RawImageデータ}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00051}00051\ \textcolor{comment}{\ \ 2\ \ \ \ \ \ :\ 指定位置}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00052}00052\ \textcolor{comment}{\ \ 3\ \ \ \ \ \ :\ 色}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00053}00053\ \textcolor{comment}{\ \ 戻り値\ :\ 無し}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00054}00054\ \textcolor{comment}{Triangle関数}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00055}00055\ \textcolor{comment}{\ \ 説明\ \ \ :\ 三角形を描画(塗りつぶし)}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00056}00056\ \textcolor{comment}{\ \ 1\ \ \ \ \ \ :\ RawImageデータ}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00057}00057\ \textcolor{comment}{\ \ 2\ \ \ \ \ \ :\ 頂点1}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00058}00058\ \textcolor{comment}{\ \ 3\ \ \ \ \ \ :\ 頂点2}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00059}00059\ \textcolor{comment}{\ \ 4\ \ \ \ \ \ :\ 頂点3}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00060}00060\ \textcolor{comment}{\ \ 5\ \ \ \ \ \ :\ 色}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00061}00061\ \textcolor{comment}{\ \ 戻り値\ :\ 無し}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00062}00062\ \textcolor{comment}{Quadrangle関数}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00063}00063\ \textcolor{comment}{\ \ 説明\ \ \ :\ 四角形を描画(塗りつぶし)}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00064}00064\ \textcolor{comment}{\ \ 1\ \ \ \ \ \ :\ RawImageデータ}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00065}00065\ \textcolor{comment}{\ \ 2\ \ \ \ \ \ :\ 頂点1}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00066}00066\ \textcolor{comment}{\ \ 3\ \ \ \ \ \ :\ 頂点2}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00067}00067\ \textcolor{comment}{\ \ 4\ \ \ \ \ \ :\ 頂点3}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00068}00068\ \textcolor{comment}{\ \ 5\ \ \ \ \ \ :\ 頂点4}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00069}00069\ \textcolor{comment}{\ \ 6\ \ \ \ \ \ :\ 色}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00070}00070\ \textcolor{comment}{\ \ 戻り値\ :\ 無し}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00071}00071\ \textcolor{comment}{TriangleSide関数}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00072}00072\ \textcolor{comment}{\ \ 説明\ \ \ :\ 三角形を描画(幅指定型)}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00073}00073\ \textcolor{comment}{\ \ 1\ \ \ \ \ \ :\ RawImageデータ}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00074}00074\ \textcolor{comment}{\ \ 2\ \ \ \ \ \ :\ 頂点1}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00075}00075\ \textcolor{comment}{\ \ 3\ \ \ \ \ \ :\ 頂点2}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00076}00076\ \textcolor{comment}{\ \ 4\ \ \ \ \ \ :\ 頂点3}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00077}00077\ \textcolor{comment}{\ \ 5\ \ \ \ \ \ :\ 幅}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00078}00078\ \textcolor{comment}{\ \ 6\ \ \ \ \ \ :\ 色}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00079}00079\ \textcolor{comment}{\ \ 戻り値\ :\ 無し}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00080}00080\ \textcolor{comment}{QuadrangleSide関数}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00081}00081\ \textcolor{comment}{\ \ 説明\ \ \ :\ 四角形を描画(幅指定型)}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00082}00082\ \textcolor{comment}{\ \ 1\ \ \ \ \ \ :\ RawImageデータ}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00083}00083\ \textcolor{comment}{\ \ 2\ \ \ \ \ \ :\ 頂点1}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00084}00084\ \textcolor{comment}{\ \ 3\ \ \ \ \ \ :\ 頂点2}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00085}00085\ \textcolor{comment}{\ \ 4\ \ \ \ \ \ :\ 頂点3}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00086}00086\ \textcolor{comment}{\ \ 5\ \ \ \ \ \ :\ 頂点4}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00087}00087\ \textcolor{comment}{\ \ 6\ \ \ \ \ \ :\ 幅}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00088}00088\ \textcolor{comment}{\ \ 7\ \ \ \ \ \ :\ 色}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00089}00089\ \textcolor{comment}{\ \ 戻り値\ :\ 無し}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00090}00090\ \textcolor{comment}{Cut関数}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00091}00091\ \textcolor{comment}{\ \ 説明\ \ \ :\ 切り取る}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00092}00092\ \textcolor{comment}{\ \ 1\ \ \ \ \ \ :\ RawImageデータ}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00093}00093\ \textcolor{comment}{\ \ 2\ \ \ \ \ \ :\ 指定領域の左上}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00094}00094\ \textcolor{comment}{\ \ 3\ \ \ \ \ \ :\ 指定領域の幅と高さ(右下から左上の座標を差し引いた大きさ)}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00095}00095\ \textcolor{comment}{\ \ 戻り値\ :\ RawImageデータ}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00096}00096\ \textcolor{comment}{Scaling関数}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00097}00097\ \textcolor{comment}{\ \ 説明\ \ \ :\ 拡縮する}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00098}00098\ \textcolor{comment}{\ \ 1\ \ \ \ \ \ :\ RawImageデータ}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00099}00099\ \textcolor{comment}{\ \ 2\ \ \ \ \ \ :\ 拡縮後のサイズ}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00100}00100\ \textcolor{comment}{\ \ 戻り値\ :\ RawImageデータ}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00101}00101\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00102}00102\ }
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00103}\mbox{\hyperlink{draw_8h_a932434e2b28ab076859540433d605e20}{00103}}\ \textcolor{preprocessor}{\#define\ drawImageIndex(image\_,\ x\_,\ y\_)\ (y\_\ *\ image\_-\/>x\ +\ x\_)}}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00104}00104\ }
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00105}00105\ \mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*\ \mbox{\hyperlink{draw_8h_a8c45bc21feb09d961f8865a2cfb85cdd}{drawInit}}\ \ \ \ \ \ \ \ \ \ (\mbox{\hyperlink{structtag_draw_point}{drawSize}}\ size);}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00106}00106\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{draw_8h_a94529cb00d9b138f430ae08f37e8e48a}{drawDelte}}\ \ \ \ \ \ \ \ \ (\mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*\ image);}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00107}00107\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{draw_8h_aabeec0c13970ab97f84bc4a5879ed911}{drawFill}}\ \ \ \ \ \ \ \ \ \ (\mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*\ image,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point\ ,\ \mbox{\hyperlink{structtag_draw_point}{drawSize}}\ size,\ \mbox{\hyperlink{structtag_draw_color}{drawColor}}\ color);}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00108}00108\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{draw_8h_a73cad7681289ccd967625d55ce435f76}{drawAllFill}}\ \ \ \ \ \ \ (\mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*\ image,\ \mbox{\hyperlink{structtag_draw_color}{drawColor}}\ color);}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00109}00109\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{draw_8h_a3faa2850cf2c12ec5694435ba2f776dd}{drawPointing}}\ \ \ \ \ \ (\mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*\ image,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point\ ,\ \mbox{\hyperlink{structtag_draw_color}{drawColor}}\ color);}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00110}00110\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{draw_8h_ac1c8b0381976837d1c891150719d5624}{drawTriangle}}\ \ \ \ \ \ (\mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*\ image,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point1,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point2,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point3,\ \mbox{\hyperlink{structtag_draw_color}{drawColor}}\ color);}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00111}00111\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{draw_8h_a80f1b87d698991be828c3876910915e6}{drawQuadrangle}}\ \ \ \ (\mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*\ image,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point1,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point2,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point3,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point4,\ \mbox{\hyperlink{structtag_draw_color}{drawColor}}\ color);}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00112}00112\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{draw_8h_ac05afb5fda421c394cc87b6b7adfd304}{drawTriangleSide}}\ \ (\mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*\ image,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point1,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point2,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point3,\ \textcolor{keywordtype}{int}\ width,\ \mbox{\hyperlink{structtag_draw_color}{drawColor}}\ color);}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00113}00113\ \textcolor{keywordtype}{void}\ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{draw_8h_a1584394623ab3f29bba877d335462491}{drawQuadrangleSide}}(\mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*\ image,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point1,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point2,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point3,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point4,\ \textcolor{keywordtype}{int}\ width,\ \mbox{\hyperlink{structtag_draw_color}{drawColor}}\ color);}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00114}00114\ \mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*\ \mbox{\hyperlink{draw_8h_a7bcf68423b09d9cece763404fbc52c72}{drawCut}}\ \ \ \ \ \ \ \ \ \ \ (\mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*\ image,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point1,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point2);}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00115}00115\ \mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*\ \mbox{\hyperlink{draw_8h_a290feeda9257a089241bfc7bc4012ad9}{drawScaling}}\ \ \ \ \ \ \ (\mbox{\hyperlink{structtag_draw_raw_image}{drawRawImage}}*\ image,\ \mbox{\hyperlink{structtag_draw_point}{drawPoint}}\ point1);}
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00116}00116\ }
+\DoxyCodeLine{\Hypertarget{draw_8h_source_l00117}00117\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

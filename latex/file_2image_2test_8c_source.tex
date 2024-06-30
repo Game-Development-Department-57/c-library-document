@@ -1,0 +1,29 @@
+\doxysection{test.\+c}
+\hypertarget{file_2image_2test_8c_source}{}\label{file_2image_2test_8c_source}\index{C:/Users/GDD/Desktop/program/c/library/source/file/image/test.c@{C:/Users/GDD/Desktop/program/c/library/source/file/image/test.c}}
+\mbox{\hyperlink{file_2image_2test_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{file_2image_2test_8c_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{file_2image_2test_8c_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{bitmap_8h}{bitmap.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{file_2image_2test_8c_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{memory_8h}{binary/memory.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{file_2image_2test_8c_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{file_2image_2test_8c_source_l00005}\mbox{\hyperlink{file_2image_2test_8c_a840291bc02cba5474a4cb46a9b9566fe}{00005}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{error_2test_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{file_2image_2test_8c_source_l00006}00006\ \{}
+\DoxyCodeLine{\Hypertarget{file_2image_2test_8c_source_l00007}00007\ \ \ FILE*\ fp\ =\ fopen(\textcolor{stringliteral}{"{}sample.bmp"{}},\ \textcolor{stringliteral}{"{}rb"{}});}
+\DoxyCodeLine{\Hypertarget{file_2image_2test_8c_source_l00008}00008\ \ \ \mbox{\hyperlink{structtag_b_i_t_m_a_p}{BITMAP}}*\ bmp\ =\ \mbox{\hyperlink{bitmap_8c_a2cd1b5b79c789f70270c9f8e3366e4f9}{bitmapHeaderLoad}}(fp);}
+\DoxyCodeLine{\Hypertarget{file_2image_2test_8c_source_l00009}00009\ \ \ \textcolor{keywordflow}{if}\ (bmp\ ==\ \mbox{\hyperlink{error_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}})}
+\DoxyCodeLine{\Hypertarget{file_2image_2test_8c_source_l00010}00010\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{file_2image_2test_8c_source_l00011}00011\ \ \ \ \ printf(\textcolor{stringliteral}{"{}no.\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{file_2image_2test_8c_source_l00012}00012\ \ \ \}\textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{file_2image_2test_8c_source_l00013}00013\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{file_2image_2test_8c_source_l00014}00014\ \ \ \ \ printf(\textcolor{stringliteral}{"{}header\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{file_2image_2test_8c_source_l00015}00015\ \ \ \ \ \mbox{\hyperlink{memory_8h_a9ed8073399ed553852f6e86b5d7ee5e2}{BinaryDump}}((\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}*)bmp-\/>\mbox{\hyperlink{structtag_b_i_t_m_a_p_afd76d6da7f8a539f72d2e52c81e3c9d3}{header}},\ 14,\ 16);}
+\DoxyCodeLine{\Hypertarget{file_2image_2test_8c_source_l00016}00016\ \ \ \ \ printf(\textcolor{stringliteral}{"{}info\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{file_2image_2test_8c_source_l00017}00017\ \ \ \ \ \mbox{\hyperlink{memory_8h_a9ed8073399ed553852f6e86b5d7ee5e2}{BinaryDump}}((\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}*)bmp-\/>\mbox{\hyperlink{structtag_b_i_t_m_a_p_add4fbb0b8eb301257019262450ac89ec}{info}},\ 40,\ 16);}
+\DoxyCodeLine{\Hypertarget{file_2image_2test_8c_source_l00018}00018\ \ \ \ \ printf(\textcolor{stringliteral}{"{}line\ size\ :\%d\(\backslash\)n"{}},\ \mbox{\hyperlink{bitmap_8c_aaac1a2e5d22430389adaf985e709e295}{bitmapLineSize}}(bmp));}
+\DoxyCodeLine{\Hypertarget{file_2image_2test_8c_source_l00019}00019\ \ \ \ \ printf(\textcolor{stringliteral}{"{}image\ size:\%d\(\backslash\)n"{}},\ \mbox{\hyperlink{bitmap_8c_a8c7a60a8bfdea0e1d2f872f1c6a5bb39}{bitmapImageSizeGet}}(bmp));}
+\DoxyCodeLine{\Hypertarget{file_2image_2test_8c_source_l00020}00020\ \ \ \ \ printf(\textcolor{stringliteral}{"{}image\ size:\%d\(\backslash\)n"{}},\ \mbox{\hyperlink{bitmap_8c_a1d489b026cc16b06ca316e60587d5048}{bitmapHeightGet}}(bmp)\ *\ \mbox{\hyperlink{bitmap_8c_aaac1a2e5d22430389adaf985e709e295}{bitmapLineSize}}(bmp));}
+\DoxyCodeLine{\Hypertarget{file_2image_2test_8c_source_l00021}00021\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{file_2image_2test_8c_source_l00022}00022\ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{file_2image_2test_8c_source_l00023}00023\ \}}
+
+\end{DoxyCode}

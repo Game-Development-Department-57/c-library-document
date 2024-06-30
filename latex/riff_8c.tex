@@ -1,0 +1,137 @@
+\doxysection{C\+:/\+Users/\+GDD/\+Desktop/program/c/library/source/file/riff/riff.c File Reference}
+\hypertarget{riff_8c}{}\label{riff_8c}\index{C:/Users/GDD/Desktop/program/c/library/source/file/riff/riff.c@{C:/Users/GDD/Desktop/program/c/library/source/file/riff/riff.c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include "{}data/stack.\+h"{}}\newline
+{\ttfamily \#include "{}riffformat.\+h"{}}\newline
+{\ttfamily \#include "{}binary/ftype.\+h"{}}\newline
+{\ttfamily \#include "{}binary/binary.\+h"{}}\newline
+Include dependency graph for riff.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{riff_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{riff_8c_a738b878c44a5b16c339c197afeabc97d}{riff\+Id\+Check}} (\mbox{\hyperlink{binary_2ftype_8h_a6a082686277de39ac6dbe7f7007bb4d4}{FDWORD}} id, char \texorpdfstring{$\ast$}{*}cmp)
+\item 
+int \mbox{\hyperlink{riff_8c_a255467591ebd23444d007ed8ba6f1da0}{riff\+Chunk\+Size}} (\mbox{\hyperlink{riffformat_8h_a3595aaf190f23edd6e0cfcad742a6c85}{RIFFCHUNK}} \texorpdfstring{$\ast$}{*}chunk)
+\item 
+\mbox{\hyperlink{binary_2ftype_8h_a6a082686277de39ac6dbe7f7007bb4d4}{FDWORD}} \mbox{\hyperlink{riff_8c_a0d33f6b57e4d119f50529b2060a54f64}{riff\+Get\+Id}} (\mbox{\hyperlink{riffformat_8h_affa18387b7581ae436a9e4c2c973a508}{RIFF}} \texorpdfstring{$\ast$}{*}riff)
+\item 
+int \mbox{\hyperlink{riff_8c_af2ff88f0120ee07a3c90346eff22a04f}{riff\+Is\+SPChunk}} (\mbox{\hyperlink{binary_2ftype_8h_a6a082686277de39ac6dbe7f7007bb4d4}{FDWORD}} id)
+\item 
+\mbox{\hyperlink{riffformat_8h_affa18387b7581ae436a9e4c2c973a508}{RIFF}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{riff_8c_a5a07ec4e8934ccadd10bff0fe65ed8dd}{riff\+Create}} (const char \texorpdfstring{$\ast$}{*}name)
+\item 
+void \mbox{\hyperlink{riff_8c_a1c30a3a049d982c20cdd5005a7838bc9}{riff\+Read}} (\mbox{\hyperlink{riffformat_8h_affa18387b7581ae436a9e4c2c973a508}{RIFF}} \texorpdfstring{$\ast$}{*}riff)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{riff_8c_a255467591ebd23444d007ed8ba6f1da0}\index{riff.c@{riff.c}!riffChunkSize@{riffChunkSize}}
+\index{riffChunkSize@{riffChunkSize}!riff.c@{riff.c}}
+\doxysubsubsection{\texorpdfstring{riffChunkSize()}{riffChunkSize()}}
+{\footnotesize\ttfamily \label{riff_8c_a255467591ebd23444d007ed8ba6f1da0} 
+int riff\+Chunk\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{riffformat_8h_a3595aaf190f23edd6e0cfcad742a6c85}{RIFFCHUNK}} \texorpdfstring{$\ast$}{*}}]{chunk}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{riff_8c_a255467591ebd23444d007ed8ba6f1da0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{riff_8c_a5a07ec4e8934ccadd10bff0fe65ed8dd}\index{riff.c@{riff.c}!riffCreate@{riffCreate}}
+\index{riffCreate@{riffCreate}!riff.c@{riff.c}}
+\doxysubsubsection{\texorpdfstring{riffCreate()}{riffCreate()}}
+{\footnotesize\ttfamily \label{riff_8c_a5a07ec4e8934ccadd10bff0fe65ed8dd} 
+\mbox{\hyperlink{riffformat_8h_affa18387b7581ae436a9e4c2c973a508}{RIFF}} \texorpdfstring{$\ast$}{*} riff\+Create (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{name}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{riff_8c_source_l00029}{29}} of file \mbox{\hyperlink{riff_8c_source}{riff.\+c}}.
+
+\Hypertarget{riff_8c_a0d33f6b57e4d119f50529b2060a54f64}\index{riff.c@{riff.c}!riffGetId@{riffGetId}}
+\index{riffGetId@{riffGetId}!riff.c@{riff.c}}
+\doxysubsubsection{\texorpdfstring{riffGetId()}{riffGetId()}}
+{\footnotesize\ttfamily \label{riff_8c_a0d33f6b57e4d119f50529b2060a54f64} 
+\mbox{\hyperlink{binary_2ftype_8h_a6a082686277de39ac6dbe7f7007bb4d4}{FDWORD}} riff\+Get\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{riffformat_8h_affa18387b7581ae436a9e4c2c973a508}{RIFF}} \texorpdfstring{$\ast$}{*}}]{riff}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{riff_8c_source_l00014}{14}} of file \mbox{\hyperlink{riff_8c_source}{riff.\+c}}.
+
+\Hypertarget{riff_8c_a738b878c44a5b16c339c197afeabc97d}\index{riff.c@{riff.c}!riffIdCheck@{riffIdCheck}}
+\index{riffIdCheck@{riffIdCheck}!riff.c@{riff.c}}
+\doxysubsubsection{\texorpdfstring{riffIdCheck()}{riffIdCheck()}}
+{\footnotesize\ttfamily \label{riff_8c_a738b878c44a5b16c339c197afeabc97d} 
+int riff\+Id\+Check (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{binary_2ftype_8h_a6a082686277de39ac6dbe7f7007bb4d4}{FDWORD}}}]{id}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{cmp}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{riff_8c_source_l00007}{7}} of file \mbox{\hyperlink{riff_8c_source}{riff.\+c}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{riff_8c_a738b878c44a5b16c339c197afeabc97d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{riff_8c_a738b878c44a5b16c339c197afeabc97d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{riff_8c_af2ff88f0120ee07a3c90346eff22a04f}\index{riff.c@{riff.c}!riffIsSPChunk@{riffIsSPChunk}}
+\index{riffIsSPChunk@{riffIsSPChunk}!riff.c@{riff.c}}
+\doxysubsubsection{\texorpdfstring{riffIsSPChunk()}{riffIsSPChunk()}}
+{\footnotesize\ttfamily \label{riff_8c_af2ff88f0120ee07a3c90346eff22a04f} 
+int riff\+Is\+SPChunk (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{binary_2ftype_8h_a6a082686277de39ac6dbe7f7007bb4d4}{FDWORD}}}]{id}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{riff_8c_source_l00023}{23}} of file \mbox{\hyperlink{riff_8c_source}{riff.\+c}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{riff_8c_af2ff88f0120ee07a3c90346eff22a04f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{riff_8c_af2ff88f0120ee07a3c90346eff22a04f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{riff_8c_a1c30a3a049d982c20cdd5005a7838bc9}\index{riff.c@{riff.c}!riffRead@{riffRead}}
+\index{riffRead@{riffRead}!riff.c@{riff.c}}
+\doxysubsubsection{\texorpdfstring{riffRead()}{riffRead()}}
+{\footnotesize\ttfamily \label{riff_8c_a1c30a3a049d982c20cdd5005a7838bc9} 
+void riff\+Read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{riffformat_8h_affa18387b7581ae436a9e4c2c973a508}{RIFF}} \texorpdfstring{$\ast$}{*}}]{riff}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{riff_8c_source_l00046}{46}} of file \mbox{\hyperlink{riff_8c_source}{riff.\+c}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{riff_8c_a1c30a3a049d982c20cdd5005a7838bc9_cgraph}
+\end{center}
+\end{figure}

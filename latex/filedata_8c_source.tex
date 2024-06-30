@@ -1,0 +1,46 @@
+\doxysection{filedata.\+c}
+\hypertarget{filedata_8c_source}{}\label{filedata_8c_source}\index{C:/Users/GDD/Desktop/program/c/library/source/file/filedata.c@{C:/Users/GDD/Desktop/program/c/library/source/file/filedata.c}}
+\mbox{\hyperlink{filedata_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{filedata_8h}{filedata.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00005}\mbox{\hyperlink{filedata_8c_a5ea9acd75b0bb032cc1beec33f230d68}{00005}}\ \mbox{\hyperlink{structtag_f_i_l_e_d_a_t_a}{FILEDATA}}*\ \mbox{\hyperlink{filedata_8c_a5ea9acd75b0bb032cc1beec33f230d68}{filedataOpen}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ name,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ mode)}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00006}00006\ \{}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00007}00007\ \ \ FILE*\ fp\ =\ fopen(name,\ mode);}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00008}00008\ \ \ \textcolor{keywordflow}{if}\ (fp\ ==\ \mbox{\hyperlink{error_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{error_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}};}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00009}00009\ \ \ }
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00010}00010\ \ \ \mbox{\hyperlink{structtag_f_i_l_e_d_a_t_a}{FILEDATA}}*\ fd\ =\ (\mbox{\hyperlink{structtag_f_i_l_e_d_a_t_a}{FILEDATA}}*)\ malloc(\textcolor{keyword}{sizeof}(\mbox{\hyperlink{structtag_f_i_l_e_d_a_t_a}{FILEDATA}}));}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00011}00011\ \ \ \textcolor{keywordflow}{if}\ (fd\ ==\ \mbox{\hyperlink{error_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}})}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00012}00012\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00013}00013\ \ \ \ \ fclose(fp);}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00014}00014\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{error_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}};}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00015}00015\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00016}00016\ \ \ }
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00017}00017\ \ \ fd-\/>\mbox{\hyperlink{structtag_f_i_l_e_d_a_t_a_aa743c238cbca5483c9781008d6123851}{fp}}\ \ \ \ \ \ \ \ \ \ \ =\ fp;}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00018}00018\ \ \ fseek(fp,\ 0,\ SEEK\_END);}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00019}00019\ \ \ fd-\/>\mbox{\hyperlink{structtag_f_i_l_e_d_a_t_a_a4a6ff6f6ca0643307448a32cae694d04}{fileSize}}\ \ \ \ \ =\ ftell(fp);}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00020}00020\ \ \ fseek(fp,\ 0,\ SEEK\_SET);}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00021}00021\ \ \ fd-\/>\mbox{\hyperlink{structtag_f_i_l_e_d_a_t_a_a3851b4afd168a5eb95239f7e67d1af05}{sectionSize}}\ \ =\ 512;}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00022}00022\ \ \ fd-\/>\mbox{\hyperlink{structtag_f_i_l_e_d_a_t_a_aec658a53d4b878b6688cfdd2e8dd46ac}{sectionCount}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00023}00023\ \ \ fd-\/>\mbox{\hyperlink{structtag_f_i_l_e_d_a_t_a_af7709138b7801487fabef5f86def1a84}{buffer}}\ \ \ \ \ \ \ =\ \mbox{\hyperlink{error_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}};}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00024}00024\ \ \ }
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00025}00025\ \ \ \textcolor{keywordflow}{return}\ fd;}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00026}00026\ \}}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00028}\mbox{\hyperlink{filedata_8c_a99cff922ef3dadbab81c7f23e4653e6f}{00028}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{filedata_8c_a99cff922ef3dadbab81c7f23e4653e6f}{filedataClose}}(\mbox{\hyperlink{structtag_f_i_l_e_d_a_t_a}{FILEDATA}}*\ fd)}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00029}00029\ \{}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00030}00030\ \ \ free(fd-\/>\mbox{\hyperlink{structtag_f_i_l_e_d_a_t_a_af7709138b7801487fabef5f86def1a84}{buffer}});}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00031}00031\ \ \ fclose(fd-\/>\mbox{\hyperlink{structtag_f_i_l_e_d_a_t_a_aa743c238cbca5483c9781008d6123851}{fp}});}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00032}00032\ \ \ free(fd);}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00033}00033\ \ \ }
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00034}00034\ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00035}00035\ \}}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00037}\mbox{\hyperlink{filedata_8c_a93abe5ec22cbe87e57bb1a376a43450a}{00037}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{filedata_8c_a93abe5ec22cbe87e57bb1a376a43450a}{filedataLoad}}(\mbox{\hyperlink{structtag_f_i_l_e_d_a_t_a}{FILEDATA}}*\ fd,\ \textcolor{keywordtype}{int}\ location)}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00038}00038\ \{}
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00039}00039\ \ \ }
+\DoxyCodeLine{\Hypertarget{filedata_8c_source_l00040}00040\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,25 @@
+var structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r =
+[
+    [ "biBitCount", "structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html#ace6209419da9078cab60d8efc2bda55b", null ],
+    [ "biClrImportant", "structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html#a95ad713759ba87ecb3e8a04dee5bc523", null ],
+    [ "biClrUsed", "structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html#abdd0cacc41a344185b5cc42b8d059299", null ],
+    [ "biCompression", "structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html#a9ff053c592a963569c3d54a9fa1b8e1c", null ],
+    [ "biHeight", "structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html#a278713a714f13dc18e66b84913ebb271", null ],
+    [ "biPlanes", "structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html#a60451c97b81a85c034f4eff4fd6e908b", null ],
+    [ "biSize", "structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html#a224a74cec533e0d74951c354576fdb46", null ],
+    [ "biSizeImage", "structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html#a3600a7a9c75343f29ed350f4ba1a38a9", null ],
+    [ "biWidth", "structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html#ae387e714706a1c899cd1eff0496f1843", null ],
+    [ "biXPelsPerMeter", "structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html#a10bc0c88403cd916afbc3f1abde46408", null ],
+    [ "biYPelsPerMeter", "structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html#ade9535367c2e74305b10f97b4fc60220", null ],
+    [ "colorImportant", "structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html#a8e4b4d997f01c6b826d44841e8810160", null ],
+    [ "colorIndex", "structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html#aedea05f75371f508ad967a6549407d38", null ],
+    [ "compression", "structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html#a54f5f72269c404ccef5f755a500ed95a", null ],
+    [ "headerSize", "structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html#a3755fb7f7a6b78b9293ea853a57ad76a", null ],
+    [ "height", "structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html#a86dcc8e373b569e48f4e4cb16807d61e", null ],
+    [ "imageSize", "structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html#a875431e69df6c6266b98813fd3922a7d", null ],
+    [ "pixelBit", "structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html#a3baea6df953248acf3c4d7469787df11", null ],
+    [ "planes", "structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html#ae52f5394f2274911811f47f2208045b1", null ],
+    [ "width", "structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html#adcafe5d9edf9e4623ee411b48d5a4999", null ],
+    [ "xResolution", "structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html#abb1b99ac57e6d0701bcff8b9ed0300e9", null ],
+    [ "yResolution", "structtag_b_i_t_m_a_p_i_n_f_o_h_e_a_d_e_r.html#ad85495e9d92801d16726c47b6601e189", null ]
+];

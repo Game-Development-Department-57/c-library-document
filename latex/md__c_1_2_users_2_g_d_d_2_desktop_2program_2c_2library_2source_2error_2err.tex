@@ -1,0 +1,69 @@
+\chapter{errライブラリについて}
+\hypertarget{md__c_1_2_users_2_g_d_d_2_desktop_2program_2c_2library_2source_2error_2err}{}\label{md__c_1_2_users_2_g_d_d_2_desktop_2program_2c_2library_2source_2error_2err}\index{errライブラリについて@{errライブラリについて}}
+\label{md__c_1_2_users_2_g_d_d_2_desktop_2program_2c_2library_2source_2error_2err_autotoc_md4}%
+\Hypertarget{md__c_1_2_users_2_g_d_d_2_desktop_2program_2c_2library_2source_2error_2err_autotoc_md4}%
+\hypertarget{md__c_1_2_users_2_g_d_d_2_desktop_2program_2c_2library_2source_2error_2err_autotoc_md5}{}\doxysection{\texorpdfstring{目次}{目次}}\label{md__c_1_2_users_2_g_d_d_2_desktop_2program_2c_2library_2source_2error_2err_autotoc_md5}
+割り当て規則 関数群 定数群\hypertarget{md__c_1_2_users_2_g_d_d_2_desktop_2program_2c_2library_2source_2error_2err_autotoc_md6}{}\doxysection{\texorpdfstring{割り当て規則}{割り当て規則}}\label{md__c_1_2_users_2_g_d_d_2_desktop_2program_2c_2library_2source_2error_2err_autotoc_md6}
+err型(int型)の32bitを次のように利用する。 ~\newline
+ \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
+\hline
+\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ 範囲   }&\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ 幅   }&\cellcolor{\tableheadbgcolor}\textbf{ 用途   }&\cellcolor{\tableheadbgcolor}\textbf{ 別名    }\\\cline{1-4}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ 範囲   }&\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ 幅   }&\cellcolor{\tableheadbgcolor}\textbf{ 用途   }&\cellcolor{\tableheadbgcolor}\textbf{ 別名    }\\\cline{1-4}
+\endhead
+\PBS\raggedleft 31bit   &\PBS\raggedleft 1bit   &正負のフラグ   &Sign    \\\cline{1-4}
+\PBS\raggedleft 30-\/24bit   &\PBS\raggedleft 7bit   &予約領域   &Reserved    \\\cline{1-4}
+\PBS\raggedleft 23-\/12bit   &\PBS\raggedleft 12bit   &クラス   &Record-\/A    \\\cline{1-4}
+\PBS\raggedleft 11-\/0bit   &\PBS\raggedleft 12bit   &詳細   &Record-\/B   \\\cline{1-4}
+\end{longtabu}
+
+
+基本的にエラーの割り当ては、負の値であるため正の値が割り当てられるのは特殊な場合である。 ~\newline
+ 0x00000000は必ず\+SUCCESSである。 ~\newline
+
+
+関数群と定数群の実体はマクロである。 ~\newline
+\hypertarget{md__c_1_2_users_2_g_d_d_2_desktop_2program_2c_2library_2source_2error_2err_autotoc_md7}{}\doxysection{\texorpdfstring{関数群}{関数群}}\label{md__c_1_2_users_2_g_d_d_2_desktop_2program_2c_2library_2source_2error_2err_autotoc_md7}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ function   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 説明    }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ function   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 説明    }\\\cline{1-2}
+\endhead
+\PBS\centering \doxylink{err_8h_a16cbfdbf7f5c986ef7f8335baa4d4f83}{err\+Get\+Sign(err)}   &\PBS\centering Sign取得    \\\cline{1-2}
+\PBS\centering \doxylink{err_8h_a84f8a10d30892415889f8c376b744878}{err\+Get\+Reserved(err)}   &\PBS\centering Reserved取得    \\\cline{1-2}
+\PBS\centering \doxylink{err_8h_a6e66071f08ae547e9ff41739d9d5f1f9}{err\+Get\+Record\+A(err)}   &\PBS\centering Record-\/\+A取得    \\\cline{1-2}
+\PBS\centering \doxylink{err_8h_a14bc3d1a510b17e84a06429826a9cf85}{err\+Get\+Record\+B(err)}   &\PBS\centering Record-\/\+B取得    \\\cline{1-2}
+\PBS\centering \doxylink{err_8h_a6f223fd8a27a0c6384741a7592e3d1d7}{err\+Set\+Sign(err)}   &\PBS\centering Sign代入    \\\cline{1-2}
+\PBS\centering \doxylink{err_8h_a0e7f4cee831dd8e4f255fb815a4f3f58}{err\+Set\+Reserved(err)}   &\PBS\centering Reserved代入    \\\cline{1-2}
+\PBS\centering \doxylink{err_8h_a59ab42da93756fba69016c6f328e6d70}{err\+Set\+Record\+A(err)}   &\PBS\centering Record-\/\+A代入    \\\cline{1-2}
+\PBS\centering \doxylink{err_8h_afe5127d2f08946f3a1acd89864caecf5}{err\+Set\+Record\+B(err)}   &\PBS\centering Record-\/\+B代入   \\\cline{1-2}
+\end{longtabu}
+\hypertarget{md__c_1_2_users_2_g_d_d_2_desktop_2program_2c_2library_2source_2error_2err_autotoc_md8}{}\doxysection{\texorpdfstring{定数群}{定数群}}\label{md__c_1_2_users_2_g_d_d_2_desktop_2program_2c_2library_2source_2error_2err_autotoc_md8}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ define   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 説明    }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ define   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 説明    }\\\cline{1-2}
+\endhead
+\PBS\centering err\+Mask\+Sign   &\PBS\centering Signのマスク    \\\cline{1-2}
+\PBS\centering err\+Mask\+Reserved   &\PBS\centering Reservedのマスク    \\\cline{1-2}
+\PBS\centering err\+Mask\+RecordA   &\PBS\centering Record-\/\+Aのマスク    \\\cline{1-2}
+\PBS\centering err\+Mask\+RecordB   &\PBS\centering Record-\/\+Bのマスク    \\\cline{1-2}
+\PBS\centering err\+Shift\+Sign   &\PBS\centering Signのオフセット    \\\cline{1-2}
+\PBS\centering err\+Shift\+Reserved   &\PBS\centering Reservedのオフセット    \\\cline{1-2}
+\PBS\centering err\+Shift\+RecordA   &\PBS\centering Record-\/\+Aのオフセット    \\\cline{1-2}
+\PBS\centering err\+Shift\+RecordB   &\PBS\centering Record-\/\+Bのオフセット   \\\cline{1-2}
+\end{longtabu}

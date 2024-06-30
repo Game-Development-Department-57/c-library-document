@@ -1,0 +1,72 @@
+\doxysection{endian.\+c}
+\hypertarget{endian_8c_source}{}\label{endian_8c_source}\index{C:/Users/GDD/Desktop/program/c/library/source/data/endian/endian.c@{C:/Users/GDD/Desktop/program/c/library/source/data/endian/endian.c}}
+\mbox{\hyperlink{endian_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{binary_2ftype_8h}{binary/ftype.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00005}00005\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ endian\_checker\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00006}00006\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ endian\_flag;}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00008}\mbox{\hyperlink{endian_8c_a083b2e840cc4afee2f08f66c46f4d64d}{00008}}\ \mbox{\hyperlink{endian_8c_a083b2e840cc4afee2f08f66c46f4d64d}{\_\_attribute\_\_}}((constructor))}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00009}00009\ \textcolor{keywordtype}{void}\ endianCheck(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00010}00010\ \{}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00011}00011\ \ \ \textcolor{keywordflow}{if}\ (*(\textcolor{keywordtype}{char}*)\ \&endian\_checker)}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00012}00012\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00013}00013\ \ \ \ \ endian\_flag\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00014}00014\ \ \ \}\textcolor{keywordflow}{else}\ }
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00015}00015\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00016}00016\ \ \ \ \ endian\_flag\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00017}00017\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00018}00018\ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00019}00019\ \}}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00021}\mbox{\hyperlink{endian_8c_a9baabc1511895a19bd50b0c11f3ddb14}{00021}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{endian_8c_a9baabc1511895a19bd50b0c11f3ddb14}{endianGet}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00022}00022\ \{}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00023}00023\ \ \ \textcolor{keywordflow}{return}\ endian\_flag;}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00024}00024\ \}}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00026}\mbox{\hyperlink{endian_8c_a5fdcd9c6d10554c59afa9fe82bb232da}{00026}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{endian_8c_a5fdcd9c6d10554c59afa9fe82bb232da}{endianReverse}}(\textcolor{keywordtype}{void}*\ src,\ \textcolor{keywordtype}{int}\ size)}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00027}00027\ \{}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00028}00028\ \ \ \textcolor{keywordtype}{void}*\ ptr\ =\ malloc(size);}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00029}00029\ \ \ \textcolor{keywordflow}{if}\ (ptr\ ==\ \mbox{\hyperlink{error_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}})\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00030}00030\ \ \ memcpy(ptr,\ src,\ size);}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00031}00031\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ size;\ i++)}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00032}00032\ \ \ \ \ ((\textcolor{keywordtype}{char}*)src)[i]\ =\ ((\textcolor{keywordtype}{char}*)ptr)[size-\/i-\/1];}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00033}00033\ \ \ free(ptr);}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00034}00034\ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00035}00035\ \}}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00037}\mbox{\hyperlink{endian_8c_a75c3e38b39826ae44e827785205ef416}{00037}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{endian_8c_a75c3e38b39826ae44e827785205ef416}{endianSet}}(\textcolor{keywordtype}{void}*\ src,\ \textcolor{keywordtype}{int}\ size)}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00038}00038\ \{}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00039}00039\ \ \ \textcolor{keywordflow}{if}\ (endian\_flag)}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00040}00040\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00041}00041\ \ \ \ \ \mbox{\hyperlink{endian_8c_a5fdcd9c6d10554c59afa9fe82bb232da}{endianReverse}}(src,\ size);}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00042}00042\ \ \ \}\textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00043}00043\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00044}00044\ \ \ \ \ ;}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00045}00045\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00046}00046\ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00047}00047\ \}}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00049}\mbox{\hyperlink{endian_8c_aff5fae677a43c9f558db9d56201e64fb}{00049}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{endian_8c_aff5fae677a43c9f558db9d56201e64fb}{endianReverse2}}(\textcolor{keywordtype}{void}*\ dst,\ \textcolor{keywordtype}{void}*\ src,\ \textcolor{keywordtype}{int}\ size)}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00050}00050\ \{}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00051}00051\ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ size;\ i++)}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00052}00052\ \ \ \ \ ((\textcolor{keywordtype}{char}*)dst)[i]\ =\ ((\textcolor{keywordtype}{char}*)src)[size-\/i-\/1];}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00053}00053\ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00054}00054\ \}}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00056}\mbox{\hyperlink{endian_8c_aa5708f01df3c1a9522c2eea513bbb2d0}{00056}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{endian_8c_aa5708f01df3c1a9522c2eea513bbb2d0}{endianSet2}}(\textcolor{keywordtype}{void}*\ dst,\ \textcolor{keywordtype}{void}*\ src,\ \textcolor{keywordtype}{int}\ size)}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00057}00057\ \{}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00058}00058\ \ \ \textcolor{keywordflow}{if}\ (endian\_flag)}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00059}00059\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00060}00060\ \ \ \ \ \mbox{\hyperlink{endian_8c_aff5fae677a43c9f558db9d56201e64fb}{endianReverse2}}(dst,\ src,\ size);}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00061}00061\ \ \ \}\textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00062}00062\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00063}00063\ \ \ \ \ ;}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00064}00064\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00065}00065\ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{endian_8c_source_l00066}00066\ \}}
+
+\end{DoxyCode}

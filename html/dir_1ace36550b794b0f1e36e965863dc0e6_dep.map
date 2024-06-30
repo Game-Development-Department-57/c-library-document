@@ -1,0 +1,23 @@
+<map id="C:/Users/GDD/Desktop/program/c/library/source/data" name="C:/Users/GDD/Desktop/program/c/library/source/data">
+<area shape="rect" id="node1" href="dir_c95b20c332f20db9459d6dbef2f5828a.html" title="binary" alt="" coords="228,139,284,165"/>
+<area shape="rect" id="node2" href="dir_7cc4a4b5a6d99a14b57b38d4c700e77a.html" title="error" alt="" coords="571,139,618,165"/>
+<area shape="rect" id="node4" href="dir_21475253fcff53e4fff57ea7c20e9900.html" title="endian" alt="" coords="268,64,327,91"/>
+<area shape="poly" id="edge1" href="dir_000006_000001.html" alt="" coords="292,93,273,127,268,124,288,90"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000006_000001.html" title="2" alt="" coords="276,119,283,135"/>
+<area shape="rect" id="node5" href="dir_84bff2530d2720d6947de2a7389e15e3.html" title="format" alt="" coords="186,64,243,91"/>
+<area shape="poly" id="edge2" href="dir_000010_000001.html" alt="" coords="224,90,244,124,239,127,220,93"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000010_000001.html" title="3" alt="" coords="244,110,251,126"/>
+<area shape="rect" id="node6" href="dir_6a890e9c0d36b3525690907a89c70ce2.html" title="list" alt="" coords="575,64,614,91"/>
+<area shape="poly" id="edge3" href="dir_000015_000007.html" alt="" coords="597,91,597,123,592,123,592,91"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000015_000007.html" title="1" alt="" coords="600,112,607,128"/>
+<area shape="rect" id="node7" href="dir_b5a74c62f0c28cca2ec5502bc9498013.html" title="queue" alt="" coords="351,64,407,91"/>
+<area shape="rect" id="node8" href="dir_4f0a621520fbd3c3cf25dc92752f20a9.html" title="stack" alt="" coords="431,64,484,91"/>
+<area shape="poly" id="edge4" href="dir_000022_000001.html" alt="" coords="439,93,420,104,358,127,300,143,298,138,356,122,418,99,437,89"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000022_000001.html" title="2" alt="" coords="300,140,307,156"/>
+<area shape="rect" id="node9" href="dir_0885019f0b44a9a33a0deeca55339bda.html" title="tree" alt="" coords="508,64,551,91"/>
+<area shape="rect" id="node10" href="dir_1f251d528261f6e70db22dd15d5498bd.html" title="vector" alt="" coords="107,64,162,91"/>
+<area shape="poly" id="edge5" href="dir_000025_000001.html" alt="" coords="157,89,223,128,220,133,154,94"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000025_000001.html" title="1" alt="" coords="220,114,227,130"/>
+<area shape="rect" id="clust2" href="dir_1ace36550b794b0f1e36e965863dc0e6.html" alt="" coords="27,53,624,101"/>
+<area shape="rect" id="clust1" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html" title="source" alt="" coords="16,16,635,176"/>
+</map>

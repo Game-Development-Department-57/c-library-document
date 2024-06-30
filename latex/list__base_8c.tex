@@ -1,0 +1,178 @@
+\doxysection{C\+:/\+Users/\+GDD/\+Desktop/program/c/library/source/data/list/list\+\_\+base.c File Reference}
+\hypertarget{list__base_8c}{}\label{list__base_8c}\index{C:/Users/GDD/Desktop/program/c/library/source/data/list/list\_base.c@{C:/Users/GDD/Desktop/program/c/library/source/data/list/list\_base.c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include "{}list\+\_\+std.\+h"{}}\newline
+Include dependency graph for list\+\_\+base.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{list__base_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{list__types_8h_a49ce6bd05ef083b0734d34862190a08a}{Index}} \mbox{\hyperlink{list__base_8c_ab4f588f946461cf29e5f1519e4c67f82}{list\+Index\+Convert}} (\mbox{\hyperlink{list__types_8h_a49ce6bd05ef083b0734d34862190a08a}{Index}} index)
+\item 
+\mbox{\hyperlink{list__types_8h_a49ce6bd05ef083b0734d34862190a08a}{Index}} \mbox{\hyperlink{list__base_8c_a255dbe2753abaf722a49e1c87d57689e}{list\+Index\+ConvertP}} (\mbox{\hyperlink{list__types_8h_a49ce6bd05ef083b0734d34862190a08a}{Index}} index)
+\item 
+\mbox{\hyperlink{list__types_8h_a49ce6bd05ef083b0734d34862190a08a}{Index}} \mbox{\hyperlink{list__base_8c_a38bce6a0aa0b80d583cc74a66db12423}{list\+Index\+ConvertN}} (\mbox{\hyperlink{list__types_8h_a49ce6bd05ef083b0734d34862190a08a}{Index}} index)
+\item 
+int \mbox{\hyperlink{list__base_8c_a3dcc72ef7bbc428e067fed8a88f68864}{list\+Index\+Range}} (\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}} list, \mbox{\hyperlink{list__types_8h_a49ce6bd05ef083b0734d34862190a08a}{Index}} index)
+\item 
+int \mbox{\hyperlink{list__base_8c_a0e576b1a9f4ea8036cf1984f1abb1b77}{list\+Is\+Begin}} (\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}} list, \mbox{\hyperlink{list__types_8h_a49ce6bd05ef083b0734d34862190a08a}{Index}} index)
+\item 
+int \mbox{\hyperlink{list__base_8c_a1758824e0c7452314222ea5677169989}{list\+Is\+End}} (\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}} list, \mbox{\hyperlink{list__types_8h_a49ce6bd05ef083b0734d34862190a08a}{Index}} index)
+\item 
+\mbox{\hyperlink{list__types_8h_a69b10e18ec70767f3f34b723dd6d2d79}{LISTNODE}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{list__base_8c_a95c56217d2c975fbac3ff23f0ab04b99}{list\+Node\+Create}} (void)
+\item 
+\mbox{\hyperlink{list__types_8h_a69b10e18ec70767f3f34b723dd6d2d79}{LISTNODE}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{list__base_8c_a5d97022ebfbf363eee44ec7d732f1bd5}{list\+Access}} (\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}} list, \mbox{\hyperlink{list__types_8h_a49ce6bd05ef083b0734d34862190a08a}{Index}} index)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{list__base_8c_a5d97022ebfbf363eee44ec7d732f1bd5}\index{list\_base.c@{list\_base.c}!listAccess@{listAccess}}
+\index{listAccess@{listAccess}!list\_base.c@{list\_base.c}}
+\doxysubsubsection{\texorpdfstring{listAccess()}{listAccess()}}
+{\footnotesize\ttfamily \label{list__base_8c_a5d97022ebfbf363eee44ec7d732f1bd5} 
+\mbox{\hyperlink{list__types_8h_a69b10e18ec70767f3f34b723dd6d2d79}{LISTNODE}} \texorpdfstring{$\ast$}{*} list\+Access (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}}}]{list}{, }\item[{\mbox{\hyperlink{list__types_8h_a49ce6bd05ef083b0734d34862190a08a}{Index}}}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{list__base_8c_source_l00039}{39}} of file \mbox{\hyperlink{list__base_8c_source}{list\+\_\+base.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{list__base_8c_a5d97022ebfbf363eee44ec7d732f1bd5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{list__base_8c_ab4f588f946461cf29e5f1519e4c67f82}\index{list\_base.c@{list\_base.c}!listIndexConvert@{listIndexConvert}}
+\index{listIndexConvert@{listIndexConvert}!list\_base.c@{list\_base.c}}
+\doxysubsubsection{\texorpdfstring{listIndexConvert()}{listIndexConvert()}}
+{\footnotesize\ttfamily \label{list__base_8c_ab4f588f946461cf29e5f1519e4c67f82} 
+\mbox{\hyperlink{list__types_8h_a49ce6bd05ef083b0734d34862190a08a}{Index}} list\+Index\+Convert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list__types_8h_a49ce6bd05ef083b0734d34862190a08a}{Index}}}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{list__base_8c_source_l00004}{4}} of file \mbox{\hyperlink{list__base_8c_source}{list\+\_\+base.\+c}}.
+
+\Hypertarget{list__base_8c_a38bce6a0aa0b80d583cc74a66db12423}\index{list\_base.c@{list\_base.c}!listIndexConvertN@{listIndexConvertN}}
+\index{listIndexConvertN@{listIndexConvertN}!list\_base.c@{list\_base.c}}
+\doxysubsubsection{\texorpdfstring{listIndexConvertN()}{listIndexConvertN()}}
+{\footnotesize\ttfamily \label{list__base_8c_a38bce6a0aa0b80d583cc74a66db12423} 
+\mbox{\hyperlink{list__types_8h_a49ce6bd05ef083b0734d34862190a08a}{Index}} list\+Index\+ConvertN (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list__types_8h_a49ce6bd05ef083b0734d34862190a08a}{Index}}}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{list__base_8c_source_l00014}{14}} of file \mbox{\hyperlink{list__base_8c_source}{list\+\_\+base.\+c}}.
+
+\Hypertarget{list__base_8c_a255dbe2753abaf722a49e1c87d57689e}\index{list\_base.c@{list\_base.c}!listIndexConvertP@{listIndexConvertP}}
+\index{listIndexConvertP@{listIndexConvertP}!list\_base.c@{list\_base.c}}
+\doxysubsubsection{\texorpdfstring{listIndexConvertP()}{listIndexConvertP()}}
+{\footnotesize\ttfamily \label{list__base_8c_a255dbe2753abaf722a49e1c87d57689e} 
+\mbox{\hyperlink{list__types_8h_a49ce6bd05ef083b0734d34862190a08a}{Index}} list\+Index\+ConvertP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list__types_8h_a49ce6bd05ef083b0734d34862190a08a}{Index}}}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{list__base_8c_source_l00009}{9}} of file \mbox{\hyperlink{list__base_8c_source}{list\+\_\+base.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{list__base_8c_a255dbe2753abaf722a49e1c87d57689e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{list__base_8c_a3dcc72ef7bbc428e067fed8a88f68864}\index{list\_base.c@{list\_base.c}!listIndexRange@{listIndexRange}}
+\index{listIndexRange@{listIndexRange}!list\_base.c@{list\_base.c}}
+\doxysubsubsection{\texorpdfstring{listIndexRange()}{listIndexRange()}}
+{\footnotesize\ttfamily \label{list__base_8c_a3dcc72ef7bbc428e067fed8a88f68864} 
+int list\+Index\+Range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}}}]{list}{, }\item[{\mbox{\hyperlink{list__types_8h_a49ce6bd05ef083b0734d34862190a08a}{Index}}}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{list__base_8c_source_l00019}{19}} of file \mbox{\hyperlink{list__base_8c_source}{list\+\_\+base.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{list__base_8c_a3dcc72ef7bbc428e067fed8a88f68864_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{list__base_8c_a0e576b1a9f4ea8036cf1984f1abb1b77}\index{list\_base.c@{list\_base.c}!listIsBegin@{listIsBegin}}
+\index{listIsBegin@{listIsBegin}!list\_base.c@{list\_base.c}}
+\doxysubsubsection{\texorpdfstring{listIsBegin()}{listIsBegin()}}
+{\footnotesize\ttfamily \label{list__base_8c_a0e576b1a9f4ea8036cf1984f1abb1b77} 
+int list\+Is\+Begin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}}}]{list}{, }\item[{\mbox{\hyperlink{list__types_8h_a49ce6bd05ef083b0734d34862190a08a}{Index}}}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{list__base_8c_source_l00024}{24}} of file \mbox{\hyperlink{list__base_8c_source}{list\+\_\+base.\+c}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{list__base_8c_a0e576b1a9f4ea8036cf1984f1abb1b77_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{list__base_8c_a0e576b1a9f4ea8036cf1984f1abb1b77_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{list__base_8c_a1758824e0c7452314222ea5677169989}\index{list\_base.c@{list\_base.c}!listIsEnd@{listIsEnd}}
+\index{listIsEnd@{listIsEnd}!list\_base.c@{list\_base.c}}
+\doxysubsubsection{\texorpdfstring{listIsEnd()}{listIsEnd()}}
+{\footnotesize\ttfamily \label{list__base_8c_a1758824e0c7452314222ea5677169989} 
+int list\+Is\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8c_a2fb946e826d5469e4b3462e89ec7ca68}{List}}}]{list}{, }\item[{\mbox{\hyperlink{list__types_8h_a49ce6bd05ef083b0734d34862190a08a}{Index}}}]{index}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{list__base_8c_source_l00029}{29}} of file \mbox{\hyperlink{list__base_8c_source}{list\+\_\+base.\+c}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{list__base_8c_a1758824e0c7452314222ea5677169989_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{list__base_8c_a1758824e0c7452314222ea5677169989_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{list__base_8c_a95c56217d2c975fbac3ff23f0ab04b99}\index{list\_base.c@{list\_base.c}!listNodeCreate@{listNodeCreate}}
+\index{listNodeCreate@{listNodeCreate}!list\_base.c@{list\_base.c}}
+\doxysubsubsection{\texorpdfstring{listNodeCreate()}{listNodeCreate()}}
+{\footnotesize\ttfamily \label{list__base_8c_a95c56217d2c975fbac3ff23f0ab04b99} 
+\mbox{\hyperlink{list__types_8h_a69b10e18ec70767f3f34b723dd6d2d79}{LISTNODE}} \texorpdfstring{$\ast$}{*} list\+Node\+Create (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{list__base_8c_source_l00034}{34}} of file \mbox{\hyperlink{list__base_8c_source}{list\+\_\+base.\+c}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{list__base_8c_a95c56217d2c975fbac3ff23f0ab04b99_icgraph}
+\end{center}
+\end{figure}

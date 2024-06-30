@@ -1,0 +1,9 @@
+<map id="tagMusicRaw" name="tagMusicRaw">
+<area shape="rect" id="Node000001" title=" " alt="" coords="183,96,283,123"/>
+<area shape="rect" id="Node000002" href="$structtag_music_raw_header.html" title=" " alt="" coords="5,5,146,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,38,212,93,209,98,110,42"/>
+<area shape="rect" id="Node000003" href="$structtag_music_raw_data.html" title=" " alt="" coords="170,5,296,32"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="236,48,236,95,230,95,230,48"/>
+<area shape="rect" id="Node000004" href="$structtag_music_raw_list.html" title=" " alt="" coords="321,5,441,32"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="348,43,255,98,253,93,345,38"/>
+</map>

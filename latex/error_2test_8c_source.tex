@@ -1,0 +1,38 @@
+\doxysection{test.\+c}
+\hypertarget{error_2test_8c_source}{}\label{error_2test_8c_source}\index{C:/Users/GDD/Desktop/program/c/library/source/error/test.c@{C:/Users/GDD/Desktop/program/c/library/source/error/test.c}}
+\mbox{\hyperlink{error_2test_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{error_8h}{error.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00004}\mbox{\hyperlink{error_2test_8c_a2b1ad86cfb152e339f26a8026c5c9fe6}{00004}}\ \textcolor{preprocessor}{\#define\ ERROR\_MSG\_NEGATIVE\ "{}negative."{}}}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00005}\mbox{\hyperlink{error_2test_8c_a9fd6d70803d54bab18e8c95e4a9e508c}{00005}}\ \textcolor{preprocessor}{\#define\ ERROR\_MSG\_SUCCESS\ \ "{}success."{}}}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00007}\mbox{\hyperlink{error_2test_8c_ae56153b644c6a0d216cf75a77996c1bd}{00007}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{error_2test_8c_ae56153b644c6a0d216cf75a77996c1bd}{n}}(\textcolor{keywordtype}{int}\ num)}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00008}00008\ \{}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00009}00009\ \ \ \mbox{\hyperlink{structtag_e_r_r_o_r}{ERROR}}\ error;}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00010}00010\ \ \ \textcolor{keywordflow}{if}\ (num\ <\ 0)}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00011}00011\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00012}00012\ \ \ \ \ error.\mbox{\hyperlink{structtag_e_r_r_o_r_ad4e91fa387700a255c1c0036fd16ef22}{ret}}\ =\ num;}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00013}00013\ \ \ \ \ error.\mbox{\hyperlink{structtag_e_r_r_o_r_a7f80e69871c9f36114cb618a156ccd3c}{id}}\ \ =\ 1;}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00014}00014\ \ \ \ \ error.\mbox{\hyperlink{structtag_e_r_r_o_r_a6d3d9da39d10e6ebdf8291574e2eb437}{buffer}}\ =\ \mbox{\hyperlink{error_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}};}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00015}00015\ \ \ \ \ error.\mbox{\hyperlink{structtag_e_r_r_o_r_a896d9615ffb28ba4fc6e743fb28ae157}{message}}\ =\ \mbox{\hyperlink{error_2test_8c_a2b1ad86cfb152e339f26a8026c5c9fe6}{ERROR\_MSG\_NEGATIVE}};}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00016}00016\ \ \ \ \ \mbox{\hyperlink{error_8c_a6ccb869aaf2a807e4e4a799ea9749ac6}{errorSet}}(error);}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00017}00017\ \ \ \ \ \textcolor{keywordflow}{return}\ num;}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00018}00018\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00019}00019\ \ \ error.\mbox{\hyperlink{structtag_e_r_r_o_r_ad4e91fa387700a255c1c0036fd16ef22}{ret}}\ =\ num;}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00020}00020\ \ \ error.\mbox{\hyperlink{structtag_e_r_r_o_r_a7f80e69871c9f36114cb618a156ccd3c}{id}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00021}00021\ \ \ error.\mbox{\hyperlink{structtag_e_r_r_o_r_a6d3d9da39d10e6ebdf8291574e2eb437}{buffer}}\ =\ \mbox{\hyperlink{error_8c_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}};}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00022}00022\ \ \ error.\mbox{\hyperlink{structtag_e_r_r_o_r_a896d9615ffb28ba4fc6e743fb28ae157}{message}}\ =\ \mbox{\hyperlink{error_2test_8c_a9fd6d70803d54bab18e8c95e4a9e508c}{ERROR\_MSG\_SUCCESS}};}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00023}00023\ \ \ \mbox{\hyperlink{error_8c_a6ccb869aaf2a807e4e4a799ea9749ac6}{errorSet}}(error);}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00024}00024\ \ \ \textcolor{keywordflow}{return}\ num;}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00025}00025\ \}}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00027}\mbox{\hyperlink{error_2test_8c_a840291bc02cba5474a4cb46a9b9566fe}{00027}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{error_2test_8c_a840291bc02cba5474a4cb46a9b9566fe}{main}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00028}00028\ \{}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00029}00029\ \ \ \mbox{\hyperlink{error_2test_8c_ae56153b644c6a0d216cf75a77996c1bd}{n}}(-\/2);}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00030}00030\ \ \ \mbox{\hyperlink{structtag_e_r_r_o_r}{ERROR}}\ error\ =\ \mbox{\hyperlink{error_8c_a654bd405645576c0329804ea99b0585f}{errorGet}}();}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00031}00031\ \ \ printf(\textcolor{stringliteral}{"{}\%s\(\backslash\)n"{}},\ error.\mbox{\hyperlink{structtag_e_r_r_o_r_a896d9615ffb28ba4fc6e743fb28ae157}{message}});}
+\DoxyCodeLine{\Hypertarget{error_2test_8c_source_l00032}00032\ \}}
+
+\end{DoxyCode}
